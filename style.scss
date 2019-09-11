@@ -1,0 +1,149 @@
+@mixin font-parameters-for-header {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@mixin webpage-max-width {
+    max-width: 1260px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body {
+    margin: 0;
+    font-family: Ubuntu, Arial;
+}
+
+.header {
+    @include webpage-max-width;
+    height: 765px;
+    background-image: url('images/panorama.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0 78px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 156px;
+}
+
+
+.upper-header {
+    height: 111px;
+    width: calc(50% + 57.5px);
+    margin-top: 35px;
+    display: flex;
+
+    &__phone-number {
+        margin: auto;
+        @include font-parameters-for-header;
+    }
+
+    &__call-link {
+        margin: auto auto auto 0;
+        @include font-parameters-for-header;
+    }
+}
+
+.menu {
+    align-self: flex-end;
+    width: 100%;
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 32px;
+        justify-content: space-evenly;
+    }
+
+    &__items {
+        display: flex;
+    }
+
+    &__links {
+        @include font-parameters-for-header;
+        text-decoration: none;
+        line-height: 30px;
+
+        &:hover {
+            color: #D5C5AA;
+        }
+    }
+
+    &__items_active {
+        @extend .menu__links;
+        background: #D5C5AA;
+        border-radius: 10px;
+        color: #000;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.main-content {
+    @include webpage-max-width;
+}
+
+.about-us {
+    margin: 0 160px;
+    display: flex;
+
+    &__article {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 140px;
+    }
+
+    &__heading {
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 60px;
+        text-transform: uppercase;
+        margin-right: 62px;
+        margin-top: 0;
+    }
+
+    p:first-child {
+        margin-top: 0;
+    }
+}
+
+.gallery {
+    height: 1256px;
+    background: #eee;
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 29px;
+
+        &_text {
+            font-weight: 300;
+            font-size: 48px;
+            margin: 0;
+        }
+
+        &_pic {
+            transform: rotate(180deg);
+        }
+    }
+
+    &__pics {
+        width: 940px;
+        height: 910px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
