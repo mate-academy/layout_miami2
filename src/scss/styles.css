@@ -6,8 +6,9 @@ body {
 
 .header {
   height: 765px;
-  background: url("../images/background.jpg"), center;
+  background: url("../images/background.jpg");
   background-size: cover;
+  background-position: center;
   font-weight: 500;
   position: relative;
 }
