@@ -16,17 +16,17 @@ $item-size: 130px;
     height: 76px;
     width: 115px;
   }
-
-  &__nav {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 25px;
-    text-transform: $upper-text;
-  }
 }
 
-.contacts {
+.menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  text-transform: $upper-text;
+}
+
+.info {
   text-transform: $upper-text;
   color: $contrast-text;
   margin: auto;
@@ -43,7 +43,7 @@ $item-size: 130px;
   }
 
   &__item {
-    @extend .nav__link;
+    @extend .menu__link;
     list-style: none;
     margin: 35px 0;
   }
@@ -53,7 +53,8 @@ $item-size: 130px;
   }
 }
 
-.nav {
+.menu {
+
   &__list {
     margin: 0;
     padding: 0;
@@ -70,6 +71,10 @@ $item-size: 130px;
     &_active {
       background-color: #d5c5aa;
       border-radius: 10px;
+
+      &:hover {
+        background-color: $contrast-text;
+      }
     }
   }
 
@@ -79,38 +84,42 @@ $item-size: 130px;
 
     &:hover {
       color: $active-color;
+      cursor: pointer;
     }
   }
 }
 
-@media screen and (max-width: 999px){
-  .nav__item {
+@media screen and (max-width: 1100px){
+  .menu__item {
     margin: 0 4px;
   }
-  .contacts__list {
-    grid-gap: 30px;
+
+  .info__list {
+    grid-gap: 20px;
   }
 }
 
-@media screen and (max-width: 599px) {
-  .nav {
+@media screen and (max-width: 799px) {
+
+  .menu {
     &__list {
       flex-direction: column;
       align-items: center;
     }
+
     &__link {
       margin: 0;
     }
   }
-  .contacts {
+
+  .info {
     &__list {
       grid-template-columns: repeat(1, $item-size);
       grid-gap: 20px;
     }
     &__item:first-child {
       grid-column-start: 1;
-      margin: 0;
+      margin-top: 20px;
     }
   }
-
 }
