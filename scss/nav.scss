@@ -1,0 +1,29 @@
+.nav {
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $light-color;
+        white-space: nowrap;
+
+        &:hover {
+            color: $hover-color;
+        }
+
+        &_active {
+            padding: 7px 20px;
+            background-color: $hover-color;
+            color: $main-color;
+            border-radius: 10px;
+
+            &:hover {
+                color: inherit;
+            }
+        }
+    }
+}
