@@ -23,7 +23,7 @@
 }
 .header__contact-item {
   position: relative;
-  display: inline;
+  margin-top: 60px;
   margin-left: 6.5vw;
   text-transform: uppercase;
 }
@@ -84,7 +84,7 @@
     right: 0;
   }
   .header__contact-item {
-    margin: 10px auto;
+    margin: 15px auto;
   }
 }
 

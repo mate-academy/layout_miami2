@@ -17,7 +17,7 @@
 
     &-item {
       position: relative;
-      display: inline;
+      margin-top: 60px;
       margin-left: 6.5vw;
       text-transform: uppercase;
     }
@@ -85,9 +85,9 @@
     flex-direction: column; 
     left: 0;
     right: 0; 
-    
+
     &-item {
-      margin: 10px auto;
+      margin: 15px auto;
     }
   }
 }
