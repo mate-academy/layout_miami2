@@ -118,32 +118,32 @@ body {
     }
 }
 
-.gallery {
-    height: 1256px;
-    background: #eee;
+// .gallery {
+//     height: 1256px;
+//     background: #eee;
 
-    &__heading {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        bottom: 29px;
+//     &__heading {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         position: relative;
+//         bottom: 29px;
 
-        &_text {
-            font-weight: 300;
-            font-size: 48px;
-            margin: 0;
-        }
+//         &_text {
+//             font-weight: 300;
+//             font-size: 48px;
+//             margin: 0;
+//         }
 
-        &_pic {
-            transform: rotate(180deg);
-        }
-    }
+//         &_pic {
+//             transform: rotate(180deg);
+//         }
+//     }
 
-    &__pics {
-        width: 940px;
-        height: 910px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-}
+//     &__pics {
+//         width: 940px;
+//         height: 910px;
+//         margin-right: auto;
+//         margin-left: auto;
+//     }
+// }
