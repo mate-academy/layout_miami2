@@ -1,0 +1,39 @@
+.nav {
+  min-width: 870px;
+  max-width: $container-max-width;
+  width: $container-lg-width;
+  margin: 0 auto 25px;
+
+  &__list {
+  display: flex;
+  justify-content: space-between;
+  }
+
+  &__item {
+    padding: 7px 20px;
+    word-spacing: nowrap;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: ease .5s;
+
+    a {
+      transition: color .5s;
+    }
+
+    &--active {
+      background-color: $darken-light;
+    }
+  }
+
+  &--light {
+
+    .nav__item a {
+      color: $light-color;
+
+      &:hover {
+        color: $darken-light;
+      }
+    }
+  }
+}

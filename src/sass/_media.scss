@@ -1,0 +1,25 @@
+@media screen and (max-width: 1024px) {
+  .nav {
+    width: $container-md-width;
+    min-width: 0;
+
+    &__item {
+      padding: 5px 15px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+
+    &__list {
+      flex-direction: column;
+      align-items:  center;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+}
