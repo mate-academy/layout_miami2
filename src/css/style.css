@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.header {
+  position: relative;
+  height: 765px;
+  background-image: url("../images/header-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.header__contact {
+  position: absolute;
+  top: 35px;
+  right: 12.7vw;
+  display: flex;
+  align-items: center;
+}
+.header__contact-item {
+  position: relative;
+  display: inline;
+  margin-left: 6.5vw;
+  text-transform: uppercase;
+}
+.header__contact-item:last-child {
+  border-bottom: 1px dashed #FFF;
+}
+
+.nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+.nav__link {
+  margin: 0 3%;
+  text-decoration: none;
+  padding: 7px 20px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.nav__link_active {
+  color: black;
+  background-color: #D5C5AA;
+  border-radius: 10px;
+}
+.nav__link:hover {
+  color: #D5C5AA;
+}
+
+@media screen and (max-width: 1099px) {
+  .nav {
+    justify-content: space-evenly;
+  }
+  .nav__link {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 749px) {
+  .nav {
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__contact {
+    justify-content: center;
+    left: 0;
+    right: 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  .header__contact {
+    flex-direction: column;
+    left: 0;
+    right: 0;
+  }
+  .header__contact-item {
+    margin: 10px auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
