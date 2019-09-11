@@ -1,0 +1,20 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include main-font;
+    font-weight: $main-weight;
+    line-height: $main-height;
+    color: $main-color;
+    font-size: $main-size;
+}
+
+@import "section";
+@import "container";
+@import "header";
+@import "nav";
