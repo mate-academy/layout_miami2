@@ -3,7 +3,7 @@
 
 .header {
   height: 765px;
-  background-image: url('images/backgroundmiami.jpg');
+  background-image: url("images/backgroundmiami.jpg");
   background-size: cover;
   background-position: center;
   font-weight: 500;
@@ -75,6 +75,9 @@
     &_active {
       background-color:  $color_hover_padding;
       border-radius: 10px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -84,6 +87,10 @@
     transition: $transition;
     &:hover {
       color: $color_hover_padding;
+    }
+
+    &:active {
+      color: blue;
     }
   }
 }
@@ -129,3 +136,4 @@
   width: $logo_width;
   height: $logo_height;
 }
+

@@ -70,6 +70,9 @@ body {
   background-color: #D5C5AA;
   border-radius: 10px;
 }
+.nav__item_active:hover {
+  cursor: pointer;
+}
 .nav__link {
   color: white;
   text-decoration: none;
@@ -77,6 +80,9 @@ body {
 }
 .nav__link:hover {
   color: #D5C5AA;
+}
+.nav__link:active {
+  color: blue;
 }
 
 @media screen and (max-width: 1050px) {
