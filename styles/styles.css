@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.head .head-nav-items, .head .head-contact {
+  display: flex;
+  position: absolute;
+  list-style: none;
+}
+
+.head {
+  background-image: url("../images/main.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 765px;
+}
+.head .head-logo img {
+  margin: 35px 0 0 572px;
+}
+.head .head-contact {
+  right: 160px;
+  top: 82px;
+}
+.head .head-contact .contact-link {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0 41px;
+  text-transform: uppercase;
+}
+.head .head-contact .call {
+  border-bottom: 1px dotted white;
+}
+.head .head-nav-items {
+  bottom: 32px;
+  font-size: 16px;
+  margin-left: 163px;
+}
+.head .head-nav-items .nav-item {
+  margin-right: 85px;
+}
+.head .head-nav-items .nav-item button {
+  height: 30xp;
+  width: 80px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  outline: none;
+}
+.head .head-nav-items a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map */
