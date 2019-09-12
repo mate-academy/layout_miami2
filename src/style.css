@@ -9,25 +9,25 @@ body {
   height: 765px;
   padding-top: 35px;
   position: relative; }
-  .header__top {
+  .header-top {
     position: absolute;
     display: flex;
     left: calc(50% - 57.5px); }
-    .header__top__block {
+    .header-top__block {
       position: relative;
       top: 46.5px;
       white-space: nowrap; }
-      .header__top__block_logo {
+      .header-top__block_logo {
         width: 115px;
         height: 75px; }
-      .header__top__block_phone {
+      .header-top__block_phone {
         margin-left: 82px;
         font-weight: 500;
         font-size: 16px;
         line-height: 16px;
         text-transform: uppercase;
         color: white; }
-      .header__top__block_order {
+      .header-top__block_order {
         font-weight: 500;
         font-size: 16px;
         line-height: 16px;
@@ -44,7 +44,8 @@ body {
 .nav__list {
   display: flex;
   justify-content: center;
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 0; }
 
 .nav__item {
   text-decoration: none;
@@ -56,12 +57,12 @@ body {
     border-radius: 10px; }
 
 .nav__link,
-.header__top_order_link {
-  color: #fff;
+.header-top_order_link {
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase; }
   .nav__link:hover,
-  .header__top_order_link:hover {
+  .header-top_order_link:hover {
     color: #d5c5aa; }
 
 .info {

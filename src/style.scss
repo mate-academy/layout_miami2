@@ -9,7 +9,7 @@
   height: 765px;
   padding-top: 35px;
   position: relative;
-  &__top {
+  &-top {
     position: absolute;
     display: flex;
     left: calc(50% - #{$logo-width / 2});
@@ -40,14 +40,11 @@
   }
 }
 
-//.header__nav {
-//  position: absolute;
-//  margin-bottom: 25px;
-//}
 .nav__list {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  margin: 0;
 }
 
 .nav__item {
@@ -62,8 +59,8 @@
 }
 
 .nav__link,
-.header__top_order_link{
-  color: #fff;
+.header-top_order_link{
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   &:hover {
