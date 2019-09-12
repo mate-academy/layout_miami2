@@ -3,6 +3,16 @@ html, body {
   font-family: "Ubuntu", sans-serif;
 }
 
+.container {
+  height: 100%;
+  max-width: 1260px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 156px calc(50% - 470px);
+  display: flex;
+  justify-content: space-between;
+}
+
 .header {
   height: 765px;
   background-image: url("images/bg-header.jpg");
@@ -13,19 +23,16 @@ html, body {
   line-height: 16px;
 }
 .header__container {
-  height: 100%;
-  width: 1260px;
-  box-sizing: border-box;
-  margin: 0 auto;
+  flex-direction: column;
   padding: 35px 160px;
-  position: relative;
+}
+
+.logo__image {
+  height: 76px;
+  width: 115px;
 }
 
 .nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 25px;
   text-transform: uppercase;
 }
 .nav__list {
@@ -63,24 +70,79 @@ html, body {
   align-items: center;
 }
 .top__logo {
-  margin-left: calc(50% - 57px);
-  width: 115px;
-}
-.top__logo .logo__image {
-  height: 76px;
+  margin-left: calc(50% - 58px);
 }
 .top__tel .tel__link {
   text-decoration: none;
   color: inherit;
 }
+.top__tel .tel__link :hover {
+  color: #d5c5aa;
+}
 .top__call-to-order {
   border-bottom: 1px dashed #ffffff;
+}
+
+.info__container {
+  box-sizing: content-box;
+}
+.info__heading {
+  margin: 0;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+  width: 314px;
+}
+.info__heading .highlight {
+  color: #00aaef;
+}
+.info__text {
+  width: 564px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.info__text p {
+  margin: 0;
+}
+.info__text strong {
+  font-weight: 500;
+}
+
+.footer {
+  height: 540px;
+  background-image: url("images/bg-footer.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.footer__logo {
+  position: absolute;
+  left: calc(50% - 58px);
+  bottom: 95px;
 }
 
 @media screen and (max-width: 999px) {
   .nav__list {
     flex-direction: column;
     align-items: center;
+  }
+
+  .top {
+    height: 152px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top__logo {
+    margin-left: 0;
+  }
+
+  .info__container {
+    flex-direction: column;
+    padding-left: 70px;
+  }
+  .info__heading {
+    margin-bottom: 10px;
   }
 }
 

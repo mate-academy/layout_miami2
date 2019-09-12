@@ -1,6 +1,21 @@
+$logo-width: 115px;
+$logo-height: 76px;
+
+$light-active-color: #d5c5aa;
+
 html, body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  height: 100%;
+  max-width: 1260px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 156px calc(50% - 470px);
+  display: flex;
+  justify-content: space-between;
 }
 
 .header {
@@ -13,20 +28,17 @@ html, body {
   line-height: 16px;
 
   &__container {
-    height: 100%;
-    width: 1260px;
-    box-sizing: border-box;
-    margin: 0 auto;
+    flex-direction: column;
     padding: 35px 160px;
-    position: relative;
   }
 }
 
+.logo__image {
+  height: $logo-height;
+  width: $logo-width;
+}
+
 .nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 25px;
   text-transform: uppercase;
   &__list {
     list-style: none;
@@ -40,7 +52,7 @@ html, body {
     padding: 7px 20px;
     white-space: nowrap;
     &_active {
-      background-color: #d5c5aa;
+      background-color: $light-active-color;
       color: #000000;
       border-radius: 10px;
     }
@@ -50,7 +62,7 @@ html, body {
     color: #fff;
     transition: 0.2s;
     &:hover {
-      color: #d5c5aa;
+      color: $light-active-color;
       cursor: pointer;
     }
   }
@@ -63,16 +75,15 @@ html, body {
   justify-content: space-between;
   align-items: center;
   &__logo {
-    margin-left: calc(50% - 57px);
-    width: 115px;
-    .logo__image {
-      height: 76px;
-    }
+    margin-left: calc(50% - 58px);
   }
   &__tel {
     .tel__link {
       text-decoration: none;
       color: inherit;
+      :hover {
+        color: $light-active-color;
+      }
     }
   }
   &__call-to-order {
@@ -80,10 +91,73 @@ html, body {
   }
 }
 
+.info {
+  &__container {
+    box-sizing: content-box;
+  }
+  &__heading {
+    margin: 0;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: 314px;
+    .highlight {
+      color: #00aaef;
+    }
+  }
+
+  &__text {
+    width: 564px;
+    font-size: 16px;
+    line-height: 24px;
+    p {
+      margin: 0;
+    }
+    strong {
+      font-weight: 500;
+    }
+  }
+}
+
+.footer {
+  height: 540px;
+  background-image: url("images/bg-footer.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  &__logo {
+    position: absolute;
+    left: calc(50% - 58px);
+    bottom: 95px;
+  }
+}
+
+
+
+
 @media screen and (max-width: 999px){
   .nav__list {
     flex-direction: column;
     align-items: center;
   }
-
+  .top {
+    height: $logo-height*2;
+    flex-direction: column;
+    align-items: center;
+    &__logo {
+      margin-left: 0;
+    }
+  }
+  .info {
+    &__container {
+      flex-direction: column;
+      padding-left: 70px;
+    }
+    &__heading {
+      margin-bottom: 10px;
+    }
+  }
 }
+
+
