@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  height: 765px;
+  background-image: url(../images/header-img.jpg);
+  background-size: cover;
+  position: relative;
+  padding-top: 35px;
+}
+.header__top {
+  white-space: nowrap;
+  display: flex;
+  margin-left: calc(50% - 57.5px);
+  color: #fff;
+}
+.header__phone {
+  margin: calc(76px * 0.62) 82px 0;
+}
+.header__call {
+  text-transform: uppercase;
+  border-bottom: 1px dashed #fff;
+  height: 20px;
+  margin-top: calc(76px * 0.62);
+}
+
+.logo {
+  width: 115px;
+  height: 76px;
+}
+
+.nav {
+  font-weight: 500;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+}
+.nav__list {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.nav__item {
+  padding: 7px 20px;
+  margin: 0 22.5px;
+  white-space: nowrap;
+}
+.nav__item_active {
+  background-color: #D5C5AA;
+  border-radius: 10px;
+}
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+}
+.nav__link:hover {
+  color: #D5C5AA;
+}
+
+@media screen and (max-width: 1070px) {
+  .nav__list {
+    justify-content: space-evenly;
+  }
+
+  .nav__item {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 985px) {
+  .header__top {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .header__phone, .header__call {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
