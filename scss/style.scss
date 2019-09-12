@@ -9,6 +9,7 @@ body {
 
 .header {
   height: 765px;
+  max-height: 100vh;
   background-image: url(../images/header-img.jpg);
   background-size: cover;
   position: relative;
