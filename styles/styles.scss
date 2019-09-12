@@ -1,0 +1,60 @@
+@import "reset";
+%flex-style {
+  display: flex;
+  position: absolute;
+  list-style: none;
+}
+
+$size: 16px;
+
+
+.head {
+  background-image: url("../images/main.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 765px;
+  .head-logo {
+    img {
+      margin: 35px 0 0 572px;
+    }
+  }
+
+  .head-contact {
+    @extend %flex-style;
+    right: 160px;
+    top: 82px;
+    .contact-link {
+      color: white;
+      font-size: $size;
+      text-decoration: none;
+      margin: 0 41px;
+      text-transform: uppercase;
+    }
+    .call {
+      border-bottom: 1px dotted white;
+    }
+  }
+  .head-nav-items {
+    @extend %flex-style;
+    bottom: 32px;
+    font-size: $size;
+    margin-left: 163px;
+    .nav-item {
+      margin-right: 85px;
+      button {
+        height: 30xp;
+        width: 80px;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        outline: none;
+      }
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
