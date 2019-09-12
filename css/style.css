@@ -2,6 +2,11 @@ body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
+  line-height: 1.5;
+}
+
+strong {
+  font-weight: 500;
 }
 
 .header {
@@ -9,8 +14,10 @@ body {
   max-height: 100vh;
   background-image: url(../images/header-img.jpg);
   background-size: cover;
+  background-position: center;
   position: relative;
   padding-top: 35px;
+  line-height: 1;
 }
 .header__top {
   white-space: nowrap;
@@ -67,6 +74,50 @@ body {
   color: #D5C5AA;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 156px auto;
+}
+.info__heading {
+  width: 314px;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.info__paragraphs {
+  width: 564px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.info__paragraphs > :first-child {
+  margin-top: 0;
+}
+.info__paragraphs > :last-child {
+  margin-bottom: 0;
+}
+
+.highlight {
+  color: #00AAEF;
+}
+
+.footer {
+  height: 540px;
+  background-image: url(../images/footer-img.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.footer__logo {
+  position: absolute;
+  bottom: 95px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
 @media screen and (max-width: 1070px) {
   .nav__list {
     justify-content: space-evenly;
@@ -85,6 +136,17 @@ body {
     margin-right: 0;
   }
 }
+@media screen and (max-width: 970px) {
+  .info {
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info__paragraphs {
+    margin-top: 16px;
+    width: 400px;
+  }
+}
 @media screen and (max-width: 800px) {
   .nav__list {
     flex-direction: column;
@@ -99,6 +161,16 @@ body {
 
   .header__phone, .header__link {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .info {
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info__paragraphs {
+    width: 200px;
   }
 }
 
