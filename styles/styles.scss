@@ -14,17 +14,15 @@ $size: 16px;
   height: 765px;
   font-weight: 500;
   position: relative;
-}
-
-
-.logo {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 32px;
-  width: 115px;
-  height: 76px;
+  .logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 32px;
+    width: 115px;
+    height: 76px;
+  }
 }
 
 .head-contact {
@@ -35,6 +33,7 @@ $size: 16px;
   right: 160px;
   margin: 0;
 }
+
 .contact-link {
   color: white;
   font-size: $size;
@@ -42,6 +41,7 @@ $size: 16px;
   margin: 0 41px;
   text-transform: uppercase;
 }
+
 .call {
   border-bottom: 1px dotted white;
 }
@@ -50,7 +50,7 @@ $size: 16px;
   position: absolute;
   left: 0;
   right: 0;
-  bottom:32px;
+  bottom: 32px;
 }
 
 .head-nav-items {
@@ -82,14 +82,14 @@ $size: 16px;
   white-space: nowrap;
 
   &:hover {
-    color: #D5C5AA;
+    color: #d5c5aa;
   }
 }
 
-@media screen and (max-width : 977px){
+@media screen and (max-width: 977px) {
   .nav-item {
-  margin: 0 5px;
-  transition: 0.5s;
+    margin: 0 5px;
+    transition: 0.5s;
   }
 
   .head-contact {
@@ -101,10 +101,10 @@ $size: 16px;
   }
 }
 
-@media screen and (max-width : 800px){
+@media screen and (max-width: 800px) {
   .head-nav-items {
-  flex-direction: column;
-  align-items: center;
-  transition: 0.5s;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
   }
 }

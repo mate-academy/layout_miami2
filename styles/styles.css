@@ -26,7 +26,7 @@ body {
   position: relative;
 }
 
-.logo {
+.header .logo {
   position: absolute;
   left: 0;
   right: 0;
@@ -98,7 +98,7 @@ body {
 }
 
 .item-link:hover {
-  color: #D5C5AA;
+  color: #d5c5aa;
 }
 
 @media screen and (max-width: 977px) {
