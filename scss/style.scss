@@ -14,7 +14,17 @@ body {
     font-size: $main-size;
 }
 
+.logo {
+    width: $logo-width;
+    height: $logo-height;
+}
+
 @import "section";
 @import "container";
 @import "header";
 @import "nav";
+@import "info";
+
+// other blocks
+
+@import "footer";
