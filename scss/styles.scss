@@ -1,0 +1,131 @@
+@import "resset";
+@import "variables";
+
+.header {
+  height: 765px;
+  background-image: url('images/backgroundmiami.jpg');
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  position: relative;
+
+  &__upper {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    left: calc(50% - #{$logo_width/2});
+    top: 35px;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__phone , &__action {
+   position: relative;
+   transform: translateY(-16px);
+   white-space: nowrap;
+   &:hover {
+     border-color: $color_hover_padding;
+   }
+  }
+
+  &__phone {
+    margin: 0 82px;
+    transition: $transition;
+  }
+
+  &__action {
+    border-bottom: 1px dashed white;
+  }
+
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    transition: $transition;
+    &:hover {
+      color: $color_hover_padding;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+  }
+}
+
+.nav {
+  &__unorderedlist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    transition: $transition;
+  }
+
+  &__item {
+    margin: 0 23px;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: $transition;
+
+    &_active {
+      background-color:  $color_hover_padding;
+      border-radius: 10px;
+    }
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    transition: $transition;
+    &:hover {
+      color: $color_hover_padding;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1050px) {
+  .nav {
+    &__unorderedlist {
+      margin: 0 40px;
+    }
+
+    &__item {
+      margin: 20px 0;
+    }
+  }
+
+  .header {
+    &__phone {
+      margin: 0 20px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 790px) {
+  .nav__unorderedlist {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header  {
+    &__upper {
+      display: flex;
+      flex-direction: column;
+    }
+    &__phone {
+      margin: 40px 0;
+    }
+  }
+
+}
+
+.logo {
+  width: $logo_width;
+  height: $logo_height;
+}
