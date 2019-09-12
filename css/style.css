@@ -20,11 +20,13 @@ body {
 .header__phone {
   margin: calc(76px * 0.62) 82px 0;
 }
-.header__call {
+.header__link {
   text-transform: uppercase;
-  border-bottom: 1px dashed #fff;
   height: 20px;
-  margin-top: calc(76px * 0.62);
+  margin-top: 47.12px;
+  color: #fff;
+  border-bottom: 1px dashed #fff;
+  text-decoration: none;
 }
 
 .logo {
@@ -80,7 +82,7 @@ body {
     margin-left: 0;
   }
 
-  .header__phone, .header__call {
+  .header__phone, .header__link {
     margin-top: 20px;
   }
 }
