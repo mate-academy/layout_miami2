@@ -1,0 +1,62 @@
+@import "reset";
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  height: 765px;
+  background-image: url('../../images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  position: relative;
+
+  &__nav {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+  }
+}
+
+.nav {
+  $active-color: #d5c5aa;
+  text-transform: uppercase;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    margin: 0 22.5px;
+    padding: 7px 20px;
+    white-space: nowrap;
+
+    &_active {
+      background-color: $active-color;
+      border-radius: 10px;
+    } 
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $active-color;
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
