@@ -4,11 +4,16 @@ body {
   font-size: 16px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   height: 765px;
-  background: url("../images/background.jpg");
-  background-size: cover;
+  background-image: url("../images/background.jpg");
   background-position: center;
+  background-size: cover;
   font-weight: 500;
   position: relative;
 }
@@ -17,6 +22,31 @@ body {
   left: 0;
   right: 0;
   bottom: 25px;
+}
+.header__top {
+  position: absolute;
+  display: flex;
+  left: calc(50% - 57.5px);
+  top: 35px;
+  text-transform: uppercase;
+  color: white;
+}
+.header__phone {
+  margin: 0 82px;
+}
+.header__phone, .header__action {
+  position: relative;
+  top: 47.12px;
+  white-space: nowrap;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  transition: color 0.2s;
+}
+.header__link:hover {
+  color: #D5C5AA;
 }
 
 .nav {
@@ -46,7 +76,22 @@ body {
   color: #D5C5AA;
 }
 
+.logo {
+  width: 115px;
+  height: 76px;
+}
+
 @media screen and (max-width: 999px) {
+  .header__top {
+    flex-direction: column;
+  }
+  .header__phone {
+    margin: 20px 0;
+  }
+  .header__phone, .header__action {
+    top: 0;
+  }
+
   .nav__list {
     flex-direction: column;
     align-items: center;
