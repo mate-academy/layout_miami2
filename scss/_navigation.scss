@@ -1,0 +1,41 @@
+@import "variables";
+
+.nav {
+  text-transform: uppercase;
+  &__list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+  
+  &__item {
+    margin: 0 22.5px;
+    padding: 7px 20px;
+    white-space: nowrap;
+    
+    &_active {
+      background-color: $light-active-color;
+      border-radius: 10px;
+      color: black;
+    }
+  }
+  
+  &__link {
+    color: white;
+    text-decoration: none;
+    transition: $hover-duration;
+    
+    &:hover {
+      color: $light-active-color;
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
