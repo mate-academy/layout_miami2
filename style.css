@@ -5,9 +5,6 @@ body {
 
 .header {
   max-width: 1260px;
-  box-sizing: border-box;
-  padding-right: 78px;
-  padding-left: 78px;
   margin-right: auto;
   margin-left: auto;
   height: 765px;
@@ -15,9 +12,9 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-right: 78px;
+  padding-left: 78px;
 }
 .header__top {
   display: flex;
@@ -93,9 +90,6 @@ body {
 
 .info {
   max-width: 1260px;
-  box-sizing: border-box;
-  padding-right: 78px;
-  padding-left: 78px;
   margin-right: auto;
   margin-left: auto;
   height: 672px;
@@ -132,9 +126,6 @@ body {
 
 .footer {
   max-width: 1260px;
-  box-sizing: border-box;
-  padding-right: 78px;
-  padding-left: 78px;
   margin-right: auto;
   margin-left: auto;
   height: 540px;
