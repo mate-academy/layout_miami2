@@ -1,3 +1,8 @@
+$logo-width: 115px;
+$logo-height: 76px;
+$hover-color: #D5C5AA;
+$hover-duration: 0.2s;
+
 @mixin font-parameters-for-header {
     font-weight: 500;
     font-size: 16px;
@@ -7,6 +12,9 @@
 
 @mixin webpage-max-width {
     max-width: 1260px;
+    box-sizing: border-box;
+    padding-right: 78px;
+    padding-left: 78px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -22,20 +30,20 @@ body {
     background-image: url('images/panorama.jpg');
     background-size: cover;
     background-position: center;
-    padding: 0 78px;
-    box-sizing: border-box;
+    position: relative;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    margin-bottom: 156px;
-}
 
-
-.upper-header {
-    height: 111px;
-    width: calc(50% + 57.5px);
-    margin-top: 35px;
-    display: flex;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        height: 111px;
+        position: absolute;
+        left: calc(50% - #{$logo-width / 2});
+        right: 78px;
+        top: 35px;
+    }
 
     &__phone-number {
         margin: auto;
@@ -43,43 +51,112 @@ body {
     }
 
     &__call-link {
+        text-decoration: none;
+        border-bottom: 1px dashed;
         margin: auto auto auto 0;
+        transition: color $hover-duration;
         @include font-parameters-for-header;
+
+        &:hover {
+            color: $hover-color;
+        }
     }
 }
 
+.logo {
+    width: $logo-width;
+    height: $logo-height;
+}
+
 .menu {
-    align-self: flex-end;
-    width: 100%;
+    position: absolute;
+    left: 78px;
+    right: 78px;
+    bottom: 32px;
 
     &__list {
         display: flex;
         list-style-type: none;
-        padding-left: 0;
-        margin-bottom: 32px;
+        padding: 0;
         justify-content: space-evenly;
-    }
-
-    &__items {
-        display: flex;
+        margin: 0;
     }
 
     &__links {
         @include font-parameters-for-header;
         text-decoration: none;
         line-height: 30px;
+        transition: color $hover-duration;
 
         &:hover {
-            color: #D5C5AA;
+            color: $hover-color;
         }
     }
 
     &__items_active {
-        @extend .menu__links;
+        @include font-parameters-for-header;
+        line-height: 30px;
         background: #D5C5AA;
         border-radius: 10px;
         color: #000;
         padding: 0 20px;
+    }
+}
+
+.info {
+    @include webpage-max-width;
+    height: 672px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__content {
+        max-width: 940px;
+        min-height: 360px;
+        display: flex;
+    }
+
+    &__article {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__heading {
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 60px;
+        min-width: 314px;
+        text-transform: uppercase;
+        margin: 0 62px 0 0;
+
+        strong {
+            font-weight: 500;
+        }
+
+        .highlight {
+            color: #00aaef;
+        }
+    }
+
+    p:first-child {
+        margin-top: 0;
+    }
+}
+
+.footer {
+    @include webpage-max-width;
+    height: 540px;
+    background-image: url('images/footer-panorama.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &__logo {
+        position: absolute;
+        bottom: 95px;
+        margin: auto;
+        left: 0;
+        right: 0;
     }
 }
 
@@ -88,33 +165,19 @@ body {
         flex-direction: column;
         align-items: center;
     }
-}
 
-.main-content {
-    @include webpage-max-width;
-}
-
-.about-us {
-    margin: 0 160px;
-    display: flex;
-
-    &__article {
-        font-size: 16px;
-        line-height: 24px;
-        margin-bottom: 140px;
+    .header__top {
+        flex-direction: column;
     }
 
-    &__heading {
-        font-weight: 300;
-        font-size: 48px;
-        line-height: 60px;
-        text-transform: uppercase;
-        margin-right: 62px;
-        margin-top: 0;
+    .header__phone-number {
+        margin: 20px 0;
     }
 
-    p:first-child {
-        margin-top: 0;
+    .info {
+        &__content {
+            flex-direction: column;
+        }
     }
 }
 

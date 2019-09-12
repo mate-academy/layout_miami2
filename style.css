@@ -5,71 +5,150 @@ body {
 
 .header {
   max-width: 1260px;
+  box-sizing: border-box;
+  padding-right: 78px;
+  padding-left: 78px;
   margin-right: auto;
   margin-left: auto;
   height: 765px;
   background-image: url("images/panorama.jpg");
   background-size: cover;
   background-position: center;
-  padding: 0 78px;
-  box-sizing: border-box;
+  position: relative;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
-  margin-bottom: 156px;
 }
-
-.upper-header {
-  height: 111px;
-  width: calc(50% + 57.5px);
-  margin-top: 35px;
+.header__top {
   display: flex;
+  justify-content: space-between;
+  height: 111px;
+  position: absolute;
+  left: calc(50% - 57.5px);
+  right: 78px;
+  top: 35px;
 }
-.upper-header__phone-number {
+.header__phone-number {
   margin: auto;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
 }
-.upper-header__call-link {
+.header__call-link {
+  text-decoration: none;
+  border-bottom: 1px dashed;
   margin: auto auto auto 0;
+  transition: color 0.2s;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
 }
+.header__call-link:hover {
+  color: #D5C5AA;
+}
+
+.logo {
+  width: 115px;
+  height: 76px;
+}
 
 .menu {
-  align-self: flex-end;
-  width: 100%;
+  position: absolute;
+  left: 78px;
+  right: 78px;
+  bottom: 32px;
 }
 .menu__list {
   display: flex;
   list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 32px;
+  padding: 0;
   justify-content: space-evenly;
+  margin: 0;
 }
-.menu__items {
-  display: flex;
-}
-.menu__links, .menu__items_active {
+.menu__links {
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
   line-height: 30px;
+  transition: color 0.2s;
 }
-.menu__links:hover, .menu__items_active:hover {
+.menu__links:hover {
   color: #D5C5AA;
 }
 .menu__items_active {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 30px;
   background: #D5C5AA;
   border-radius: 10px;
   color: #000;
   padding: 0 20px;
+}
+
+.info {
+  max-width: 1260px;
+  box-sizing: border-box;
+  padding-right: 78px;
+  padding-left: 78px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 672px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info__content {
+  max-width: 940px;
+  min-height: 360px;
+  display: flex;
+}
+.info__article {
+  font-size: 16px;
+  line-height: 24px;
+}
+.info__heading {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  min-width: 314px;
+  text-transform: uppercase;
+  margin: 0 62px 0 0;
+}
+.info__heading strong {
+  font-weight: 500;
+}
+.info__heading .highlight {
+  color: #00aaef;
+}
+.info p:first-child {
+  margin-top: 0;
+}
+
+.footer {
+  max-width: 1260px;
+  box-sizing: border-box;
+  padding-right: 78px;
+  padding-left: 78px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 540px;
+  background-image: url("images/footer-panorama.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.footer__logo {
+  position: absolute;
+  bottom: 95px;
+  margin: auto;
+  left: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 899px) {
@@ -77,58 +156,18 @@ body {
     flex-direction: column;
     align-items: center;
   }
-}
-.main-content {
-  max-width: 1260px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-.about-us {
-  margin: 0 160px;
-  display: flex;
-}
-.about-us__article {
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 140px;
-}
-.about-us__heading {
-  font-weight: 300;
-  font-size: 48px;
-  line-height: 60px;
-  text-transform: uppercase;
-  margin-right: 62px;
-  margin-top: 0;
-}
-.about-us p:first-child {
-  margin-top: 0;
-}
+  .header__top {
+    flex-direction: column;
+  }
 
-.gallery {
-  height: 1256px;
-  background: #eee;
-}
-.gallery__heading {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  bottom: 29px;
-}
-.gallery__heading_text {
-  font-weight: 300;
-  font-size: 48px;
-  margin: 0;
-}
-.gallery__heading_pic {
-  transform: rotate(180deg);
-}
-.gallery__pics {
-  width: 940px;
-  height: 910px;
-  margin-right: auto;
-  margin-left: auto;
+  .header__phone-number {
+    margin: 20px 0;
+  }
+
+  .info__content {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
