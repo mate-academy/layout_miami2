@@ -12,6 +12,9 @@ $hover-duration: 0.2s;
 
 @mixin webpage-max-width {
     max-width: 1260px;
+    box-sizing: border-box;
+    padding-right: 78px;
+    padding-left: 78px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -28,9 +31,6 @@ body {
     background-size: cover;
     background-position: center;
     position: relative;
-    box-sizing: border-box;
-    padding-right: 78px;
-    padding-left: 78px;
 
     &__top {
         display: flex;
