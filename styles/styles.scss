@@ -1,60 +1,110 @@
 @import "reset";
 %flex-style {
   display: flex;
-  position: absolute;
+  justify-content: flex-end;
   list-style: none;
 }
 
 $size: 16px;
 
-
-.head {
+.header {
   background-image: url("../images/main.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
   height: 765px;
-  .head-logo {
-    img {
-      margin: 35px 0 0 572px;
-    }
+  font-weight: 500;
+  position: relative;
+}
+
+
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 32px;
+  width: 115px;
+  height: 76px;
+}
+
+.head-contact {
+  @extend %flex-style;
+  position: absolute;
+  top: 82px;
+  left: 0;
+  right: 160px;
+  margin: 0;
+}
+.contact-link {
+  color: white;
+  font-size: $size;
+  text-decoration: none;
+  margin: 0 41px;
+  text-transform: uppercase;
+}
+.call {
+  border-bottom: 1px dotted white;
+}
+
+.head-nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom:32px;
+}
+
+.head-nav-items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 22.5px;
+  padding: 7px 20px;
+  font-size: $size;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.item-link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  white-space: nowrap;
+
+  &:hover {
+    color: #D5C5AA;
+  }
+}
+
+@media screen and (max-width : 977px){
+  .nav-item {
+  margin: 0 5px;
+  transition: 0.5s;
   }
 
   .head-contact {
-    @extend %flex-style;
-    right: 160px;
-    top: 82px;
-    .contact-link {
-      color: white;
-      font-size: $size;
-      text-decoration: none;
-      margin: 0 41px;
-      text-transform: uppercase;
-    }
-    .call {
-      border-bottom: 1px dotted white;
-    }
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    top: 160px;
+    left: 70px;
   }
+}
+
+@media screen and (max-width : 800px){
   .head-nav-items {
-    @extend %flex-style;
-    bottom: 32px;
-    font-size: $size;
-    margin-left: 163px;
-    .nav-item {
-      margin-right: 85px;
-      button {
-        height: 30xp;
-        width: 80px;
-        background-color: white;
-        color: black;
-        border-radius: 10px;
-        outline: none;
-      }
-    }
-    a {
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
   }
 }
