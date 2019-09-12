@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  height: 765px;
+  background-image: url("images/backgroundmiami.jpg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  position: relative;
+}
+.header__upper {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  left: calc(50% - 57.5px);
+  top: 35px;
+  text-transform: uppercase;
+  color: white;
+}
+.header__phone, .header__action {
+  position: relative;
+  transform: translateY(-16px);
+  white-space: nowrap;
+}
+.header__phone:hover, .header__action:hover {
+  border-color: #D5C5AA;
+}
+.header__phone {
+  margin: 0 82px;
+  transition: 0.5s;
+}
+.header__action {
+  border-bottom: 1px dashed white;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.header__link:hover {
+  color: #D5C5AA;
+}
+.header__nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+}
+
+.nav__unorderedlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+.nav__item {
+  margin: 0 23px;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+.nav__item_active {
+  background-color: #D5C5AA;
+  border-radius: 10px;
+}
+.nav__item_active:hover {
+  cursor: pointer;
+}
+.nav__link {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.nav__link:hover {
+  color: #D5C5AA;
+}
+.nav__link:active {
+  color: blue;
+}
+
+@media screen and (max-width: 1050px) {
+  .nav__unorderedlist {
+    margin: 0 40px;
+  }
+  .nav__item {
+    margin: 20px 0;
+  }
+
+  .header__phone {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .nav__unorderedlist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__upper {
+    display: flex;
+    flex-direction: column;
+  }
+  .header__phone {
+    margin: 40px 0;
+  }
+}
+.logo {
+  width: 115px;
+  height: 76;
+}
+
+/*# sourceMappingURL=styles.css.map */
