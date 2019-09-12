@@ -2,21 +2,57 @@ body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
+  line-height: 1.5;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+strong {
+  font-weight: 500;
 }
 
 .header {
   height: 765px;
-  background: url("../images/background.jpg");
-  background-size: cover;
+  background-image: url("../images/background-header.jpg");
   background-position: center;
+  background-size: cover;
   font-weight: 500;
   position: relative;
+  line-height: 1;
 }
 .header__nav {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 25px;
+}
+.header__top {
+  position: absolute;
+  display: flex;
+  left: calc(50% - 57.5px);
+  top: 35px;
+  text-transform: uppercase;
+  color: white;
+}
+.header__phone {
+  margin: 0 82px;
+}
+.header__phone, .header__action {
+  position: relative;
+  top: 47.12px;
+  white-space: nowrap;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  transition: color 0.2s;
+}
+.header__link:hover {
+  color: #D5C5AA;
 }
 
 .nav {
@@ -46,10 +82,81 @@ body {
   color: #D5C5AA;
 }
 
+.logo {
+  width: 115px;
+  height: 76px;
+}
+
+.section {
+  padding: 156px calc(50% - 457px);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info__heading {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: 314px;
+  margin: 0;
+}
+.info__text {
+  max-width: 564px;
+}
+.info__text > :first-child {
+  margin-top: 0;
+}
+.info__text > :last-child {
+  margin-bottom: 0;
+}
+
+.highlighted {
+  color: #00AAEF;
+}
+
+.footer {
+  height: 540px;
+  background-image: url("../images/background-bottom.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.footer__logo {
+  position: absolute;
+  bottom: 95px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
 @media screen and (max-width: 999px) {
+  .header__top {
+    flex-direction: column;
+  }
+  .header__phone {
+    margin: 20px 0;
+  }
+  .header__phone, .header__action {
+    top: 0;
+  }
+
   .nav__list {
     flex-direction: column;
     align-items: center;
+  }
+
+  .section {
+    padding: 20px 40px;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+  .info__heading {
+    margin-bottom: 12px;
   }
 }
 
