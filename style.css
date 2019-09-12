@@ -4,17 +4,13 @@ body {
 }
 
 .header {
-  max-width: 1260px;
-  box-sizing: border-box;
-  padding-right: 78px;
-  padding-left: 78px;
-  margin-right: auto;
-  margin-left: auto;
   height: 765px;
   background-image: url("images/panorama.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
+  padding-right: 78px;
+  padding-left: 78px;
 }
 .header__top {
   display: flex;
@@ -89,12 +85,8 @@ body {
 }
 
 .info {
-  max-width: 1260px;
-  box-sizing: border-box;
   padding-right: 78px;
   padding-left: 78px;
-  margin-right: auto;
-  margin-left: auto;
   height: 672px;
   display: flex;
   justify-content: center;
@@ -128,12 +120,6 @@ body {
 }
 
 .footer {
-  max-width: 1260px;
-  box-sizing: border-box;
-  padding-right: 78px;
-  padding-left: 78px;
-  margin-right: auto;
-  margin-left: auto;
   height: 540px;
   background-image: url("images/footer-panorama.jpg");
   background-size: cover;

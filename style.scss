@@ -10,27 +10,19 @@ $hover-duration: 0.2s;
     color: #fff;
 }
 
-@mixin webpage-max-width {
-    max-width: 1260px;
-    box-sizing: border-box;
-    padding-right: 78px;
-    padding-left: 78px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 body {
     margin: 0;
     font-family: Ubuntu, Arial;
 }
 
 .header {
-    @include webpage-max-width;
     height: 765px;
     background-image: url('images/panorama.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
+    padding-right: 78px;
+    padding-left: 78px;
 
     &__top {
         display: flex;
@@ -101,7 +93,8 @@ body {
 }
 
 .info {
-    @include webpage-max-width;
+    padding-right: 78px;
+    padding-left: 78px;
     height: 672px;
     display: flex;
     justify-content: center;
@@ -141,7 +134,6 @@ body {
 }
 
 .footer {
-    @include webpage-max-width;
     height: 540px;
     background-image: url('images/footer-panorama.jpg');
     background-size: cover;
