@@ -1,0 +1,139 @@
+@import "_reset";
+@import "mixins";
+@import "variables";
+
+.header {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 765px;
+  padding-top: 35px;
+  position: relative;
+  &__top {
+    position: absolute;
+    display: flex;
+    left: calc(50% - #{$logo-width / 2});
+    &__block {
+      position: relative;
+      top: $logo-height * 0.62;
+      white-space: nowrap;
+    &_logo {
+      width: $logo-width;
+      height: $logo-height;
+    }
+    &_phone {
+      margin-left: 82px;
+      @include header-top-styles;
+    }
+    &_order {
+      @include header-top-styles;
+      border-bottom: 1px dashed #fff;
+      margin-left: 82px;
+    }
+    }
+  }
+  &__nav {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+  }
+}
+
+//.header__nav {
+//  position: absolute;
+//  margin-bottom: 25px;
+//}
+.nav__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav__item {
+  text-decoration: none;
+  margin-right: 22.5px;
+  padding: 7px 20px;
+  &_active {
+    color: black;
+    background: $color-hover;
+    border-radius: 10px;
+  }
+}
+
+.nav__link,
+.header__top_order_link{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    color: $color-hover;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 156px calc(50% - 470px);
+  &__header {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-top: 0;
+    .light_color {
+       color: $light-color;
+    }
+  }
+  &__text {
+    width: 564px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    & > :first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.footer {
+  background-image: url("../images/footer_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 540px;
+  position: relative;
+  &__logo {
+    position: absolute;
+    bottom: 95px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 999px){
+  .header__top {
+    display: flex;
+    flex-direction: column;
+    &__block {
+      display: flex;
+      flex-direction: column;
+      &_phone,
+      &_order {
+        margin-left: 0;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 899px) {
+  .header__nav {
+    margin-top: 500px;
+
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

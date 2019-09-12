@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif; }
+
+.header {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 765px;
+  padding-top: 35px;
+  position: relative; }
+  .header__top {
+    position: absolute;
+    display: flex;
+    left: calc(50% - 57.5px); }
+    .header__top__block {
+      position: relative;
+      top: 46.5px;
+      white-space: nowrap; }
+      .header__top__block_logo {
+        width: 115px;
+        height: 75px; }
+      .header__top__block_phone {
+        margin-left: 82px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: white; }
+      .header__top__block_order {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: white;
+        border-bottom: 1px dashed #fff;
+        margin-left: 82px; }
+  .header__nav {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0; }
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; }
+
+.nav__item {
+  text-decoration: none;
+  margin-right: 22.5px;
+  padding: 7px 20px; }
+  .nav__item_active {
+    color: black;
+    background: #d5c5aa;
+    border-radius: 10px; }
+
+.nav__link,
+.header__top_order_link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .nav__link:hover,
+  .header__top_order_link:hover {
+    color: #d5c5aa; }
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 156px calc(50% - 470px); }
+  .info__header {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-top: 0; }
+    .info__header .light_color {
+      color: #00aaef; }
+  .info__text {
+    width: 564px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px; }
+    .info__text > :first-child {
+      margin-top: 0; }
+
+.footer {
+  background-image: url("../images/footer_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 540px;
+  position: relative; }
+  .footer__logo {
+    position: absolute;
+    bottom: 95px;
+    left: 0;
+    right: 0;
+    margin: auto; }
+
+@media screen and (max-width: 999px) {
+  .header__top {
+    display: flex;
+    flex-direction: column; }
+    .header__top__block {
+      display: flex;
+      flex-direction: column; }
+      .header__top__block_phone, .header__top__block_order {
+        margin-left: 0; } }
+@media screen and (max-width: 899px) {
+  .header__nav {
+    margin-top: 500px; }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+/*# sourceMappingURL=style.css.map */
