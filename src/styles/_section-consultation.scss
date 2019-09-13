@@ -1,0 +1,13 @@
+.section-consultation {
+
+  padding: 153px 160px 145px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__heading-block {
+      position: absolute;
+      top: -0.53em;
+    
+    }
+}

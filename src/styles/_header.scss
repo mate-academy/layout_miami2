@@ -30,4 +30,10 @@
     bottom: 25px;
   }
 }
-  
+
+@media screen and (max-width: $max-width) {
+
+  .header__phone-namber {
+    left: calc(50% + 80px);    
+  }
+}

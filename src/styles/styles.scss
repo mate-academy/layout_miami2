@@ -1,146 +1,18 @@
-/* import files*/
 @import "css_reset";
 
 @import "variables";
 
+@import "_blocks/button";
+@import "_blocks/heading-block";
 @import "_blocks/info";
 @import "_blocks/light-menu";
 @import "_blocks/logo";
 @import "_blocks/phone-number";
+@import "_blocks/photo-block";
 @import "_blocks/title";
 
 @import "header";
 @import "section-about";
 @import "section-gallery";
+@import "section-consultation";
 @import "footer";
-/* import files*/
-
-
-
-
-
-/* section-gallery__foto-block */
-.section-gallery__foto-block {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-
-  &_big-foto {
-    width: 620px;
-    height: 260px;
-  }
-
-  &_middle-foto {
-    width: 462px;
-    height: 261px;
-  }
-
-  &_small-foto {
-    width: 301px;
-    height: 260px;
-  }
-
-  &_top, &_middle, &_bottom {
-    margin-bottom: 63px;
-    position: relative;
-    display: flex;
-
-    & img:first-child {
-      margin-right: 16px;
-    }
-  }
-
-  &_MarinaPalms::after {
-    content: "Marina Palms / North Miami Beach, FL 33162";
-    position: absolute;
-    left: 0;
-    bottom: 35px;
-  }
-}
-/* section-gallery__foto-block */
-
-/* section-gallery__link */
-.section-gallery__link {
-  width: 188px;
-  height: 52px;
-  background-color: $special-color;
-  display: flex;
-  justify-content: center;
-  margin-top: 28px;
-
-  &_link {
-    font-size: 14px;
-    line-height: 52px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $link-color;
-  }
-}
-/* section-gallery__link */
-
-/* section__title-block */
-.section__title-block {
-  display: flex;
-  flex-direction: column;
-
-  &_title {
-    display: block;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 48px;
-    text-transform: uppercase;
-  }
-
-  &_decoration {
-    display: flex;
-
-    &-side {
-      height: 2px;
-      background-color: $special-color;
-    }
-
-    
-  }
-}
-
-/* section__title-block */
-
-
-/* MeDiA ReQuEsTs */
-@media screen and (max-width: 999px) {
-  .light-menu__list {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .light-menu__item_is-active {
-    margin-left: 42.5px;
-  }
-
-  .details {
-    flex-direction: column;
-  }
-
-  .header__details {
-    left: calc(50% + 80px);    
-  }
-  
-  .details__link {
-    margin-left: 0;
-  }
-
-  .section-about {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .section-about  __text {
-    margin-top: 24px;
-  }
-  
-}
-/* MeDiA ReQuEsTs */
-
-
