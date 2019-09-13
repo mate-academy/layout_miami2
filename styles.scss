@@ -11,9 +11,8 @@ html, body {
 .container {
   height: 100%;
   max-width: 1260px;
-  box-sizing: border-box;
   margin: 0 auto;
-  padding: 156px calc(50% - 470px);
+  padding: 150px calc(50% - 470px);
   display: flex;
   justify-content: space-between;
 }
@@ -30,12 +29,17 @@ html, body {
   &__container {
     flex-direction: column;
     padding: 35px 160px;
+    box-sizing: border-box;
   }
 }
 
 .logo__image {
   height: $logo-height;
   width: $logo-width;
+}
+
+.highlight {
+  color: #00aaef;
 }
 
 .nav {
@@ -92,9 +96,6 @@ html, body {
 }
 
 .info {
-  &__container {
-    box-sizing: content-box;
-  }
   &__heading {
     margin: 0;
     font-weight: 300;
@@ -102,9 +103,7 @@ html, body {
     line-height: 60px;
     text-transform: uppercase;
     width: 314px;
-    .highlight {
-      color: #00aaef;
-    }
+
   }
 
   &__text {
@@ -117,6 +116,122 @@ html, body {
     strong {
       font-weight: 500;
     }
+  }
+}
+
+.heading {
+  position: absolute;
+  top: -24px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    font-size: 48px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+  }
+  h2::before, h2::after {
+    content: '';
+    background-color: #00aaef;
+    height: 4px;
+    width: calc(50% - 14px);
+    position: absolute;
+    top: 48px;
+  }
+  h2::before {
+    left: 0;
+  }
+  h2::after {
+    right: 0;
+  }
+  &__crown-image {
+    height: 16px;
+    width: 23px;
+  }
+}
+
+.button {
+  width: 100%;
+  background-color: #00aaef;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: inherit;
+  &:hover {
+    background-color: #2f80ed;
+    cursor: pointer;
+  }
+}
+
+.gallery {
+  &__container {
+    flex-direction: column;
+  }
+  position: relative;
+  background-color: #eee;
+  &__photos {
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: calc(50% - 5px);
+    }
+  }
+  .wide-left {
+    img:first-child {
+      width: calc(67% - 5px);
+    }
+    img:last-child {
+      width: calc(33% - 5px);
+    }
+  }
+  .wide-right {
+    img:first-child {
+      width: calc(33% - 5px);
+    }
+    img:last-child {
+      width: calc(67% - 5px);
+    }
+  }
+
+}
+
+.contact-us {
+  position: relative;
+  &__text {
+    font-size: 24px;
+    line-height: 1.5;
+    width: 276px;
+  }
+  &__form {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__message {
+    height: 165px;
+    resize: none;
+    margin-bottom: 7px;
+  }
+  &__name, &__email, &__submit {
+    height: 55px;
+    margin-bottom: 7px;
+  }
+  ::placeholder {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 55px;
   }
 }
 
@@ -133,12 +248,9 @@ html, body {
   }
 }
 
-
-
-
 @media screen and (max-width: 999px){
   .nav__list {
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
   }
   .top {
