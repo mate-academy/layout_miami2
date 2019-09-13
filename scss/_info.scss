@@ -32,7 +32,11 @@
     width: 100vw;
     flex-direction: column;
     align-items: center;
+    margin: 60px auto;
   
+    &__heading {
+     width: 280px;
+    }
 
     &__paragraphs {
       margin-top: 16px;

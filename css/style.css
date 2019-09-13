@@ -97,6 +97,10 @@ p {
     width: 100vw;
     flex-direction: column;
     align-items: center;
+    margin: 60px auto;
+  }
+  .info__heading {
+    width: 280px;
   }
   .info__paragraphs {
     margin-top: 16px;
@@ -206,6 +210,11 @@ p {
   right: 0;
 }
 
+@media screen and (max-width: 370px) {
+  .section__heading {
+    font-size: 32px;
+  }
+}
 .gallery {
   width: 940px;
   margin: auto;
@@ -232,7 +241,7 @@ p {
 @media screen and (max-width: 970px) {
   .gallery {
     width: 100vw;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
   .gallery > p {
     width: 80vw;
@@ -282,6 +291,80 @@ p {
   }
   .photos_right .photos__img:last-child {
     width: 100%;
+  }
+}
+.consultation {
+  width: 936px;
+  margin: 112px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 152px;
+}
+.consultation__info_heading {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  margin: 0 0 24px 0;
+}
+.consultation__info > p {
+  width: 480px;
+}
+.consultation__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.consultation__form > button, .consultation__form > input {
+  text-transform: uppercase;
+  border: none;
+  width: 383px;
+  height: 54px;
+  box-sizing: border-box;
+}
+.consultation__form > input {
+  background-color: #eee;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.consultation__form > button {
+  background-color: #00AAEF;
+  color: white;
+  font-weight: 500;
+  line-height: 36px;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+@media screen and (max-width: 970px) {
+  .consultation {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 60px;
+  }
+  .consultation__info_heading {
+    margin: 15px auto;
+    width: max-content;
+  }
+  .consultation__info > p {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .consultation__form {
+    margin-top: 20px;
+  }
+  .consultation__form > input, .consultation__form > button {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+}
+@media screen and (max-width: 370px) {
+  .consultation__info_heading {
+    font-size: 24px;
+    line-height: 32px;
   }
 }
 .highlight {
