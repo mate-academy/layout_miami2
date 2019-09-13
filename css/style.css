@@ -5,8 +5,21 @@ body {
   line-height: 1.5;
 }
 
+button {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  font-size: 14px;
+  line-height: 1;
+}
+
 strong {
   font-weight: 500;
+}
+
+.logo {
+  height: 76px;
+  width: 115px;
 }
 
 .header {
@@ -97,6 +110,75 @@ strong {
     align-items: center;
   }
 }
+.section {
+  padding: 156px calc(50% - 470px);
+  position: relative;
+}
+.section:nth-child(even) {
+  background-color: #EEEEEE;
+}
+.section__heading {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.5em;
+}
+
+@media screen and (max-width: 999px) {
+  .section {
+    padding: 20px 40px;
+  }
+}
+.button {
+  display: block;
+  color: white;
+  background-color: #00AAEF;
+  padding: 19px 62px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.button:hover {
+  background-color: #2F80ED;
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: max-content;
+  white-space: nowrap;
+  position: absolute;
+  display: block;
+}
+.heading::after, .heading::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(100% + 5px);
+  width: calc(50% - 19.5px);
+  height: 2px;
+  background-color: #00AAEF;
+}
+.heading::before {
+  left: 0;
+}
+.heading::after {
+  right: 0;
+}
+.heading__crown {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 13px;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url("../images/crown.png");
+}
+
 .info {
   display: flex;
   justify-content: space-between;
@@ -131,6 +213,35 @@ strong {
     margin-bottom: 12px;
   }
 }
+.gallery__caption {
+  margin: 12px 0 35px 0;
+}
+.gallery__button {
+  margin: auto;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+}
+.photos__img {
+  width: calc(50% - 10px);
+  height: 260px;
+  object-fit: cover;
+}
+.photos_wide_left .photos__img:first-child {
+  width: calc(67% - 10px);
+}
+.photos_wide_left .photos__img:last-child {
+  width: calc(33% - 10px);
+}
+.photos_wide_right .photos__img:first-child {
+  width: calc(33% - 10px);
+}
+.photos_wide_right .photos__img:last-child {
+  width: calc(67% - 10px);
+}
+
 .footer {
   height: 540px;
   background-image: url("../images/footer.jpg");
@@ -144,21 +255,6 @@ strong {
   margin: auto;
   left: 0;
   right: 0;
-}
-
-.logo {
-  height: 76px;
-  width: 115px;
-}
-
-.section {
-  padding: 156px calc(50% - 470px);
-}
-
-@media screen and (max-width: 999px) {
-  .section {
-    padding: 20px 40px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

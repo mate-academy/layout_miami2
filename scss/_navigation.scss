@@ -1,5 +1,3 @@
-@import "variables";
-
 .nav {
   text-transform: uppercase;
   &__list {
@@ -33,7 +31,7 @@
   }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: $small-screen-breakpoint) {
   .nav__list {
     flex-direction: column;
     align-items: center;

@@ -1,0 +1,41 @@
+.heading {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: max-content;
+  white-space: nowrap;
+  position: absolute;
+  display: block;
+  
+  &%line {
+    content: "";display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    width: calc(50% - 19.5px);
+    height: 2px;
+    background-color: #00AAEF;
+  }
+  
+  &::before {
+    @extend %line;
+    left: 0;
+  }
+  
+  &::after {
+    @extend %line;
+    right: 0;
+  }
+  
+  &__crown {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 13px;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../images/crown.png");
+  }
+}

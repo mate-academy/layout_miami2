@@ -1,24 +1,11 @@
 @import "variables";
 @import "reset";
+@import "logo";
 @import "header";
 @import "navigation";
+@import "section";
+@import "button";
+@import "heading";
 @import "information-section";
+@import "gallery";
 @import "footer";
-
-.logo {
-  height: $logo-height;
-  width: $logo-width;
-}
-
-.section {
-  padding: 156px calc(50% - 470px);
-}
-
-@media screen and (max-width: 999px) {
-  
-  .section {
-    padding: 20px 40px;
-  }
-}
-
-

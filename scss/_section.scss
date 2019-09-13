@@ -1,0 +1,22 @@
+.section {
+  padding: 156px calc(50% - 470px);
+  position: relative;
+  
+  &:nth-child(even) {
+    background-color: #EEEEEE;
+  }
+  
+  &__heading {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -0.5em;
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  
+  .section {
+    padding: 20px 40px;
+  }
+}
