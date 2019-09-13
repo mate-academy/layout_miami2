@@ -1,0 +1,17 @@
+.phone-number {
+    display: flex;
+    white-space: nowrap;
+  
+    &__link {
+      margin-left: 82px;
+      color: white;
+      border-bottom: dashed 1px;
+      text-decoration: none;
+  
+      &:hover {
+        color: $active-color;
+        transition: 0.5s;
+      }
+    }
+  }
+  

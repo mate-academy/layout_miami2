@@ -1,0 +1,13 @@
+.info {
+    width: 564px;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    line-height: 1.5;
+  
+    &_paragraph-2 {
+      font-weight: 400;
+      margin: 24px 0;
+    }
+  }
+  

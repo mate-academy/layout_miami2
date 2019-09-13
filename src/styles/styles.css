@@ -1,0 +1,277 @@
+/* import files*/
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+
+h1, h2, p {
+  margin: 0;
+  font-weight: normal;
+}
+
+.info {
+  width: 564px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.info_paragraph-2 {
+  font-weight: 400;
+  margin: 24px 0;
+}
+
+.light-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.light-menu__item {
+  margin: 0 22.5px;
+  padding: 7px 20px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+.light-menu__item_is-active {
+  background-color: #D5C5AA;
+  color: black;
+}
+.light-menu__link {
+  text-decoration: none;
+  color: white;
+}
+.light-menu__link:hover {
+  color: #D5C5AA;
+  transition: 0.5s;
+}
+
+.logo__img {
+  width: 115px;
+  height: 76px;
+}
+
+.phone-number {
+  display: flex;
+  white-space: nowrap;
+}
+.phone-number__link {
+  margin-left: 82px;
+  color: white;
+  border-bottom: dashed 1px;
+  text-decoration: none;
+}
+.phone-number__link:hover {
+  color: #D5C5AA;
+  transition: 0.5s;
+}
+
+.title {
+  width: 314px;
+}
+.title__style {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.title__special-color {
+  color: #00AAEF;
+}
+
+.header {
+  height: 765px;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-height: 100vh;
+  color: white;
+  text-transform: uppercase;
+}
+.header__logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 35px;
+  display: flex;
+  justify-content: center;
+}
+.header__phone-number {
+  position: absolute;
+  left: calc(50% + 139px);
+  top: 82px;
+}
+.header__light-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+}
+
+.section-about {
+  display: flex;
+  justify-content: center;
+  padding: 156px 160px;
+}
+.section-about__title, .section-about__info {
+  margin: 0 31px;
+}
+
+.section-gallery {
+  background-color: #eee;
+  padding: 112px 159px 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.section-gallery__title-block {
+  position: relative;
+  top: -26px;
+}
+.section-gallery__title {
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.section-gallery__title_after {
+  display: flex;
+}
+.section-gallery__title_after-side {
+  height: 2px;
+  background-color: #00AAEF;
+}
+
+.footer {
+  height: 765px;
+  background-image: url("../images/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-height: 100vh;
+}
+.footer__logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 95px;
+}
+
+/* import files*/
+/* section-gallery__foto-block */
+.section-gallery__foto-block {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.section-gallery__foto-block_big-foto {
+  width: 620px;
+  height: 260px;
+}
+.section-gallery__foto-block_middle-foto {
+  width: 462px;
+  height: 261px;
+}
+.section-gallery__foto-block_small-foto {
+  width: 301px;
+  height: 260px;
+}
+.section-gallery__foto-block_top, .section-gallery__foto-block_middle, .section-gallery__foto-block_bottom {
+  margin-bottom: 63px;
+  position: relative;
+  display: flex;
+}
+.section-gallery__foto-block_top img:first-child, .section-gallery__foto-block_middle img:first-child, .section-gallery__foto-block_bottom img:first-child {
+  margin-right: 16px;
+}
+.section-gallery__foto-block_MarinaPalms::after {
+  content: "Marina Palms / North Miami Beach, FL 33162";
+  position: absolute;
+  left: 0;
+  bottom: 35px;
+}
+
+/* section-gallery__foto-block */
+/* section-gallery__link */
+.section-gallery__link {
+  width: 188px;
+  height: 52px;
+  background-color: #00AAEF;
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+.section-gallery__link_link {
+  font-size: 14px;
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+/* section-gallery__link */
+/* section__title-block */
+.section__title-block {
+  display: flex;
+  flex-direction: column;
+}
+.section__title-block_title {
+  display: block;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+.section__title-block_decoration {
+  display: flex;
+}
+.section__title-block_decoration-side {
+  height: 2px;
+  background-color: #00AAEF;
+}
+
+/* section__title-block */
+/* MeDiA ReQuEsTs */
+@media screen and (max-width: 999px) {
+  .light-menu__list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .light-menu__item_is-active {
+    margin-left: 42.5px;
+  }
+
+  .details {
+    flex-direction: column;
+  }
+
+  .header__details {
+    left: calc(50% + 80px);
+  }
+
+  .details__link {
+    margin-left: 0;
+  }
+
+  .section-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .section-about __text {
+    margin-top: 24px;
+  }
+}
+/* MeDiA ReQuEsTs */
+
+/*# sourceMappingURL=styles.css.map */

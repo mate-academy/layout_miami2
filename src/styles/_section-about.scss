@@ -1,0 +1,10 @@
+.section-about {
+    display: flex;
+    justify-content: center;
+    padding: 156px 160px;
+
+    &__title, &__info {
+      margin: 0 31px;
+    }
+  }
+  

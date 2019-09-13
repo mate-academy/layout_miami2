@@ -1,0 +1,33 @@
+.header {
+  height: 765px;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-height: 100vh;
+  color: $link-color;
+  text-transform: uppercase;
+
+  &__logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__phone-number {
+    position: absolute;
+    left: calc(50% + 139px);    
+    top: 82px;
+  }
+
+  &__light-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+  }
+}
+  

@@ -1,0 +1,33 @@
+.light-menu {
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    &__item {
+      margin: 0 22.5px;
+      padding: 7px 20px;
+      border-radius: 10px;
+      white-space: nowrap;
+  
+      &_is-active {
+        background-color: $active-color;
+        color: black;
+      }  
+    }
+    
+    &__link {
+      text-decoration: none;
+      color: white;
+  
+      &:hover {
+        color: $active-color;
+        transition: 0.5s;
+      }
+    }
+  }
+  
