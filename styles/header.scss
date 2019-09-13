@@ -1,0 +1,89 @@
+.header {
+    height: 765px;
+    background-image: url('../images/panorama.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-transform: uppercase;
+
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        left: calc(50% - #{$logo-width / 2});
+        right: 78px;
+        top: 35px;
+    }
+
+    &__phone-number, &__call-link {
+        position: relative;
+        top: $logo-height * 0.62;
+        color: white;
+        white-space: nowrap;
+    }
+
+    &__phone-number {
+        margin: 0 auto;
+    }
+
+    &__call-link {
+        border-bottom: 1px dashed;
+        margin: 0 auto 0 0;
+        transition: color $hover-duration;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+    .menu {
+        position: absolute;
+        left: 78px;
+        right: 78px;
+        bottom: 32px;
+    
+        &__list {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-evenly;
+        }
+    
+        &__links {
+            line-height: 30px;
+            color: white;
+            transition: color $hover-duration;
+    
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    
+        &__active-item {
+            line-height: 30px;
+            background: #D5C5AA;
+            border-radius: 10px;
+            color: #000;
+            padding: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .menu__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__top {
+        flex-direction: column;
+    }
+
+    .header__phone-number {
+        margin: 20px 0;
+        top: 0;
+    }
+
+    .header__call-link {
+        top: 0;
+    }
+}

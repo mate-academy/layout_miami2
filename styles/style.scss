@@ -1,0 +1,15 @@
+@import "vars";
+@import "reset";
+@import "logo";
+@import "header";
+@import "info-section";
+@import "heading";
+@import "gallery-section";
+@import "button";
+@import "footer";
+
+
+@media screen and (max-width: #{$small-screen-breakpoint}) {
+
+}
+
