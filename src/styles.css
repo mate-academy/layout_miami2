@@ -20,7 +20,6 @@ body {
   width: 100%;
   margin-left: calc(50% - 57px);
   display: flex;
-  flex-direction: row;
 }
 .menu__top img {
   margin-right: 82px;
@@ -54,7 +53,7 @@ body {
 }
 .menu__link:hover {
   color: #D5C5AA;
-  transform: 0.5s;
+  transition: 0.5s;
 }
 .menu_activ {
   background: #D5C5AA;
