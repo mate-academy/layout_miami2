@@ -156,6 +156,7 @@ html, body {
 }
 
 .button {
+  height: 55px;
   width: 100%;
   background-color: #00aaef;
   color: #ffffff;
@@ -184,6 +185,7 @@ html, body {
       object-fit: cover;
       width: calc(50% - 5px);
     }
+
   }
   .wide-left {
     img:first-child {
@@ -200,6 +202,10 @@ html, body {
     img:last-child {
       width: calc(67% - 5px);
     }
+  }
+  &__button {
+    width: 188px;
+    align-self: center;
   }
 
 }

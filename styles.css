@@ -144,6 +144,7 @@ html, body {
 }
 
 .button {
+  height: 55px;
   width: 100%;
   background-color: #00aaef;
   color: #ffffff;
@@ -185,6 +186,10 @@ html, body {
 }
 .gallery .wide-right img:last-child {
   width: calc(67% - 5px);
+}
+.gallery__button {
+  width: 188px;
+  align-self: center;
 }
 
 .contact-us {
