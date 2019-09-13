@@ -159,7 +159,7 @@ h1, h2, p {
 }
 .footer__logo {
   position: absolute;
-  left: 0px;
+  left: 0;
   right: 0;
   bottom: 95px;
   display: flex;
