@@ -14,12 +14,16 @@
     left: 0;
     right: 0;
     margin: auto;
-    top: -0.4em;
+    top: -0.5em;
+  }
+
+  &__content {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: $small-screen-breakpoint) {
   .section {
-    padding: 20px 40px;
+    padding: 40px 40px;
   }
 }
