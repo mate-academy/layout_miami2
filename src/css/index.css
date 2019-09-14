@@ -14,7 +14,7 @@ body, p {
 
 .header {
   height: 756px;
-  background-image: url("../../image/header.jpg");
+  background-image: url("../../im/header.jpg");
   background-size: cover;
   background-position: center;
   font-weight: 500;
@@ -96,7 +96,7 @@ body, p {
     align-items: center; } }
 .footer {
   height: 540px;
-  background-image: url("../../image/footer.png");
+  background-image: url("../../im/footer.png");
   background-size: cover;
   background-position: center;
   font-weight: 500;
@@ -168,7 +168,7 @@ body, p {
     left: 0;
     right: 0;
     margin: auto;
-    background-image: url("../../image/crown.svg"); }
+    background-image: url("../../im/crown.svg"); }
 
 .photos {
   display: flex;
@@ -276,7 +276,7 @@ body, p {
       position: absolute;
       width: 35px;
       height: 29px;
-      background-image: url("../../image/quotes.jpg");
+      background-image: url("../../im/quotes.jpg");
       background-size: contain;
       background-repeat: none;
       background-position: center;
