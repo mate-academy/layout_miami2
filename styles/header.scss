@@ -6,33 +6,33 @@
     position: relative;
     text-transform: uppercase;
 
-    &__top {
+    .upper-header {
         display: flex;
         align-items: flex-start;
         position: absolute;
         left: calc(50% - #{$logo-width / 2});
         right: 78px;
         top: 35px;
-    }
 
-    &__phone-number, &__call-link {
-        position: relative;
-        top: $logo-height * 0.62;
-        color: white;
-        white-space: nowrap;
-    }
-
-    &__phone-number {
-        margin: 0 auto;
-    }
-
-    &__call-link {
-        border-bottom: 1px dashed;
-        margin: 0 auto 0 0;
-        transition: color $hover-duration;
-
-        &:hover {
-            color: $hover-color;
+        &__phone-number, &__call-link {
+            position: relative;
+            top: $logo-height * 0.62;
+            color: white;
+            white-space: nowrap;
+        }
+    
+        &__phone-number {
+            margin: 0 auto;
+        }
+    
+        &__call-link {
+            border-bottom: 1px dashed;
+            margin: 0 auto 0 0;
+            transition: color $hover-duration;
+    
+            &:hover {
+                color: $hover-color;
+            }
         }
     }
 
@@ -68,22 +68,24 @@
     }
 }
 
-@media screen and (max-width: 899px) {
-    .menu__list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header__top {
-        flex-direction: column;
-    }
-
-    .header__phone-number {
-        margin: 20px 0;
-        top: 0;
-    }
-
-    .header__call-link {
-        top: 0;
+@media screen and (max-width: $small-screen-breakpoint) {
+    .header {
+        .menu__list {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .upper-header {
+            flex-direction: column;
+    
+            &__phone-number {
+                margin: 20px 0;
+                top: 0;
+            }
+        
+            &__call-link {
+                top: 0;
+            }
+        }
     }
 }

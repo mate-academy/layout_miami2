@@ -1,4 +1,5 @@
-html, body, ul, li, button, input, textarea, h1 {
+@charset "UTF-8";
+html, body, ul, li, button, input, textarea, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   border-width: 0;
@@ -37,7 +38,7 @@ a:hover, a:visited:hover {
   position: relative;
   text-transform: uppercase;
 }
-.header__top {
+.header .upper-header {
   display: flex;
   align-items: flex-start;
   position: absolute;
@@ -45,21 +46,21 @@ a:hover, a:visited:hover {
   right: 78px;
   top: 35px;
 }
-.header__phone-number, .header__call-link {
+.header .upper-header__phone-number, .header .upper-header__call-link {
   position: relative;
   top: 47.12px;
   color: white;
   white-space: nowrap;
 }
-.header__phone-number {
+.header .upper-header__phone-number {
   margin: 0 auto;
 }
-.header__call-link {
+.header .upper-header__call-link {
   border-bottom: 1px dashed;
   margin: 0 auto 0 0;
   transition: color 0.2s;
 }
-.header__call-link:hover {
+.header .upper-header__call-link:hover {
   color: #D5C5AA;
 }
 .header .menu {
@@ -90,34 +91,31 @@ a:hover, a:visited:hover {
 }
 
 @media screen and (max-width: 899px) {
-  .menu__list {
+  .header .menu__list {
     flex-direction: column;
     align-items: center;
   }
-
-  .header__top {
+  .header .upper-header {
     flex-direction: column;
   }
-
-  .header__phone-number {
+  .header .upper-header__phone-number {
     margin: 20px 0;
     top: 0;
   }
-
-  .header__call-link {
+  .header .upper-header__call-link {
     top: 0;
   }
 }
 .info {
-  padding-right: 78px;
-  padding-left: 78px;
+  padding: 30px 0;
+  box-sizing: border-box;
   min-height: 672px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .info__content {
-  max-width: 940px;
+  width: 70vw;
   min-height: 360px;
   display: flex;
 }
@@ -145,6 +143,7 @@ a:hover, a:visited:hover {
   }
   .info__heading {
     margin-bottom: 16px;
+    min-width: 0;
   }
 }
 .heading {
@@ -154,7 +153,6 @@ a:hover, a:visited:hover {
   position: absolute;
   width: max-content;
   line-height: 1;
-  margin: 0;
   display: block;
 }
 .heading::before, .heading::after {
@@ -189,8 +187,11 @@ a:hover, a:visited:hover {
   min-height: 1256px;
   box-sizing: border-box;
   background: #eee;
-  padding: 10% 78px 10%;
+  padding: 10% 78px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .gallery__heading {
   left: 0;
@@ -199,7 +200,7 @@ a:hover, a:visited:hover {
   top: -0.5em;
 }
 .gallery__content {
-  max-width: 940px;
+  width: 940px;
   min-height: 1034px;
   margin: auto;
 }
@@ -240,6 +241,22 @@ a:hover, a:visited:hover {
   .gallery {
     padding: 10% 0;
   }
+
+  .photos__unit {
+    width: 50%;
+  }
+  .photos_wide_left .photos__unit:first-child {
+    width: 67%;
+  }
+  .photos_wide_left .photos__unit:last-child {
+    width: 33%;
+  }
+  .photos_wide_right .photos__unit:first-child {
+    width: 33%;
+  }
+  .photos_wide_right .photos__unit:last-child {
+    width: 67%;
+  }
 }
 .button {
   display: block;
@@ -256,6 +273,192 @@ a:hover, a:visited:hover {
   background-color: #2f80ed;
 }
 
+.consultation {
+  padding: 14% 0;
+  box-sizing: border-box;
+  min-height: 540px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.consultation__heading {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.5em;
+}
+.consultation__content {
+  width: 70vw;
+  min-height: 242px;
+  display: flex;
+  justify-content: space-between;
+}
+.consultation__text {
+  max-width: 480px;
+}
+.consultation__article-heading {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+.consultation__form {
+  width: 383px;
+}
+
+@media screen and (max-width: 899px) {
+  .consultation__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .consultation__text {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 549px) {
+  .consultation__form {
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 339px) {
+  .consultation__heading {
+    font-size: 45px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  margin-bottom: 8px;
+}
+.form .input {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #393939;
+  line-height: 55px;
+  background-color: #eee;
+}
+.form .input::placeholder {
+  color: inherit;
+  text-transform: uppercase;
+}
+.form .input_textarea {
+  height: 166px;
+}
+
+.testimonials {
+  min-height: 569px;
+  position: relative;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials__heading {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.5em;
+}
+.testimonials__content {
+  width: 70vw;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+.testimonials__content .person {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials__content .person__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.testimonials__content .person__name {
+  margin-top: 12px;
+}
+.testimonials__content .person__position {
+  margin: 0;
+  color: #696973;
+  font-style: italic;
+}
+.testimonials__content .person__quote {
+  text-align: center;
+  position: relative;
+}
+.testimonials__content .person__quote:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 33px;
+  background-image: url("../images/“.svg");
+  background-size: contain;
+  right: 90%;
+  bottom: 100%;
+}
+
+@media screen and (max-width: 899px) {
+  .testimonials {
+    padding: 50px 0;
+  }
+  .testimonials__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contact {
+  min-height: 540px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact__heading {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.5em;
+}
+.contact__content {
+  width: 70vw;
+  min-height: 242px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact__info {
+  font-size: 24px;
+  max-width: 276px;
+}
+.contact__info > p:first-child {
+  margin-top: 0;
+}
+.contact__form {
+  width: 379px;
+}
+
+@media screen and (max-width: 899px) {
+  .contact {
+    padding: 70px 0;
+  }
+  .contact__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__info {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 549px) {
+  .contact__form {
+    width: 70vw;
+  }
+}
 .footer {
   height: 540px;
   background-image: url("../images/footer-panorama.jpg");

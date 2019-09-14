@@ -2,8 +2,11 @@
     min-height: 1256px;
     box-sizing: border-box;
     background: #eee;
-    padding: 10% 78px 10%;
+    padding: 10% 78px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__heading {
         left: 0;
@@ -13,7 +16,7 @@
     }
 
     &__content {
-        max-width: 940px;
+        width: 940px;
         min-height: 1034px;
         margin: auto;
     }
@@ -69,6 +72,37 @@
 @media screen and (max-width: #{$small-screen-breakpoint}) {
     .gallery {
         padding: 10% 0;
+    }
+
+    .photos {
+    
+        &__unit {
+            width: 50%;
+        }
+    
+        &_wide_left {
+            .photos__unit {
+                &:first-child {
+                    width: 67%;
+                }
+    
+                &:last-child {
+                    width: 33%;
+                }
+            }
+        }
+    
+        &_wide_right {
+            .photos__unit {
+                &:first-child {
+                    width: 33%;
+                }
+    
+                &:last-child {
+                    width: 67%;
+                }
+            }
+        }
     }
 }
 
