@@ -9,12 +9,13 @@
   display: block;
   
   &%line {
-    content: "";display: block;
+    content: "";
+    display: block;
     position: absolute;
     top: calc(100% + 5px);
     width: calc(50% - 19.5px);
     height: 2px;
-    background-color: #00AAEF;
+    background-color: $highlight-color;
   }
   
   &::before {
