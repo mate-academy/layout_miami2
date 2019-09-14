@@ -1,0 +1,62 @@
+.header {
+  height: 765px;
+  background-image: url("../../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  position: relative;
+  line-height: 1;
+
+  &__nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+  }
+
+  &__top {
+    position: absolute;
+    display: flex;
+    left: calc(50% - #{$logo-width / 2});
+    top: 35px;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__phone {
+    margin: 0 82px;
+  }
+
+  &__phone, &__action {
+    position: relative;
+    top: $logo-height * 0.62;
+    white-space: nowrap;
+  }
+
+  &__link {
+    color: white;
+    border-bottom: 1px dashed;
+    text-decoration: none;
+
+    &:hover {
+      color: $light-active-color;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .header {
+    &__top {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__phone {
+      margin: 12px 0;
+    }
+
+    &__phone, &__action {
+      top: 0;
+    }
+  }
+}
