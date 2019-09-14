@@ -1,0 +1,17 @@
+.foot {
+  background-image: url("../images/foot-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 540px;
+  position: relative;
+}
+
+.foot-logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 95px;
+  width: 115px;
+  height: 76px;
+}

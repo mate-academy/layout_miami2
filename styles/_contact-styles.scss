@@ -1,0 +1,89 @@
+.contact {
+  padding: 0 156px calc(50% - 470px);
+  position: relative;
+  color: black;
+}
+
+.contact_main {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.6em;
+}
+
+.contact_head {
+  display: block;
+  font-weight: 300;
+  font-size: 48px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  position: relative;
+  width: max-content;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 123px;
+    line-height: 1px;
+    height: 2px;
+    background-color: #00aaef;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    line-height: 1px;
+    right: 0;
+    width: 123px;
+    height: 2px;
+    background-color: #00aaef;
+  }
+}
+
+.contact_crown {
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  display: block;
+  top: calc(100% + 4px);
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-image: url("../images/crown1.svg");
+  background-repeat: no-repeat;
+}
+
+.contact_block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+.block_detail {
+  width: calc(50% - 133.7px);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.contact_form {
+  input {
+    height: 54px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #eee;
+    border-width: 0;
+  }
+  input[type="button"] {
+    background-color: #00aaef;
+  }
+}
+.form_textarea {
+  width: 100%;
+  height: 116px;
+  padding: 0;
+  background-color: #eee;
+  border-width: 0;
+}

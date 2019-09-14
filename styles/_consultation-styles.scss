@@ -1,0 +1,112 @@
+
+.consult {
+  padding: 0 156px calc(50% - 470px);
+  position: relative;
+  color: black;
+}
+
+.consult_head {
+  display: block;
+  font-weight: 300;
+  font-size: 48px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  position: relative;
+  width: max-content;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 152px;
+    line-height: 1px;
+    height: 2px;
+    background-color: #00aaef;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    line-height: 1px;
+    right: 0;
+    width: 152px;
+    height: 2px;
+    background-color: #00aaef;
+  }
+}
+
+.consult_crown {
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  display: block;
+  top: calc(100% + 4px);
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-image: url("../images/crown1.svg");
+  background-repeat: no-repeat;
+}
+
+.consult_main {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.6em;
+}
+
+.consult_items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.items_text,
+.items_form {
+  width: calc(50% - 36px);
+}
+
+.text_head {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0 0 20px 0;
+}
+
+.text_note {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.items_form {
+  input {
+    height: 54px;
+    width: 100%;
+    margin-bottom: 8px;
+    background-color: #eee;
+    border-width: 0;
+  }
+}
+
+::placeholder {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+input[type="button"] {
+  background-color: #00aaef;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  color: white;
+  cursor: pointer;
+}
