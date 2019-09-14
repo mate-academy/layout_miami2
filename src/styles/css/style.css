@@ -1,5 +1,8 @@
 body {
   margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 strong {
@@ -11,6 +14,7 @@ body {
 }
 
 .header {
+  line-height: 1;
   height: 765px;
   background-image: url("../../images/header.jpg");
   background-size: cover;
@@ -83,12 +87,63 @@ body {
   height: 76px;
 }
 
+.section {
+  padding: 156px calc(50% - 470px);
+  font-size: 16px;
+}
+
+.info {
+  width: 940px;
+  display: grid;
+  grid-template-areas: "heading text";
+  grid-gap: 62px;
+}
+.info__heading {
+  grid-area: heading;
+  width: 314px;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 300;
+  margin: 0;
+}
+.info__text {
+  grid-area: text;
+  grid-template-areas: "p1" "p2" "p3";
+  grid-gap: 24px;
+}
+.info__text > :first-child {
+  margin-top: 0;
+}
+.info__text > :last-child {
+  margin-bottom: 0;
+}
+.info__p1 {
+  grid-area: p1;
+}
+.info__p2 {
+  grid-area: p2;
+}
+.info__p3 {
+  grid-area: p3;
+}
+
+.highlight {
+  color: #00aaef;
+}
+
 .footer {
-  height: 540;
+  height: 540px;
   background-image: url("../../images/footer.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
+}
+.footer__logo {
+  position: absolute;
+  display: flex;
+  bottom: 95px;
+  left: calc(50% - 57.5px);
 }
 
 @media screen and (max-width: 999px) {
@@ -107,6 +162,10 @@ body {
 
   .header__phone, .header.action {
     top: 0;
+  }
+
+  .section {
+    padding: 20px;
   }
 }
 
