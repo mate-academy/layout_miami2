@@ -1,5 +1,5 @@
 .contact {
-    min-height: 540px;
+    padding: 100px 0;
     position: relative;
     display: flex;
     justify-content: center;
@@ -14,7 +14,6 @@
 
     &__content {
         width: 70vw;
-        min-height: 242px;
         display: flex;
         justify-content: space-between;
     }
@@ -35,8 +34,6 @@
 
 @media screen and (max-width: #{$small-screen-breakpoint}) {
     .contact {
-        padding: 70px 0;
-
         &__content {
             flex-direction: column;
             align-items: center;

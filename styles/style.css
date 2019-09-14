@@ -111,16 +111,13 @@ a:hover, a:visited:hover {
   }
 }
 .info {
-  padding: 30px 0;
+  padding: 100px 0;
   box-sizing: border-box;
-  min-height: 672px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .info__content {
   width: 70vw;
-  min-height: 360px;
   display: flex;
 }
 .info__article {
@@ -188,14 +185,12 @@ a:hover, a:visited:hover {
 }
 
 .gallery {
-  min-height: 1256px;
   box-sizing: border-box;
   background: #eee;
-  padding: 10% 78px;
+  padding: 100px 0;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .gallery__heading {
   left: 0;
@@ -205,8 +200,6 @@ a:hover, a:visited:hover {
 }
 .gallery__content {
   width: 940px;
-  min-height: 1034px;
-  margin: auto;
 }
 .gallery__text {
   font-weight: 500;
@@ -242,10 +235,6 @@ a:hover, a:visited:hover {
 }
 
 @media screen and (max-width: 899px) {
-  .gallery {
-    padding: 10% 0;
-  }
-
   .photos__unit {
     width: 50%;
   }
@@ -278,13 +267,11 @@ a:hover, a:visited:hover {
 }
 
 .consultation {
-  padding: 14% 0;
+  padding: 100px 0;
   box-sizing: border-box;
-  min-height: 540px;
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .consultation__heading {
   left: 0;
@@ -294,7 +281,6 @@ a:hover, a:visited:hover {
 }
 .consultation__content {
   width: 70vw;
-  min-height: 242px;
   display: flex;
   justify-content: space-between;
 }
@@ -353,12 +339,11 @@ a:hover, a:visited:hover {
 }
 
 .testimonials {
-  min-height: 569px;
   position: relative;
   background-color: #eee;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 100px 0;
 }
 .testimonials__heading {
   left: 0;
@@ -368,7 +353,6 @@ a:hover, a:visited:hover {
 }
 .testimonials__content {
   width: 70vw;
-  height: 80%;
   display: flex;
   justify-content: space-around;
 }
@@ -395,6 +379,9 @@ a:hover, a:visited:hover {
   text-align: center;
   position: relative;
 }
+.testimonials__content .person__quote:last-child {
+  margin-bottom: 0;
+}
 .testimonials__content .person__quote:after {
   content: "";
   display: block;
@@ -408,16 +395,16 @@ a:hover, a:visited:hover {
 }
 
 @media screen and (max-width: 899px) {
-  .testimonials {
-    padding: 50px 0;
-  }
   .testimonials__content {
     flex-direction: column;
     align-items: center;
   }
+  .testimonials .person:not(:last-child) {
+    margin-bottom: 80px;
+  }
 }
 .contact {
-  min-height: 540px;
+  padding: 100px 0;
   position: relative;
   display: flex;
   justify-content: center;
@@ -431,7 +418,6 @@ a:hover, a:visited:hover {
 }
 .contact__content {
   width: 70vw;
-  min-height: 242px;
   display: flex;
   justify-content: space-between;
 }
@@ -447,9 +433,6 @@ a:hover, a:visited:hover {
 }
 
 @media screen and (max-width: 899px) {
-  .contact {
-    padding: 70px 0;
-  }
   .contact__content {
     flex-direction: column;
     align-items: center;

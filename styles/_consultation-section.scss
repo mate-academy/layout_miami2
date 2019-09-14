@@ -1,11 +1,9 @@
 .consultation {
-    padding: 14% 0;
+    padding: 100px 0;
     box-sizing: border-box;
-    min-height: 540px;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
 
     &__heading {
         left: 0;
@@ -16,7 +14,6 @@
 
     &__content {
         width: 70vw;
-        min-height: 242px;
         display: flex;
         justify-content: space-between;
     }
