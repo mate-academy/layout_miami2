@@ -1,0 +1,44 @@
+.person {
+  text-align: center;
+  margin-top: 76px;
+
+  &__photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 16px;
+    margin: 12px 0 5px 0;
+  }
+
+  &__position {
+    color: #696973;
+    font-style: italic;
+  }
+
+  &__text {
+    margin-top: 16px;
+    position: relative;
+
+    &::after {
+      width: 40px;
+      height: 33px;
+      content: "";
+      position: absolute;
+      background-image: url(../images/quotes.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      right: calc(100% - 10px);
+      bottom: calc(100% + 6px);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .person {
+    margin-top: 20;
+  }
+}

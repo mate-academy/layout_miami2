@@ -18,6 +18,11 @@
     color: #fff;
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $btn-hover-color;
+    }
   }
 }
 

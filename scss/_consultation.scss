@@ -34,20 +34,19 @@
       }
   
       > input {
-        @extend %input_btn;
-        background-color: #eee;
-        text-align: center;
-        margin-bottom: 8px;
+        @include input_mix;
+
+        &::placeholder {
+          color: #393939;
+        }
       }
-  
+
       > button {
-        @extend %input_btn;
-        background-color: $blue-color;
-        color: white;
-        font-weight: 500;
-        line-height: 36px;
-        font-size: 14px;
-        margin-top: 2px;
+        @include button_mix;
+      }
+
+      > button:hover {
+        background-color: $btn-hover-color;
       }
     }
   }
