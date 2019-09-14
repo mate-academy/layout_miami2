@@ -1,142 +1,23 @@
+@import varr
 @import reset
-    
-$logo-width: 115px
-$logo-height: 76px
-$light-act-color: #D5C5AA
-$hover-deration: 0.2s
+@import headd
+@import sec
+@import navig
+@import foot
+@import info
+@import highlight
+@import logo 
+@import heading
+@import photos
+@import gallery
+@import buttonn
+@import consultation
+@import form
+@import input
+@import testimonials
+@import person
+@import contact
+@import link
 
-.header
-    height: 756px
-    background-image: url("../../image/header.jpg")
-    background-size: cover
-    background-position: center
-    font-weight: 500
-    position: relative
-    line-height: 1
 
-    &__nav
-        position: absolute
-        bottom: 25px
-        left: 0
-        right: 0
 
-    &__top
-        position: absolute
-        display: flex
-        left: calc(50% - #{$logo-width / 2})
-        top: 35px
-        text-transform: uppercase
-        color: #fff
-
-    &__phone
-        margin: 0 82px
-
-    &__phone, &__action
-        top: $logo-height * 0.62
-        position: relative
-        white-space: nowrap
-
-    &__link
-        color: #fff
-        border-bottom: 1px dashed
-        text-decoration: none
-        transition: color $hover-deration
-
-        &:hover
-            color: $light-act-color
-        
-.nav
-    text-transform: uppercase
-    cursor: pointer
-
-    &__list
-        margin: 0
-        list-style: none
-        display: flex
-        padding: 0
-        justify-content: center
-
-    &__item
-        margin: 0 22.5px
-        padding: 7px 20px
-        white-space: nowrap
-
-        &_active
-            background-color: $light-act-color
-            border-radius: 10px
-
-    &__link
-        color: white
-        text-decoration: none
-        transition: color $hover-deration
-
-        &:hover
-            color: $light-act-color
-
-.section
-    padding: 156px calc(50% - 470px)
-
-.logo 
-    width: $logo-width
-    height: $logo-height
-
-.info
-    display: flex
-    justify-content: space-between
-
-    &__heading
-        font-weight: lighter
-        font-size: 48px
-        line-height: 60px
-        text-transform: uppercase
-        width: 314px
-        margin: 0
-
-    &__text
-        max-width: 564px
-
-        > :first-child
-            margin-top: 0     
-        
-        > :last-child
-            margin-bottom: 0 
-            
-.highlight
-    color: #00aaff
-
-.footer
-    height: 540px
-    background-image: url("../../image/footer.png")
-    background-size: cover
-    background-position: center
-    font-weight: 500
-    position: relative
-    line-height: 1
-
-    &__logo
-        position: absolute
-        bottom: 95px
-        margin: auto
-        left: 0
-        right: 0
-    
-@media screen and (max-width: 999px)
-    .header
-        &__phone, &__action
-            top: 0
-        
-        &__top
-            flex-direction: column
-      
-        &__phone
-            margin: 20px 0
-    
-    .nav__list
-        flex-direction: column
-        align-items: center
-
-    .section
-        padding: 20px 40px
-
-    .info
-        flex-direction: column

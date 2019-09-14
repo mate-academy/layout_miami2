@@ -1,0 +1,32 @@
+.nav
+    text-transform: uppercase
+    cursor: pointer
+
+    &__list
+        margin: 0
+        list-style: none
+        display: flex
+        padding: 0
+        justify-content: center
+
+    &__item
+        margin: 0 22.5px
+        padding: 7px 20px
+        white-space: nowrap
+
+        &_active
+            background-color: $light-act-color
+            border-radius: 10px
+
+    &__link
+        color: white
+        text-decoration: none
+        transition: color $hover-deration
+
+        &:hover
+            color: $light-act-color
+
+@media screen and (max-width: 999px)
+    .nav__list
+        flex-direction: column
+        align-items: center

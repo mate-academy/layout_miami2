@@ -1,10 +1,15 @@
-body {
+html, body, input, ul, p, li, button, textarea, h1, h2, h3 {
     margin: 0;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
+    padding: 0;
+    border: none;
 }
 
 strong {
     font-weight: 500;
+}
+
+body, p {
+    line-height: 1.5;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
 }
