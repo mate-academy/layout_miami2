@@ -7,10 +7,16 @@
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 24px;
+    font-style: normal;
+    font-weight: normal;
   }
 
   &__form {
     width: 380px;
+  }
+
+  &__article {
+    max-width: 480px;
   }
 }
 

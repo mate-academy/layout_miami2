@@ -11,10 +11,10 @@
   &_wide_right {
     .photos__img{
       &:first-child {
-        width: calc(33% - 10%);
+        width: calc(40% - 10%);
       }
       &:last-child {
-        width: calc(67% - 10%);
+        width: calc(77% - 10%);
       }
     }
   }
@@ -22,10 +22,10 @@
   &_wide_left {
     .photos__img{
       &:first-child {
-        width: calc(67% - 10%);
+        width: calc(77% - 10%);
       }
       &:last-child {
-        width: calc(33% - 10%);
+        width: calc(40% - 10%);
       }
     }
   }
