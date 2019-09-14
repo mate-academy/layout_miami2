@@ -1,0 +1,52 @@
+.testemonials {
+  position: relative;
+  padding: 110px 0 70px;
+
+  @include mobile {
+    padding: 70px 0;
+  }
+
+  &__block {
+    max-width: 200px;
+    text-align: center;
+
+    @include mobile {
+      max-width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__photo {
+    border-radius: 50%;
+    margin-bottom: 12px;
+  }
+
+  &__name {
+    font-weight: $bold-weight;
+  }
+
+  &__prof {
+    font-weight: 300;
+    font-style: italic;
+    color: #4d4a4a;
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: -28px;
+      left: -20px;
+      width: 43px;
+      height: 43px;
+      background: url(/img/testemonials/quot.png) no-repeat;
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+}

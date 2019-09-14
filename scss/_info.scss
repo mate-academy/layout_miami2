@@ -2,15 +2,15 @@
   padding: 150px;
 
   @include tablet {
-    padding: 75px;
+    padding: 75px 0;
   }
 
   @include mobileL {
-    padding: 30px;
+    padding: 40px 0;
   }
 
   @include mobileS {
-    padding: 15px;
+    padding: 15px 0;
   }
 
   &__title {
@@ -21,16 +21,14 @@
     line-height: 60px;
     margin-right: 15px;
 
-    &>span {
+    & + span {
       font-weight: $bold-weight;
     }
 
     @include tablet {
       margin: 0;
       margin-bottom: 25px;
-    }
-
-    @include mobileL {
+      max-width: 100%;
       text-align: center;
     }
 
@@ -42,7 +40,7 @@
   }
 
   &__higthlight {
-    color: #00AAEF;
+    color: $theme-color;
   }
 
   &__texts {
@@ -54,6 +52,11 @@
       &>span {
         font-weight: $bold-weight;
       }
+
+      &:last-child {
+        margin: 0;
+      }
+
     }
 
     @include mobileS {

@@ -3,6 +3,11 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+@mixin flex_between {
+  display: flex;
+  justify-content: space-between;
+}
+
 @mixin tablet {
   @media (max-width: #{$tablet-max-width}) {
     @content;

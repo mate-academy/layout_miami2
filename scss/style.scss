@@ -21,10 +21,14 @@ body {
 
 @import "section";
 @import "container";
+@import "titles";
+@import "button";
 @import "header";
 @import "nav";
 @import "info";
-
-// other blocks
-
+@import "gallery";
+@import "consultation";
+@import "form";
+@import "testemonials";
+@import "contact";
 @import "footer";

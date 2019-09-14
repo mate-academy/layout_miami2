@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+&__input {
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 8px;
+  line-height: 36px;
+  padding: 8px 0;
+  font-weight: 500;
+  border: none;
+  background-color: #eee;
+  text-align: center;
+
+  &::placeholder {
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &:hover {
+    background-color: darken(#eee, 5%);
+  }
+
+  &:focus {
+    background-color: darken(#eee, 5%);
+    outline: 2px solid $theme-color;
+
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+}
