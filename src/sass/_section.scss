@@ -13,6 +13,6 @@
 
   &--darken {
     padding: 112px 0;
-    background-color: $darken-light;
+    background-color: darken($light-color, 10%);
   }
 };

@@ -18,13 +18,13 @@
       transition: color .5s;
 
       &:hover {
-        color: $darken-light;
+        color: darken($light-color, 10%);
       }
     }
 
     &--active {
       font-weight: 500;
-      background-color: $darken-light;
+      background-color: darken($light-color, 10%);
     }
   }
 }

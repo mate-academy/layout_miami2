@@ -54,9 +54,15 @@ a {
 }
 
 button,
-input {
+input,
+textarea {
   border: none;
   outline: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .button {
@@ -167,6 +173,48 @@ input {
   margin-bottom: 24px;
 }
 
+@media screen and (max-width: 768px) {
+  .consultation {
+    flex-direction: column;
+    align-items: center;
+  }
+  .consultation__text, .consultation__form {
+    width: 80%;
+  }
+  .consultation__text {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+}
+.contact-us__list {
+  width: 30%;
+  font-size: 24px;
+}
+.contact-us__item:nth-child(2) {
+  margin-bottom: 12px;
+}
+.contact-us__form {
+  width: 47%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-us__list {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contact-us__form {
+    width: 80%;
+  }
+}
 .footer {
   height: 540px;
   display: flex;
@@ -183,7 +231,7 @@ input {
   width: calc(100% - 2em);
   padding: 1.5em 1em;
   font-size: 14px;
-  background-color: #eee;
+  background-color: #e6e6e6;
   margin-bottom: 8px;
   text-align: center;
   font-weight: 500;
@@ -298,7 +346,7 @@ body {
   color: #000;
 }
 
-.about, .consultation, .gallery, .header__nav {
+.testimonials, .about, .consultation, .contact-us, .gallery, .header__nav {
   min-width: 870px;
   max-width: 1200px;
   width: 75%;
@@ -306,7 +354,7 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .about, .consultation, .gallery, .header__nav {
+  .testimonials, .about, .consultation, .contact-us, .gallery, .header__nav {
     width: 85%;
     min-width: 0;
   }
@@ -330,11 +378,11 @@ body {
   transition: color 0.5s;
 }
 .nav__item a:hover {
-  color: #cccccc;
+  color: #e6e6e6;
 }
 .nav__item--active {
   font-weight: 500;
-  background-color: #cccccc;
+  background-color: #e6e6e6;
 }
 
 @media screen and (max-width: 1024px) {
@@ -363,7 +411,47 @@ body {
 }
 .section--darken {
   padding: 112px 0;
-  background-color: #cccccc;
+  background-color: #e6e6e6;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+}
+.testimonials__card {
+  width: 20%;
+  text-align: center;
+}
+.testimonials__ava {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 12px;
+  border-radius: 150px;
+}
+.testimonials__name {
+  font-weight: bold;
+}
+.testimonials__job {
+  margin-bottom: 16px;
+  font-style: italic;
+  color: gray;
+}
+
+@media screen and (max-width: 1024px) {
+  .testimonials {
+    flex-wrap: wrap;
+  }
+  .testimonials__card {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .testimonials {
+    flex-wrap: wrap;
+  }
+  .testimonials__card {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+.testimonials {
+  @extend %container;
+  display: flex;
+  justify-content: space-around;
+
+  &__card {
+    width: 20%;
+    text-align: center;
+  }
+
+  &__ava {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 12px;
+    border-radius: 150px;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__job {
+    margin-bottom: 16px;
+    font-style: italic;
+    color: darken($light-color, 50%);
+  }
+}
+
+@media screen and (max-width: $break-point-lg) {
+  .testimonials {
+    flex-wrap: wrap;
+
+    &__card {
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (max-width: $break-point-md) {
+  .testimonials {
+    flex-wrap: wrap;
+
+    &__card {
+      width: 70%;
+    }
+  }
+}
