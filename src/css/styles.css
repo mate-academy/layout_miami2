@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -14,16 +15,17 @@ strong {
   font-weight: 500;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
+.logo {
+  height: 76px;
+  width: 115px;
 }
 
 .header {
   height: 765px;
+  max-height: 100vh;
   background-image: url("../images/background-header.jpg");
-  background-position: center;
   background-size: cover;
+  background-position: center;
   font-weight: 500;
   position: relative;
   line-height: 1;
@@ -52,14 +54,25 @@ ul {
 }
 .header__link {
   color: white;
-  text-decoration: none;
   border-bottom: 1px dashed;
   transition: color 0.2s;
+  text-decoration: none;
 }
 .header__link:hover {
   color: #D5C5AA;
 }
 
+@media screen and (max-width: 999px) {
+  .header__top {
+    flex-direction: column;
+  }
+  .header__phone {
+    margin: 20px 0;
+  }
+  .header__phone, .header__action {
+    top: 0;
+  }
+}
 .nav {
   text-transform: uppercase;
 }
@@ -67,6 +80,7 @@ ul {
   list-style: none;
   margin: 0;
   display: flex;
+  padding: 0;
   justify-content: center;
 }
 .nav__item {
@@ -77,23 +91,98 @@ ul {
 .nav__item_active {
   background-color: #D5C5AA;
   border-radius: 10px;
+  color: black;
 }
 .nav__link {
   color: white;
+  transition: 0.2s;
   text-decoration: none;
-  transition: color 0.2s;
 }
 .nav__link:hover {
   color: #D5C5AA;
 }
 
-.logo {
-  width: 115px;
-  height: 76px;
+@media screen and (max-width: 999px) {
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.section {
+  padding: 100px calc(50% - 470px);
+  position: relative;
+}
+.section:nth-child(even) {
+  background-color: #EEEEEE;
+}
+.section__heading {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.5em;
+}
+.section__content {
+  width: 100%;
 }
 
-.section {
-  padding: 156px calc(50% - 457px);
+.highlighted {
+  color: #00AAEF;
+}
+
+@media screen and (max-width: 999px) {
+  .section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+.button {
+  display: block;
+  color: white;
+  background-color: #00AAEF;
+  padding: 19px 62px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.button:hover {
+  background-color: #2F80ED;
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: max-content;
+  white-space: nowrap;
+  position: absolute;
+  display: block;
+}
+.heading::after, .heading::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(100% + 5px);
+  width: calc(50% - 19.5px);
+  height: 2px;
+  background-color: #00AAEF;
+}
+.heading::before {
+  left: 0;
+}
+.heading::after {
+  right: 0;
+}
+.heading__crown {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 13px;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url("../images/crown.png");
 }
 
 .info {
@@ -118,8 +207,42 @@ ul {
   margin-bottom: 0;
 }
 
-.highlighted {
-  color: #00AAEF;
+@media screen and (max-width: 999px) {
+  .info {
+    flex-direction: column;
+  }
+  .info__heading {
+    margin-bottom: 12px;
+  }
+}
+.gallery__caption {
+  margin: 12px 0 35px 0;
+}
+.gallery__button {
+  margin: 44px auto 0 auto;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+}
+.photos__img {
+  width: calc(50% - 10px);
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+}
+.photos_wide_left .photos__img:first-child {
+  width: calc(67% - 10px);
+}
+.photos_wide_left .photos__img:last-child {
+  width: calc(33% - 10px);
+}
+.photos_wide_right .photos__img:first-child {
+  width: calc(33% - 10px);
+}
+.photos_wide_right .photos__img:last-child {
+  width: calc(67% - 10px);
 }
 
 .footer {
@@ -135,34 +258,6 @@ ul {
   margin: auto;
   left: 0;
   right: 0;
-}
-
-@media screen and (max-width: 999px) {
-  .header__top {
-    flex-direction: column;
-  }
-  .header__phone {
-    margin: 20px 0;
-  }
-  .header__phone, .header__action {
-    top: 0;
-  }
-
-  .nav__list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .section {
-    padding: 20px 40px;
-  }
-
-  .info {
-    flex-direction: column;
-  }
-  .info__heading {
-    margin-bottom: 12px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */
