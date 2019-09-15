@@ -10,7 +10,7 @@ strong {
 
 .header {
   height: 765px;
-  background-image: url("./img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-size: cover;
   background-position: center;
   font-size: 16px;
@@ -111,7 +111,7 @@ strong {
 .footer {
   position: relative;
   height: 540px;
-  background-image: url("./img/footer.jpg");
+  background-image: url("../img/footer.jpg");
   background-size: cover;
   background-position: center;
 }
