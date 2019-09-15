@@ -1,0 +1,17 @@
+.section-testimonials {
+  padding: 106px 250px 70px;
+  justify-content: center;
+  position: relative;
+  flex-wrap: nowrap;
+
+  &__heading-block {
+    position: absolute;
+    top: -0.53em;
+  }
+}
+
+@media screen and (max-width: $max-width) {
+  .testimonials {
+    flex-direction: column;
+  }
+}

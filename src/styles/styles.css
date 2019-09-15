@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
@@ -6,14 +7,56 @@ body {
   line-height: 1;
 }
 
-h1, h2, p, button {
+h1, h2, h3, p, button, input, textarea {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+.section {
+  display: flex;
+}
 .section:nth-child(even) {
-  background-color: #eee;
+  background-color: #eeeeee;
+}
+
+.form {
+  width: 388px;
+  display: flex;
+  flex-direction: column;
+}
+.form__item, .form__button {
+  width: 100%;
+  height: 54px;
+}
+.form__item {
+  margin-bottom: 8px;
+}
+.form__button {
+  background-color: #00AAEF;
+  color: white;
+  font-size: 14px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.form__textarea {
+  background-color: #eeeeee;
+  text-align: center;
+  line-height: 36px;
+  width: 100%;
+  height: 166px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  padding-top: 11px;
+}
+.form__textarea::-webkit-input-placeholder {
+  color: #393939;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
 }
 
 .heading-block {
@@ -55,6 +98,21 @@ h1, h2, p, button {
 .info_paragraph-2 {
   font-weight: 400;
   margin: 24px 0;
+}
+
+.input {
+  background-color: #eeeeee;
+  text-align: center;
+  line-height: 36px;
+  width: 100%;
+}
+.input::-webkit-input-placeholder {
+  color: #393939;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
 }
 
 .light-menu__list {
@@ -163,6 +221,45 @@ h1, h2, p, button {
     margin-bottom: 12px;
   }
 }
+.testimonials {
+  display: flex;
+}
+.testimonials__block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  line-height: 1.5;
+  width: 200px;
+  margin: 0 30px;
+  position: relative;
+}
+.testimonials__block_people-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+.testimonials__block_name {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.testimonials__block_position {
+  font-style: italic;
+  font-weight: 400;
+  color: #8A8A92;
+}
+.testimonials__block_respond {
+  font-weight: 400;
+}
+.testimonials__block_respond::before {
+  content: "،،";
+  font-size: 92px;
+  position: absolute;
+  left: -40px;
+  top: 135px;
+}
+
 .title {
   width: 314px;
 }
@@ -212,7 +309,6 @@ h1, h2, p, button {
   }
 }
 .section-about {
-  display: flex;
   justify-content: center;
   padding: 156px 160px;
 }
@@ -232,7 +328,6 @@ h1, h2, p, button {
 }
 .section-gallery {
   padding: 112px 159px 110px;
-  display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
@@ -254,7 +349,6 @@ h1, h2, p, button {
 
 .section-consultation {
   padding: 153px 160px 145px;
-  display: flex;
   justify-content: center;
   position: relative;
 }
@@ -262,7 +356,78 @@ h1, h2, p, button {
   position: absolute;
   top: -0.53em;
 }
+.section-consultation__info {
+  font-weight: 400;
+  margin-right: 72px;
+}
+.section-consultation__info_heading {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 24px;
+}
+.section-consultation__info_text {
+  line-height: 1.5;
+  width: 480px;
+}
 
+@media screen and (max-width: 999px) {
+  .section-consultation {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-consultation__info {
+    margin-right: 0;
+  }
+  .section-consultation__info_text {
+    width: 383px;
+  }
+
+  .form {
+    margin-top: 20px;
+  }
+}
+.section-testimonials {
+  padding: 106px 250px 70px;
+  justify-content: center;
+  position: relative;
+  flex-wrap: nowrap;
+}
+.section-testimonials__heading-block {
+  position: absolute;
+  top: -0.53em;
+}
+
+@media screen and (max-width: 999px) {
+  .testimonials {
+    flex-direction: column;
+  }
+}
+.section-contact-us {
+  padding: 153px 160px 145px;
+  justify-content: space-around;
+  position: relative;
+}
+.section-contact-us__heading-block {
+  position: absolute;
+  top: -0.53em;
+}
+.section-contact-us__block {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.section-contact-us__block__info {
+  margin-right: .section-contact-us__block__info _text;
+  margin-right-font-weight: 400;
+  margin-right-font-size: 24px;
+  margin-right-line-height: 1.5;
+}
+
+@media screen and (max-width: 999px) {
+  .section-contact-us__info {
+    flex-direction: column;
+  }
+}
 .footer {
   height: 765px;
   background-image: url("../images/footer.jpg");
