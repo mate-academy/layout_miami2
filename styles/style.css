@@ -225,10 +225,10 @@ a:hover, a:visited:hover {
 }
 
 @media screen and (max-width: 899px) {
-  .gallery__photo {
+  .gallery .gallery__photo {
     width: 100%;
   }
-  .gallery__photo:nth-of-type(1), .gallery__photo:nth-of-type(3), .gallery__photo:nth-of-type(5) {
+  .gallery .gallery__photo:nth-of-type(1), .gallery .gallery__photo:nth-of-type(3), .gallery .gallery__photo:nth-of-type(5) {
     margin-bottom: 50px;
   }
 }
