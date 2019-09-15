@@ -1,0 +1,28 @@
+.section3 {
+  @include section_flex;
+  position: relative;
+
+  &__heading {
+    @include heading_position;
+    position: absolute;
+  }
+
+  &__consultation {
+    @include inner_container;
+
+    &__heading {
+      font-size: 32px;
+      font-weight: 300;
+      max-width: 350px;
+    }
+
+    &__text {
+      p {
+        display: block;
+        line-height: 24px;
+        font-weight: 300;
+        max-width: 480px;
+      }
+    }
+  }
+}

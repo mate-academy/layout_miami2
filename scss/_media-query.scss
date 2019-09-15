@@ -1,0 +1,105 @@
+@media screen and (max-width: 1050px) {
+  .nav__unorderedlist {
+    margin: 0 40px;
+  }
+
+  .nav__item {
+    margin: 20px 0;
+  }
+
+  .header__phone {
+    margin: 0 20px;
+  }
+
+  .section {
+    margin: 0 40px;
+  }
+
+  .section__info {
+    flex-direction: column;
+  }
+
+  .section2__gallery {
+    margin: 0 40px;
+    transform: scaleX(0.85);
+  }
+
+  .section3 {
+    &__consultation {
+      margin: 0 40px;
+    }
+  }
+  .section5 {
+    &__contactus {
+      margin: 0 40px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 790px) {
+  .nav__unorderedlist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__upper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__phone {
+    margin: 40px 0;
+  }
+
+  .section2__gallery {
+    transform: scaleX(0.7);
+  }
+
+  .section {
+    height: 650px;
+  }
+
+  .section3 {
+    height: 650px;
+    &__consultation {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+      &__text {
+        margin: 20px auto 0;
+        p {
+          text-align: center;
+        }
+      }
+      &__heading {
+        margin: auto;
+        text-align: center;
+      }
+    }
+
+    &__form {
+      transform: scale(0.8);
+      margin-left: 0;
+    }
+  }
+  .section4 {
+    height: 600px;
+    &__testimotionals {
+      transform: scale(0.8);
+    }
+    .person__text::before {
+      transform: scale(0.8);
+      margin: 10px;
+    }
+  }
+
+  .section5 {
+    height: 650px;
+    &__contactus {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+  }
+}
