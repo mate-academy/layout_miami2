@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  width: max-content;
+  padding: 1.5em 4.5em;
+  font-size: 14px;
+  font-weight: 500;
+  color: $light-color;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: $main-color;
+  transition: background-color .5s;
+
+  &:hover {
+    background-color: darken($main-color, 10%);
+  }
+}

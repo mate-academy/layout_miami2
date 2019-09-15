@@ -4,14 +4,16 @@
   &__images-line {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 12px;
   }
 
   &__image {
     object-fit: cover;
     height: 280px;
+    transition: ease .5s;
 
     &--one-third {
-      width: 32%;
+      width: 32.5%;
     }
 
     &--half {
@@ -19,7 +21,51 @@
     }
 
     &--two-third {
-      width: 65%;
+      width: 65.5%;
+    }
+  }
+
+  &__caption {
+    margin-bottom: 35px;
+    font-weight: 500;
+  }
+
+  &__caption-index {
+    font-weight: 300;
+    color: $main-color;
+  }
+
+  &__button {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: $break-point-md) {
+  .gallery {
+
+    &__image {
+
+      &--one-third,
+      &--two-third,
+      &--half {
+        height: 200px;
+      }
     }
   }
 }
+
+@media screen and (max-width: $break-point-sm) {
+  .gallery {
+
+    &__image {
+
+      &--one-third,
+      &--two-third,
+      &--half {
+        width: 49%;
+        height: 180px;
+      }
+    }
+  }
+}
+

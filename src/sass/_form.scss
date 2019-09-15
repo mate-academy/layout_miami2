@@ -1,0 +1,22 @@
+.form {
+
+  &__input-text {
+    width: calc(100% - 2em);
+    padding: 1.5em 1em;
+    font-size: 14px;
+    background-color: $grey-color;
+    margin-bottom: 8px;
+    text-align: center;
+    font-weight: 500;
+
+    &::placeholder {
+      text-align: center;
+      text-transform: uppercase;
+      color: #393939;
+    }
+  }
+
+  &__button {
+    width: 100%;
+  }
+}
