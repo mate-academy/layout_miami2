@@ -1,202 +1,22 @@
-@import "resset";
 @import "variables";
-
-.header {
-  height: 765px;
-  background-image: url("images/backgroundmiami.jpg");
-  background-size: cover;
-  background-position: center;
-  font-weight: 500;
-  position: relative;
-
-  &__upper {
-    position: absolute;
-    display: flex;
-    align-items: baseline;
-    left: calc(50% - #{$logo_width/2});
-    top: 35px;
-    text-transform: uppercase;
-    color: white;
-  }
-
-  &__phone , &__action {
-   position: relative;
-   transform: translateY(-16px);
-   white-space: nowrap;
-   &:hover {
-     border-color: $color_hover_padding;
-   }
-  }
-
-  &__phone {
-    margin: 0 82px;
-    transition: $transition;
-  }
-
-  &__action {
-    border-bottom: 1px dashed white;
-  }
-
-
-  &__link {
-    color: white;
-    text-decoration: none;
-    transition: $transition;
-    &:hover {
-      color: $color_hover_padding;
-    }
-  }
-
-  &__nav {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 25px;
-  }
-}
-
-.nav {
-  &__unorderedlist {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    transition: $transition;
-  }
-
-  &__item {
-    margin: 0 23px;
-    padding: 7px 20px;
-    text-transform: uppercase;
-    white-space: nowrap;
-    transition: $transition;
-
-    &_active {
-      background-color:  $color_hover_padding;
-      border-radius: 10px;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
-
-  &__link {
-    color: white;
-    text-decoration: none;
-    transition: $transition;
-    &:hover {
-      color: $color_hover_padding;
-    }
-
-    &:active {
-      color: blue;
-    }
-  }
-}
-
-.logo {
-  width: $logo_width;
-  height: $logo_height;
-}
-
-.section {
-  height: 672px;
-  display: flex;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-
-  &__info {
-    display: flex;
-    justify-content: space-between;
-    height: 360px;
-    width: 940px;
-    box-sizing: border-box;
-  }
-
-  &__heading {
-    margin: 0;
-    font-size: 48px;
-    line-height: 60px;
-    font-weight: 300;
-    display: block;
-    box-sizing: border-box;
-    min-height: 180px;
-    min-width: 314px;
-    text-align: left;
-  }
-
-  &__highlighted-text {
-    color: #00aaef;
-    &:hover {
-      cursor: pointer;
-    }
-  }
-  &__paragraphs{
-    & > :first-child {
-      margin-top: 0;
-    }
-    & > :last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.footer {
-  height: 540px;
-  background-image: url("images/footer_image.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 1050px) {
-  .nav {
-    &__unorderedlist {
-      margin: 0 40px;
-    }
-
-    &__item {
-      margin: 20px 0;
-    }
-  }
-
-  .header {
-    &__phone {
-      margin: 0 20px;
-    }
-  }
-
-  .section {
-    margin: 0 40px;
-    &__info {
-      flex-direction: column;
-    }
-  }
-
-}
-
-@media screen and (max-width: 790px) {
-  .nav__unorderedlist {
-    flex-direction: column;
-    align-items: center;
-  }
-  .header  {
-    &__upper {
-      display: flex;
-      flex-direction: column;
-    }
-    &__phone {
-      margin: 40px 0;
-    }
-  }
-}
+@import "resset";
+@import "mixins";
+@import "header";
+@import "logo";
+@import "section";
+@import "hightlighted-text";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
+@import "footer";
+@import "media-query";
+@import "input&textarea";
+@import "form";
 
 
 
 
+/*# sourceMappingURL=styles.css.map */
 
+/*# sourceMappingURL=styles.scss.map */

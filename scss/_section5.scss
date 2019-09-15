@@ -1,0 +1,22 @@
+.section5 {
+  @include section_flex;
+  position: relative;
+
+  &__heading {
+    @include heading_position;
+    position: absolute;
+  }
+
+  &__contactus {
+    @include inner_container;
+    align-items: center;
+    &__text {
+      p {
+        display: block;
+        line-height: 32px;
+        font-weight: 300;
+        max-width: 480px;
+      }
+    }
+  }
+}
