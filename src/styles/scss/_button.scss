@@ -1,0 +1,15 @@
+.button {
+  display: block;
+  font-size: 14;
+  line-height: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 19px 62px;
+  color: white;
+  background-color: $main-color;
+  transition: background-color $hover-duration;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
