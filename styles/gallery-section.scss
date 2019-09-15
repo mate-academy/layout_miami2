@@ -1,20 +1,27 @@
 .gallery {
-    box-sizing: border-box;
+    @include section-common-styles;
     background: #eee;
-    padding: 100px 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-
-    &__heading {
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: -0.5em;
-    }
 
     &__content {
-        width: 940px;
+        width: $section-content-width;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__photo {
+        height: 261px;
+        object-fit: cover;
+        object-position: center;
+        width: calc(50% - 10px);
+
+        &:nth-of-type(1), &:nth-of-type(6) {
+            width: calc(67% - 10px);
+        }
+
+        &:nth-of-type(2), &:nth-of-type(5) {
+            width: calc(33% - 10px);
+        }
     }
 
     &__text {
@@ -22,6 +29,7 @@
         line-height: 16px;
         margin-top: 12px;
         margin-bottom: 35px;
+        width: 100%;
     }
 
     &__button {
@@ -29,70 +37,13 @@
     }
 }
 
-.photos {
-    display: flex;
-    justify-content: space-between;
-
-    &__unit {
-        width: calc(50% - 10px);
-        height: 261px;
-        object-fit: cover;
-        object-position: center;
-    }
-
-    &_wide_left {
-        .photos__unit {
-            &:first-child {
-                width: calc(67% - 10px);
-            }
-
-            &:last-child {
-                width: calc(33% - 10px);
-            }
-        }
-    }
-
-    &_wide_right {
-        .photos__unit {
-            &:first-child {
-                width: calc(33% - 10px);
-            }
-
-            &:last-child {
-                width: calc(67% - 10px);
-            }
-        }
-    }
-}
-
 @media screen and (max-width: #{$small-screen-breakpoint}) {
-    .photos {
-    
-        &__unit {
-            width: 50%;
-        }
-    
-        &_wide_left {
-            .photos__unit {
-                &:first-child {
-                    width: 67%;
-                }
-    
-                &:last-child {
-                    width: 33%;
-                }
-            }
-        }
-    
-        &_wide_right {
-            .photos__unit {
-                &:first-child {
-                    width: 33%;
-                }
-    
-                &:last-child {
-                    width: 67%;
-                }
+    .gallery {
+        &__photo {
+            width: 100%;
+
+            &:nth-of-type(1), &:nth-of-type(3), &:nth-of-type(5) {
+                margin-bottom: 50px;
             }
         }
     }

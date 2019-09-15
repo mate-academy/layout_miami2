@@ -1,19 +1,9 @@
 .testimonials {
-    position: relative;
+    @include section-common-styles;
     background-color: #eee;
-    display: flex;
-    justify-content: center;
-    padding: 100px 0;
-
-    &__heading {
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: -0.5em;
-    }
 
     &__content {
-        width: 70vw;
+        width: $section-content-width;
         display: flex;
         justify-content: space-around;
 

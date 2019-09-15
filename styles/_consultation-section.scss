@@ -1,19 +1,8 @@
 .consultation {
-    padding: 100px 0;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: center;
-
-    &__heading {
-        left: 0;
-        right: 0;
-        margin: auto;
-        top: -0.5em;
-    }
+    @include section-common-styles;
 
     &__content {
-        width: 70vw;
+        width: $section-content-width;
         display: flex;
         justify-content: space-between;
     }

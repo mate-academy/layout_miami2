@@ -1,11 +1,8 @@
 .info {
-    padding: 100px 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
+    @include section-common-styles;
 
     &__content {
-        width: 70vw;
+        width: $section-content-width;
         display: flex;
     }
 

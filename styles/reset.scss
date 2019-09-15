@@ -24,3 +24,10 @@ a, a:visited {
         color: $highlight-hover-color;
     }
 }
+
+@mixin section-common-styles {
+    padding: 100px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
