@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.header {
+  height: 765px;
+  background-image: url("../../images/header_img.jpg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  position: relative;
+}
+.header__nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+}
+.header__top {
+  position: absolute;
+  display: flex;
+  left: calc(50% - 57.5px);
+  top: 35px;
+  text-transform: uppercase;
+  color: white;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  transition: color 0.2s;
+}
+.header__link:hover {
+  color: #D5C5AA;
+}
+.header__phone {
+  margin: 0 82px;
+}
+.header__phone, .header__action {
+  top: 47.12px;
+  white-space: nowrap;
+}
+
+.logo {
+  height: 76px;
+  width: 115px;
+}
+
+.nav__list {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+.nav__item {
+  margin: 0 22.5px;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.nav__item_active {
+  background-color: #D5C5AA;
+  border-radius: 10px;
+}
+.nav__link {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav__link:hover {
+  color: #D5C5AA;
+}
+
+@media screen and (max-width: 999px) {
+  .nav__item {
+    margin: 0 4px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .header__top {
+    flex-direction: column;
+  }
+  .header__phone {
+    margin: 20px 0;
+  }
+  .header__phone, .header__action {
+    top: 0;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
