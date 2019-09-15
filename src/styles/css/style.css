@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500&display=swap");
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
@@ -7,10 +8,6 @@ body {
 
 strong {
   font-weight: 500;
-}
-
-body {
-  font-family: "Ubuntu", sans-serif;
 }
 
 .header {
@@ -88,8 +85,53 @@ body {
 }
 
 .section {
+  position: relative;
   padding: 156px calc(50% - 470px);
-  font-size: 16px;
+}
+.section:nth-child(even) {
+  background-color: #eee;
+}
+.section__heading {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.5em;
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: max-content;
+  position: absolute;
+  white-space: nowrap;
+  display: block;
+}
+.heading::after, .heading::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(100% + 5px);
+  width: calc(50% - 19.5px);
+  height: 2px;
+  background-color: #00aaef;
+}
+.heading::before {
+  left: 0;
+}
+.heading::after {
+  right: 0;
+}
+.heading__crown {
+  position: absolute;
+  width: 20px;
+  height: 13px;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url(../../images/crown.svg);
 }
 
 .info {
