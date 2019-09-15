@@ -1,0 +1,49 @@
+.about {
+  @extend %container;
+  display: flex;
+
+  &__title {
+    flex: 2 2 0;
+    margin-right: 20px;
+    max-width: 370px;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 1.25;
+    text-transform: uppercase;
+
+    &--bold {
+      font-weight: bold;
+    }
+
+    &--accent {
+      color: $main-color;
+    }
+  }
+
+  &__text {
+    flex: 3 3 0;
+  }
+
+  &__text-item {
+    margin-bottom: 24px;
+    line-height: 1.5;
+
+    &--highlighted {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: $break-point-md) {
+  .about {
+    flex-direction: column;
+
+    &__title {
+      text-align: center;
+      max-width: none;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+

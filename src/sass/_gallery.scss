@@ -1,0 +1,25 @@
+.gallery {
+  @extend %container;
+
+  &__images-line {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    object-fit: cover;
+    height: 280px;
+
+    &--one-third {
+      width: 32%;
+    }
+
+    &--half {
+      width: 49%;
+    }
+
+    &--two-third {
+      width: 65%;
+    }
+  }
+}

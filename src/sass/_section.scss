@@ -1,0 +1,8 @@
+.section {
+  padding: 156px 0;
+  background-color: #fff;
+
+  &--darken {
+    background-color: $darken-light;
+  }
+};
