@@ -1,0 +1,15 @@
+.footer {
+  background: url(../img/bg-footer.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 540px;
+  width: 100%;
+  position: relative;
+  
+  &__logo {
+    position: absolute;
+    left: calc(50vw - 115px / 2);
+    bottom: 95px;
+  }
+}

@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-size: normal;
+  text-decoration: none;
+  font-family: Ubuntu;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a, ul {
+  margin: 0;
+  text-decoration: none;
+  font-size: normal;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+}

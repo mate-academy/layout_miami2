@@ -1,0 +1,49 @@
+.gallery {
+  background-color: $bg-color-second;
+  padding: 8vw 10vw; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    position: absolute;
+    top: -26px;
+    left: calc(50% - 97px);
+  }
+
+  &__site-photos {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    margin-bottom: 0.5vw;
+    margin-top: 2vw;
+  }
+
+  &__photos-name {
+    font-weight: 500;
+  }
+
+  &__photo-1 {
+    width: 52vw;
+  }
+
+  &__photo-2 {
+    width: 26vw;
+  }
+
+  &__photo-3 {
+    width: 39vw;
+  }
+
+  &__photo-4 {
+    width: 39vw;
+  }
+
+  &__photo-5 {
+    width: 26vw;
+  }
+  
+  &__photo-6 {
+    width: 52vw;
+  }
+}

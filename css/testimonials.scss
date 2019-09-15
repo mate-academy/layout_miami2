@@ -1,0 +1,65 @@
+.testimonials {
+  display: flex;
+  padding: 8vw 16vw;
+  background-color: $bg-color-second;
+  position: relative;
+  justify-content: space-between;
+
+  &__heading {
+    position: absolute;
+    top: -26px;
+    left: calc(50% - 160px);
+  }
+
+  &__infoblock {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__infoblock:nth-child(5),
+  &__infoblock:nth-child(6),
+  &__infoblock:nth-child(7) {
+    display: none;
+  }
+
+  &__photos {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  &__names {
+    line-height: 150%;
+    font-size: 16px;
+    color: $text-color-main;
+  }
+
+  &__positions {
+    font-size: 16px;
+    font-style: italic;
+    color: #696973;
+    line-height: 150%;
+    height: 48px;
+    margin-bottom: 1vw;
+  }
+
+  &__reviews {
+    line-height: 24px;
+    color: $text-color-main;
+    position: relative;
+  }
+
+  &__quot {
+    position: absolute;
+    top: -30px;
+    left: -20px;
+  }
+
+  &__button {
+    display: none;
+    margin: 0 auto;
+  }
+}

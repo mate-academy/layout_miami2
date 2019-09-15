@@ -1,0 +1,37 @@
+.feedback-form {
+  width: 37vw;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    width: 100%;
+    margin: 0.5vw 0;
+    height: 54px;
+    color: $text-color-main;
+    padding: 0;
+    border: none;
+    background-color: $bg-color-second;
+    text-indent: 20px;
+  }
+
+  &__item::placeholder {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    color: $text-color-main;
+    text-transform: $text-case;
+  }
+
+  &__item:last-child {
+    color: $text-color-second;
+    background-color: $deco-color;
+    font-weight: 600;
+  }
+
+  &__item:last-child:hover {
+    color: $text-color-main;
+    background-color: $bg-color-main;
+    border: 1px solid black;
+  }
+}

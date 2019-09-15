@@ -1,0 +1,14 @@
+.main {
+  width: 100vw;
+}
+
+.text-deco_color {
+  color: $deco-color;
+}
+
+@import "info.scss";
+@import "gallery.scss";
+@import "feedback-form.scss";
+@import "consultation.scss";
+@import "testimonials.scss";
+@import "contact-us.scss";
