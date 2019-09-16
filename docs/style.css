@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: "Ubuntu", "sans-serif";
   line-height: 1.5;
+  border-width: 0;
 }
 
 strong {
@@ -81,6 +82,7 @@ strong {
 
 .section {
   padding: 156px calc(50% - 470px);
+  position: relative;
 }
 .section:nth-child(even) {
   background-color: #F2F2F2;
@@ -109,28 +111,77 @@ strong {
 
 .blue-text {
   color: #00aaef;
+  text-decoration: none;
 }
 
-.gallery__heading {
+.gallery__photo {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery_img {
+  width: calc(50% - 10px);
+  height: 263px;
+  object-fit: cover;
+  object-position: center;
+}
+.gallery_img.wide {
+  width: calc(66.7% - 10px);
+}
+.gallery_img.narrow {
+  width: calc(33.3% - 10px);
+}
+
+.micrologo {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 16px;
+  left: calc(50% - 10px);
+  bottom: -12px;
+  margin: auto;
+  background-image: url("./img/logo_micro.svg");
+  background-repeat: no-repeat;
+}
+
+.button {
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #00AAEF;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  height: 52px;
+  width: 188px;
+  margin: 44px auto 0 auto;
+  border: none;
+}
+.button:hover {
+  color: #D5C5AA;
+}
+
+.heading {
   font-size: 48px;
   font-weight: 300;
   text-transform: uppercase;
-  position: relative;
+  position: absolute;
   width: max-content;
+  left: calc(50% - 97px);
+  top: -77px;
 }
-.gallery__heading::before, .gallery__heading::after {
+.heading::before, .heading::after {
   content: "";
   display: block;
   position: absolute;
   height: 2px;
   background-color: #00AAEF;
   bottom: 0;
-  width: 75px;
+  width: 40%;
 }
-.gallery__heading::before {
+.heading::before {
   left: 0;
 }
-.gallery__heading::after {
+.heading::after {
   right: 0;
 }
 
@@ -159,7 +210,7 @@ strong {
     margin: 0 8%;
   }
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1024px) and (max-width: 860px) {
   .nav__menu {
     flex-direction: column;
   }
@@ -187,6 +238,10 @@ strong {
   }
   .info__heading {
     margin-top: 20px;
+  }
+
+  .gallery__photo {
+    padding-top: 30px;
   }
 }
 
