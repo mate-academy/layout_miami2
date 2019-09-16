@@ -24,7 +24,7 @@ strong {
   font-weight: 500;
 }
 
-input {
+input, textarea {
   border: 0;
 }
 
@@ -290,7 +290,7 @@ input {
   justify-content: space-between;
 }
 .consultation__text {
-  width: 480px;
+  max-width: 480px;
 }
 .consultation__heading {
   font-size: 32px;
