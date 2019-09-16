@@ -3,9 +3,12 @@
   display: flex;
   justify-content: space-between;
 
-  &__text,
-  &__form {
+  &__text {
     width: 47%;
+  }
+
+  &__form {
+    width: 40%;
   }
 
   &__title {

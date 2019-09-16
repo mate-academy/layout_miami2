@@ -4,8 +4,20 @@
   justify-content: space-around;
 
   &__card {
+    position: relative;
     width: 20%;
     text-align: center;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 43px;
+      height: 43px;
+      top: 190px;
+      left: -25px;
+      background: url(images/testimonials/quotes.svg) no-repeat center;
+    }
   }
 
   &__ava {

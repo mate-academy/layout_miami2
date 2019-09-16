@@ -164,8 +164,11 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.consultation__text, .consultation__form {
+.consultation__text {
   width: 47%;
+}
+.consultation__form {
+  width: 40%;
 }
 .consultation__title {
   font-size: 32px;
@@ -198,7 +201,7 @@ img {
   margin-bottom: 12px;
 }
 .contact-us__form {
-  width: 47%;
+  width: 40%;
 }
 
 @media screen and (max-width: 768px) {
@@ -419,8 +422,19 @@ body {
   justify-content: space-around;
 }
 .testimonials__card {
+  position: relative;
   width: 20%;
   text-align: center;
+}
+.testimonials__card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  top: 190px;
+  left: -25px;
+  background: url(images/testimonials/quotes.svg) no-repeat center;
 }
 .testimonials__ava {
   width: 150px;
