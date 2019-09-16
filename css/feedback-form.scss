@@ -13,21 +13,22 @@
     border: none;
     background-color: $bg-color-second;
     text-indent: 20px;
+    font-size: 18px;
+    font-weight: 500;
   }
 
   &__item::placeholder {
     text-align: center;
     font-weight: 600;
-    font-size: 14px;
-    line-height: 100%;
+    font-size: 14px;      
     color: $text-color-main;
     text-transform: $text-case;
+    text-indent: 0;
   }
 
   &__item:last-child {
     color: $text-color-second;
     background-color: $deco-color;
-    font-weight: 600;
   }
 
   &__item:last-child:hover {

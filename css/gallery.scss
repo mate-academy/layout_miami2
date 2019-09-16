@@ -21,6 +21,8 @@
 
   &__photos-name {
     font-weight: 500;
+    width: 77vw;
+    margin: 0 auto;
   }
 
   &__photo-1 {
@@ -45,5 +47,20 @@
   
   &__photo-6 {
     width: 50vw;
+  }
+
+  &__photo-1_alt {
+    display: none;
+    width: 77vw;
+  }
+
+  &__photo-2_alt {
+    display: none;
+    width: 77vw;
+  }
+
+  &__photo-3_alt {
+    display: none;
+    width: 77vw;
   }
 }

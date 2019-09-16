@@ -29,7 +29,7 @@
     @include inside-centered;
   }
 
-  &__link:hover {
+  &__link:hover:not(:first-child) {
     color: #D5C5AA;
   }
 
