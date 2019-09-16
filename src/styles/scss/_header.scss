@@ -1,0 +1,46 @@
+.header {
+  line-height: 1;
+  height: 765px;
+  background-image: url('../../images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  position: relative;
+
+  &__nav {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+  }
+
+  &__top {
+    position: absolute;
+    display:flex;
+    top: 35px;
+    left: calc(50% - #{ $logo-width / 2 });
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__phone {
+    margin: 0 82px;
+  }
+
+  &__phone, &__action {
+    position: relative;
+    top: $logo-hight * 0.62;
+    white-space: nowrap;
+  }
+
+  &__link {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    transition: color $hover-duration;
+
+    &:hover{
+      color: $ligth-active-color;
+    }
+  }
+}

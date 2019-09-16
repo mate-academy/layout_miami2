@@ -1,0 +1,166 @@
+.logo {
+  width: $logo-width;
+  height: $logo-hight;
+}
+
+.section {
+  position: relative;
+  padding: 156px calc(50% - 470px);
+
+  &:nth-child(even) {
+    background-color: #eee;
+  }
+
+  &__heading {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -0.5em;
+  }
+
+  &__gallery {
+    margin-top: 30px;
+  }
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  width: max-content;
+  position: absolute;
+  white-space: nowrap;
+  display: block;
+
+  &%line {
+    content: "";
+    display: block;
+    position: absolute;
+    top: calc(100% + 5px);
+    width: calc(50% - 19.5px);
+    height: 2px;
+    background-color: #00aaef;
+  }
+
+  &::before {
+    @extend %line;
+    left: 0;
+  }
+
+  &::after {
+    @extend %line;
+    right: 0;
+  }
+
+  &__crown {
+    position: absolute;
+    width: 20px;
+    height: 13px;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(../../images/crown.svg);
+  }
+}
+
+.info {
+  width: 940px;
+  display: grid; 
+  grid-template-areas: "heading text";
+  grid-gap: 62px;
+  &__heading {
+    grid-area: heading;
+    width: 314px;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 300;
+    margin: 0;
+  }
+  &__text {
+    grid-area: text;
+    grid-template-areas: "p1""p2""p3";
+    grid-gap: 24px;
+    > :first-child  {
+      margin-top: 0;
+    }
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__p1 {
+    grid-area: p1;
+  }
+  &__p2 {
+    grid-area: p2;
+  }
+  &__p3 {
+    grid-area: p3;
+  }
+}
+
+.highlight {
+  color: #00aaef;
+}
+
+.gallery {
+  &__caption {
+    margin: 12px 0 35px 0;
+  }
+
+  &__button {
+    margin: auto;
+  }
+}
+
+.button {
+  display: block;
+  color: white;
+  background-color: #00aaef;
+  padding: 19px 62px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color $hover-duration;
+
+
+  &:hover {
+    background-color: #2f80ed;
+  }
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+
+  &__img {
+    width: calc(50% - $image-gap);
+    height: 260px;
+    object-fit: cover;
+  }
+
+  &_wide_left {
+    .photos__img{
+      &:first-child {
+        width: calc(67% - $image-gap)
+      }
+
+      &:last-child {
+        width: calc(33% - $image-gap)
+      }
+    }
+  }
+
+  &_wide_right {
+    .photos__img{
+      &:first-child {
+        width: calc(33% - $image-gap)
+      }
+
+      &:last-child {
+        width: calc(67% - $image-gap)
+      }
+    }
+  }
+}
