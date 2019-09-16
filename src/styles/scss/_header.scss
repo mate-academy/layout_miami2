@@ -44,7 +44,7 @@
   }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: $small-screen-breakpoint) {
   .header {
     &__phone, 
     &__action {

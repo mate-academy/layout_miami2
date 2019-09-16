@@ -36,3 +36,14 @@
     }
   }
 }
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .person {
+    &__text {
+      &::after {
+        right: calc(100% + 3px);
+        bottom: calc(100% + 3px);
+      }
+    }
+  }
+}

@@ -153,6 +153,9 @@ a {
   }
   .info__heading {
     margin-bottom: 12px;
+    font-size: 38px;
+    line-height: 50px;
+    width: auto;
   }
 }
 .section {
@@ -171,8 +174,7 @@ a {
 
 @media screen and (max-width: 999px) {
   .section {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 80px 40px;
   }
 }
 .heading {
@@ -210,6 +212,11 @@ a {
   background-image: url("../../src/images/crown.svg");
 }
 
+@media screen and (max-width: 999px) {
+  .heading {
+    font-size: 38px;
+  }
+}
 .photos {
   display: flex;
   justify-content: space-between;
@@ -233,6 +240,31 @@ a {
   width: calc(67% - 10px);
 }
 
+@media screen and (max-width: 999px) {
+  .photos {
+    flex-direction: column;
+  }
+  .photos__img {
+    width: calc(100% - 10px);
+  }
+  .photos__img:nth-child(odd) {
+    margin-bottom: 10px;
+  }
+  .photos_wide_left .photos__img:first-child {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+  }
+  .photos_wide_left .photos__img:last-child {
+    width: calc(100% - 10px);
+  }
+  .photos_wide_right .photos__img:first-child {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+  }
+  .photos_wide_right .photos__img:last-child {
+    width: calc(100% - 10px);
+  }
+}
 .gallery__caption {
   margin: 12px 0 35px 0;
 }
@@ -240,6 +272,11 @@ a {
   margin: 44px auto 0;
 }
 
+@media screen and (max-width: 999px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
 .button {
   display: block;
   font-size: 14;
@@ -286,6 +323,10 @@ a {
   }
   .consultation__text, .consultation__form {
     width: 100%;
+  }
+  .consultation__heading {
+    font-size: 22px;
+    line-height: 30px;
   }
 }
 .form {
@@ -362,6 +403,12 @@ a {
   bottom: calc(100% + 6px);
 }
 
+@media screen and (max-width: 999px) {
+  .person__text::after {
+    right: calc(100% + 3px);
+    bottom: calc(100% + 3px);
+  }
+}
 .contacts {
   display: flex;
   justify-content: space-between;
