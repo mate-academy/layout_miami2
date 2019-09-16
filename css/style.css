@@ -291,7 +291,7 @@ input, textarea {
   justify-content: space-between;
 }
 .consultation__text {
-  max-width: 480px;
+  width: 480px;
 }
 .consultation__heading {
   font-size: 32px;
@@ -402,7 +402,7 @@ input, textarea {
     flex-direction: column;
   }
   .contact__text, .contact__form {
-    max-width: 280px;
+    width: 100%;
   }
 }
 .footer {
