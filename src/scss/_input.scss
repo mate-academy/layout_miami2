@@ -1,0 +1,22 @@
+input {
+  border: none; 
+  max-width: 380px;
+  height: 54px;
+  margin-bottom: 8px; 
+  background-color: #EEEEEE;
+  text-align: center;
+  font-size: 14px;
+}
+
+input::placeholder {
+  font-size: 14px; 
+  line-height: 36px;
+  font-weight: 500;
+  color: black;
+  text-align: center; 
+  text-transform: uppercase;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}

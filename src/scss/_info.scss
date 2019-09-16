@@ -1,0 +1,35 @@
+.info {
+  display: flex; //text in second block 
+  justify-content: space-between;
+
+  &__heading { // main text in second block
+    font-size: 48px; 
+    line-height: 68px;
+    text-transform: uppercase;
+    width: 314px;
+    padding: 0;
+    margin-right: 10px;
+    font-weight: 300;
+  }
+
+  &__text { //text blocks after main text in second block
+    max-width: 564px;
+
+    > * {
+      margin-bottom: 24px; // margin bottom for all p after main text in second block
+    }
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .info {
+    flex-direction: column;
+    padding: 20px 40px;
+
+    &__heading {
+      align-self: center;
+      margin: 20px 0;   
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.nav { //Menu of site
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 25px;
+  display: flex; 
+  justify-content: center; 
+
+  &__link { //all link of menu in header 
+    margin: 0 3%; 
+    text-decoration: none;
+    padding: 7px 20px;
+    transition: color $hover-time;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: $header-text-color; 
+
+    &_active { //main link which is active 
+      color: black;
+      background-color: $hover-color; 
+      border-radius: 10px;  
+    }
+  }
+
+  &__link:hover {
+    color: $hover-color;
+  }
+}
+
+@media screen and (max-width: 1099px) {
+  .nav {
+    justify-content: space-between;
+  
+    &__link {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .nav {
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+  }
+}
