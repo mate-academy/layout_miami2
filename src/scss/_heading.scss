@@ -7,7 +7,7 @@
   white-space: nowrap;
   position: absolute;
   display: block;
-  
+
   &%line {
     content: "";
     display: block;
@@ -17,17 +17,17 @@
     height: 2px;
     background-color: $highlight-color;
   }
-  
+
   &::before {
     @extend %line;
     left: 0;
   }
-  
+
   &::after {
     @extend %line;
     right: 0;
   }
-  
+
   &__crown {
     position: absolute;
     display: block;
@@ -38,5 +38,11 @@
     right: 0;
     margin: auto;
     background-image: url("../images/crown.png");
+  }
+}
+
+@media screen and (max-width: $min-screen) {
+  .heading {
+    font-size: 40px;
   }
 }

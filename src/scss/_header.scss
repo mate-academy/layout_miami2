@@ -50,7 +50,13 @@
 
   .header{
     &__top {
-      flex-direction: column;
+      //flex-direction: column;
+      left: 0;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 11px;
     }
 
     &__phone{
@@ -59,6 +65,20 @@
 
     &__phone, &__action {
       top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .header{
+    &__top {
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &__phone, &__action {
+      display: none;
     }
   }
 }
