@@ -19,3 +19,20 @@
   width: 940px;
   box-sizing: border-box;
 }
+
+@mixin focus_input_textarea {
+  background-color: #EEEEEE;
+  cursor: text;
+  border-radius: 5px;
+}
+
+@mixin placeholder_input_textarea {
+  text-transform: uppercase;
+  color: #393939;
+}
+
+@mixin hover_input_textarea {
+  cursor: pointer;
+  background-color: ghostwhite;
+  border-radius: 5px;
+}

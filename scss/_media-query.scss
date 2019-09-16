@@ -34,6 +34,12 @@
       margin: 0 40px;
     }
   }
+  .section4 {
+    height: 100%;
+    &__testimotionals {
+      margin: 20px 40px 70px;
+    }
+  }
 }
 
 
@@ -54,10 +60,17 @@
 
   .section2__gallery {
     transform: scaleX(0.7);
+    text-align: center;
+    padding-top: 70px;
+  }
+  .section2 {
+    height: 100%;
+    padding-bottom: 30px;
   }
 
   .section {
-    height: 650px;
+    height: 100%;
+    margin: 40px;
   }
 
   .section3 {
@@ -85,13 +98,19 @@
 
 
   .section4 {
-    height: 600px;
+    height: 100%;
     &__testimotionals {
-      transform: scale(0.8);
+      flex-direction: column;
+      align-items: center;
+      margin: 60px 0 20px;
     }
-    .person__text::before {
-      transform: scale(0.8);
-      margin: 10px;
+    .person {
+      width: 70%;
+      padding: 20px 0;
+      transform: scale(0.95);
+      &__text::before {
+        transform: scale(0.9);
+      }
     }
   }
 
@@ -102,5 +121,49 @@
       align-items: center;
       margin-top: 40px;
     }
+  }
+
+  .photos {
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+
+    &__img {
+      width: 100%;
+      padding-top: 10px;
+    }
+
+    &_wide_left {
+      .photos__img {
+        &:first-child {
+          width: 100%;
+        }
+
+        &:last-child {
+          width: 100%;
+        }
+      }
+    }
+
+    &_wide_right {
+      .photos__img {
+        &:last-child {
+          width: 100%;
+        }
+
+        &:first-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .heading {
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 376px) {
+  .heading {
+    transform: scale(0.9);
   }
 }

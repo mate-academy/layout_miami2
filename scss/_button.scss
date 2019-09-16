@@ -1,0 +1,21 @@
+.button {
+  display: flex;
+  background-color: $color_highlight;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 62px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: $transition;
+  font-family: inherit;
+  border-radius: 5px;
+  &:hover {
+    background-color: #2f80ed;
+  }
+
+  &:active {
+    background-color: lightgrey;
+    color: #2f80ed;
+  }
+}

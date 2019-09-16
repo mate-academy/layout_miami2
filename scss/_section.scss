@@ -1,6 +1,5 @@
 .section {
   @include section_flex;
-  text-transform: uppercase;
 
   &__info {
     @include inner_container;
@@ -16,6 +15,7 @@
     min-height: 130px;
     min-width: 314px;
     text-align: left;
+    text-transform: uppercase;
   }
 
   &__paragraphs {

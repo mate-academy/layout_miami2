@@ -1,0 +1,38 @@
+.heading {
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: absolute;
+  line-height: 1;
+  width: max-content;
+  white-space: nowrap;
+
+  &%underline {
+    content: "";
+    position: absolute;
+    width: calc(50% - 19.5px);
+    height: 2px;
+    display: block;
+    top: calc(100% + 5px);
+    background-color: #00aaef;
+  }
+
+  &::before {
+    @extend %underline;
+    left: 0;
+  }
+
+  &::after {
+    @extend %underline;
+    right: 0;
+  }
+
+  &_crown {
+    height: 13px;
+    width: 20px;
+    background: url("images/crown.svg");
+    position: absolute;
+    bottom: -17px;
+    left: calc(50% - 10px);
+  }
+}

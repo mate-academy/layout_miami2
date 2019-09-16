@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css"/>
     <link rel="icon" href="images/favicon.png"/>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header class="header">
@@ -15,7 +16,7 @@
       +1 234 555-55-55
     </div>
     <div class="header__action">
-        <a href="#" class="header__link">call to order</a>
+        <a href="tel:+1 234 555-55-55" class="header__link">call to order</a>
     </div>
   </div>
   <nav class="nav header__nav">
@@ -73,11 +74,11 @@
                 found a distant historical.
             </p>
           </div>
-          <form class="section__form">
+          <form class="section__form" action="#">
               <label><input type="text" name="name" placeholder="name" class="input section__form__input"></label>
               <label><input type="text" name="phone" placeholder="phone" class="input section__form__input"></label>
               <label><input type="text" name="email" placeholder="email" class="input section__form__input"></label>
-              <button class="button section__form__button">Consultation</button>
+              <button class="button section__form__button" type="submit">Consultation</button>
           </form>
         </div>
     </section>
@@ -112,11 +113,11 @@
               <p>Hello@miami.com<br> +1 234 555-55-55</p>
               <p>400 first ave. n.<br> suite 700<br> Minneapolis, MN 55401</p>
           </div>
-             <form class="section__form">
+             <form class="section__form" action="#">
                 <label><input type="text" name="name" placeholder="name" class="input section__form__input"></label>
                 <label><input type="text" name="email" placeholder="email" class="input section__form__input"></label>
                  <label><textarea name="message" placeholder="message" class="input_textarea section__form__input"></textarea></label>
-                <button class="button section__form__button">Write to Us</button>
+                <button class="button section__form__button" type="submit">Write to Us</button>
              </form>
         </div>
     </section>

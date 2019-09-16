@@ -10,6 +10,7 @@
 
   &__testimotionals {
     @include inner_container;
+    box-sizing: border-box;
   }
 
 }
@@ -25,11 +26,13 @@
   &__photo {
     border-radius: 50%;
   }
+
   &__position {
     margin: 0;
     font-style: italic;
     color: gray;
   }
+
   &__text {
     line-height: 24px;
     position: relative;
@@ -38,7 +41,7 @@
       display: block;
       position: absolute;
       top: -30px;
-      left: -20px;
+      left: -30px;
     }
   }
 }
