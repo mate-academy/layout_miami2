@@ -230,8 +230,7 @@ a {
   padding: 19px 62px;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.2s;
-  width: 383px; }
+  transition: background-color 0.2s; }
   .button:hover {
     background-color: #2f80ed; }
 
@@ -244,8 +243,6 @@ a {
     font-size: 32px;
     line-height: 40px;
     margin: 0 0 24px 0; }
-  .Consultation__form {
-    width: 380px; }
 
 @media screen and (max-width: 999px) {
   .Consultation {
@@ -254,8 +251,9 @@ a {
       width: 100%; } }
 .form {
   display: flex;
-  flex-direction: column; }
-  .form__input, .form__buton {
+  flex-direction: column;
+  width: 380px; }
+  .form__input, .form__button {
     width: 100%;
     margin-bottom: 8px;
     display: block;
@@ -268,7 +266,6 @@ a {
   color: #393939;
   padding: 24px;
   background-color: #eeeeee;
-  width: 383px;
   height: 54px;
   box-sizing: border-box;
   line-height: 1; }
