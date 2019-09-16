@@ -239,6 +239,10 @@ html, body {
   height: 165px;
   resize: none;
   margin-bottom: 7px;
+  border: none;
+  text-align: center;
+  background-color: #eee;
+  line-height: 55px;
 }
 
 .consultation {
