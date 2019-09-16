@@ -19,7 +19,7 @@
   &__form {
     width: 383px;
 
-    &::placeholder {
+    & input__textarea::placeholder {
       text-transform: uppercase;
     }
   }

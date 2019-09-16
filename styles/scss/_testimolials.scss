@@ -5,7 +5,7 @@
   justify-content: center;
 }
 
-.pearson {
+.person {
 
   text-align: center;
 
@@ -28,6 +28,7 @@
 
   &__text {
     position: relative;
+    
 
     &::after {
       display: block;
@@ -39,7 +40,8 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      right: calc(100% + 6px);
+      left: 0;
+    /*  right: calc(100% + 6px);*/
       bottom: calc(100% + 6px);
     }
   }
