@@ -1,7 +1,7 @@
 .form
   display: flex
   flex-direction: column
-  width: 380px
+  max-width: 380px
 
   &__input, &__button
     width: 100%
@@ -27,3 +27,7 @@
 
   &__textarea
     height: 166px
+
+@media screen and (min-width: 599px)
+  .form
+    width: 380px

@@ -120,10 +120,14 @@ a {
     margin: 20px 0; }
   .header .nav__list {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+
+  .heading {
+    font-size: 38px; } }
 .section {
   padding: 100px calc(50% - 470px);
-  position: relative; }
+  position: relative;
+  box-sizing: border-box; }
   .section:nth-child(even) {
     background-color: #eeeeee; }
   .section__heading {
@@ -250,11 +254,12 @@ a {
   .Consultation {
     flex-direction: column; }
     .Consultation__text, .Consultation__form {
-      width: 100%; } }
+      width: 100%;
+      box-sizing: border-box; } }
 .form {
   display: flex;
   flex-direction: column;
-  width: 380px; }
+  max-width: 380px; }
   .form__input, .form__button {
     width: 100%;
     margin-bottom: 8px;
@@ -278,6 +283,9 @@ a {
   .input__textarea {
     height: 166px; }
 
+@media screen and (min-width: 599px) {
+  .form {
+    width: 380px; } }
 .person {
   text-align: center; }
   .person__photo {
