@@ -13,7 +13,7 @@ html, body {
 }
 
 .header {
-  height: 765px;
+  height: 100vh;
   background-image: url("images/bg-header.jpg");
   background-size: cover;
   background-position: center;
@@ -143,7 +143,36 @@ html, body {
   width: 23px;
 }
 
+.form {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  width: 100%;
+}
+.form label * {
+  width: 100%;
+  box-sizing: border-box;
+}
+.form input {
+  height: 55px;
+  margin-bottom: 7px;
+  padding: 0 20px;
+  font-family: inherit;
+  font-weight: 500;
+}
+.form ::placeholder {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 55px;
+}
+
 .button {
+  outline: none;
   height: 55px;
   width: 100%;
   background-color: #00aaef;
@@ -200,27 +229,68 @@ html, body {
   line-height: 1.5;
   width: 276px;
 }
-.contact-us__form {
-  width: 380px;
-  display: flex;
-  flex-direction: column;
-}
 .contact-us__message {
   height: 165px;
   resize: none;
   margin-bottom: 7px;
 }
-.contact-us__name, .contact-us__email, .contact-us__submit {
-  height: 55px;
-  margin-bottom: 7px;
+
+.consultation {
+  position: relative;
 }
-.contact-us ::placeholder {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 500;
+.consultation__text {
+  width: 480px;
+}
+.consultation__text h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+  width: 350px;
+}
+.consultation__text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.testimonials {
+  background-color: #eee;
+  position: relative;
+}
+.testimonials__item {
+  width: 200px;
   text-align: center;
-  font-family: "Ubuntu", sans-serif;
-  line-height: 55px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.testimonials__photo {
+  height: 150px;
+  border-radius: 50%;
+}
+.testimonials__name {
+  font-weight: 500;
+  margin: 12px 0 0 0;
+}
+.testimonials__position {
+  font-weight: 400;
+  font-style: italic;
+  color: #aaa;
+  margin: 0 0 16px 0;
+  position: relative;
+}
+.testimonials__feedback {
+  position: relative;
+}
+.testimonials__feedback::before {
+  content: " ";
+  background-image: url("./images/testimonials/qoute.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 92px;
+  width: 43px;
+  position: absolute;
+  left: -43px;
+  top: -30px;
 }
 
 .footer {
