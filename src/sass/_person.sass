@@ -32,4 +32,14 @@
             right: calc( 100% - 10px )
             bottom: calc( 100% + 6px )
 
+.testimonials
+    display: grid
+    grid-gap: 65px
+    grid-template-columns: repeat(3, 200px)
+    justify-content: center
+
+@media screen and (max-width: 999px)
+    .testimonials
+        grid-template-columns: repeat(1, 200px)
+
 
