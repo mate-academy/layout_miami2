@@ -161,6 +161,9 @@ html, body {
   padding: 0 20px;
   font-family: inherit;
   font-weight: 500;
+  border: none;
+  background-color: #eee;
+  text-align: center;
 }
 .form ::placeholder {
   text-transform: uppercase;
@@ -215,6 +218,9 @@ html, body {
 }
 .gallery .wide-right img:last-child {
   width: calc(67% - 5px);
+}
+.gallery p {
+  padding-left: 10px;
 }
 .gallery__button {
   width: 188px;
@@ -359,7 +365,7 @@ html, body {
 }
 @media screen and (max-width: 670px) {
   .info__heading {
-    font-size: 32px;
+    font-size: 35px;
     width: 100%;
   }
   .info__text {
@@ -392,7 +398,7 @@ html, body {
   }
 
   .gallery__container {
-    padding: 70px 0;
+    padding: 70px 10px;
   }
   .gallery__photos {
     flex-direction: column;
@@ -401,6 +407,7 @@ html, body {
   .gallery__photos img, .gallery__photos img {
     height: 260px;
     width: 100%;
+    margin-bottom: 5px;
   }
   .gallery .wide-right img:first-child {
     width: 100%;
@@ -416,7 +423,25 @@ html, body {
 }
 @media screen and (max-width: 400px) {
   .container {
-    padding: 50px 20px;
+    padding: 70px 10px;
+  }
+
+  .heading {
+    top: -16px;
+  }
+  .heading h2 {
+    font-size: 32px;
+  }
+  .heading h2::before, .heading h2::after {
+    top: 32px;
+  }
+
+  .testimonials__feedback::before {
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    left: -25px;
+    top: -20px;
   }
 }
 
