@@ -1,3 +1,7 @@
+.heading_gal {
+  left: calc(50% - 97px);
+  top: -26px;
+}
 .gallery {
 
   .photos {
@@ -66,14 +70,21 @@
   }
 }
 
-@media (max-width: 699px){
+@media (max-width: 750px){
   .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .photos {
       flex-direction: column;
       align-items: center;
       &__img {
         margin-top: 10px;
       }
+    }
+
+    &__botton {
+      left: 0;
     }
   }
 }

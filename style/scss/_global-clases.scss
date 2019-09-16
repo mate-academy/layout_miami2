@@ -6,10 +6,6 @@
 .content-box {
   padding: 100px calc(50% - #{$main-info-width/2});
   position: relative;
-  &__heading {
-    left: calc(50% - 97px);
-    top: -26px;
-  }
 }
 
 .content-box:nth-child(even) {

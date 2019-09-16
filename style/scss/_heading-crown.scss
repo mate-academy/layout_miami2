@@ -5,7 +5,6 @@
   line-height: 48px;
   position: absolute;
   margin: 0;
-  width: 194px;
 
   .crown::before {
     content: "";
@@ -19,13 +18,12 @@
     bottom: -16px;
     position: absolute;
 
-
   }
 
   &::before {
     content: "";
     display: block;
-    width: 75px;
+    width: calc(50% - 33px);
     height: 2px;
     background-color: #00AAEF;
     position: absolute;
@@ -36,7 +34,7 @@
   &::after {
     content: "";
     display: block;
-    width: 75px;
+    width: calc(50% - 33px);
     height: 2px;
     background-color: #00AAEF;
     position: absolute;

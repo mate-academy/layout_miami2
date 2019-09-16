@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
 
-
   &__heading {
     width: 314px;
     height: 180px;
@@ -29,13 +28,15 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    min-width: 412px;
   }
 }
 
-@media screen and (max-width: 699px){
+@media (max-width: 750px){
   .main-info {
     flex-direction: column;
     align-items: center;
+    margin-left: 15px;
   }
 }
 
