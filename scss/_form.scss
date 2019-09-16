@@ -12,3 +12,10 @@
     }
   }
 }
+
+@media screen and (max-width: 790px) {
+  .section__form {
+    transform: scale(0.8);
+    margin-left: 0;
+  }
+}

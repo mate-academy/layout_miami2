@@ -435,10 +435,6 @@ logo {
     margin: auto;
     text-align: center;
   }
-  .section3__form {
-    transform: scale(0.8);
-    margin-left: 0;
-  }
 
   .section4 {
     height: 600px;
@@ -452,7 +448,7 @@ logo {
   }
 
   .section5 {
-    height: 650px;
+    height: 670px;
   }
   .section5__contactus {
     flex-direction: column;
@@ -510,6 +506,12 @@ logo {
   width: 383px;
 }
 
+@media screen and (max-width: 790px) {
+  .section__form {
+    transform: scale(0.8);
+    margin-left: 0;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
 /*# sourceMappingURL=styles.scss.map */
 

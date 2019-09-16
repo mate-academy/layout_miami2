@@ -62,27 +62,28 @@
 
   .section3 {
     height: 650px;
+
     &__consultation {
       flex-direction: column;
       align-items: center;
       margin-bottom: 0;
+
       &__text {
         margin: 20px auto 0;
+
         p {
           text-align: center;
         }
       }
+
       &__heading {
         margin: auto;
         text-align: center;
       }
     }
-
-    &__form {
-      transform: scale(0.8);
-      margin-left: 0;
-    }
   }
+
+
   .section4 {
     height: 600px;
     &__testimotionals {
@@ -95,7 +96,7 @@
   }
 
   .section5 {
-    height: 650px;
+    height: 670px;
     &__contactus {
       flex-direction: column;
       align-items: center;
