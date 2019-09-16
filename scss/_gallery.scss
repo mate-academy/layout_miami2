@@ -50,9 +50,33 @@
     flex-direction: column;
     align-items: center;
     
-    &__img, &__wide_right, &__wide_left {
-      width: calc(100% - 20px);
+    &__img {
+    width: calc(100% - #{$margin-photo});
       margin-bottom: $margin-photo;
+    }
+  
+    &_wide_left {
+      .photos__img {
+        &:first-child {
+          width: calc(100% - #{$margin-photo});
+        }
+      
+        &:last-child {
+          width: calc(100% - #{$margin-photo});
+        }
+      }
+    }
+  
+    &_wide_right {
+      .photos__img {
+        &:first-child {
+          width: calc(100% - #{$margin-photo});
+        }
+      
+        &:last-child {
+          width: calc(100% - #{$margin-photo});
+        }
+      }
     }
   }
 }
