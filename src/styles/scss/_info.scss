@@ -1,0 +1,42 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+
+  &__heading {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: 314px;
+    margin: 0;
+  }
+
+  &__text {
+    max-width: 564px;
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.highlight {
+  color: $main-color;
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .info {
+    flex-direction: column;
+
+    &__heading {
+      margin-bottom: 12px;
+      font-size: 38px;
+      line-height: 50px;
+      width: auto;
+    }
+  }
+}

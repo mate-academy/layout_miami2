@@ -1,0 +1,18 @@
+.input {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #eee;
+  padding: 24px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: #393939;
+  }
+
+  &__textarea {
+    height: 166px;
+  }
+}
