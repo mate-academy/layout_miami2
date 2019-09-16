@@ -499,6 +499,7 @@ p {
   text-transform: uppercase;
   border: none;
   box-sizing: border-box;
+  resize: none;
 }
 .contact__form_textarea::placeholder {
   color: #393939;
@@ -517,7 +518,7 @@ p {
     margin-left: 10%;
   }
   .contact__info > p {
-    width: max-content;
+    width: 256px;
     margin-left: auto;
     margin-right: auto;
     font-size: 24px;

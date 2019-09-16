@@ -68,6 +68,7 @@
       text-transform: uppercase;
       border: none;
       box-sizing: border-box; 
+      resize: none;
 
       &::placeholder {
         color: #393939;
@@ -89,10 +90,11 @@
       margin-left: 10%;
       
       > p {
-        width: max-content;
+        width: 256px;
         margin-left: auto;
         margin-right: auto;
         font-size: 24px;
+
       }
     }
 
