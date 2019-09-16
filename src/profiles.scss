@@ -1,0 +1,48 @@
+.nofocus{
+    color: #696973;
+    font-weight: 400;
+ }
+ 
+ .profiles {
+    display: flex;
+    justify-content: space-around;
+
+     .profile {
+        width: 200px;
+        text-align: center;
+ 
+        &__img {
+            display: block;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: auto;
+        }
+ 
+        &__name {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+        }
+ 
+        &__description {
+            font-size: 16px;
+            line-height: 24px;
+            position: relative;
+
+            &::after {
+                display: block;
+                content: "";
+                position: absolute;
+                bottom: calc(100% + 6px);
+                right: 95%;
+                width: 40px;
+                height: 33px;
+                background-image: url(./files/“.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+    }
+}

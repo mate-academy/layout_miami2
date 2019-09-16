@@ -1,0 +1,26 @@
+$active_color: #D5C5AA;
+$focus_color: #00aaef;
+$transition: 0.5s;
+
+@mixin hover {
+    &:hover {
+        color: $active_color;
+        transition: $transition;
+    }
+}
+
+@mixin line {
+    content: "";
+    position: absolute;
+    display: block;
+    width: calc(50% - 19.5px);
+    height: 2px;
+    background-color: $focus_color;
+    top: calc(100% + 5px);
+}
+
+@mixin linefocus {
+    > .line-focus {
+        color: $focus_color;
+    }
+}

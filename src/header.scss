@@ -1,0 +1,75 @@
+.head {
+    height: 765px;
+    background-image: url(./files/background_img.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.menu {
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+
+    &__top {
+        width: 100%;
+        margin-left: calc(50% - 57px);
+        display: flex;
+    }
+
+    &__top img {
+        margin-right: 82px;
+        width: 115px;
+        height: 76px;
+        margin-top: 35px;
+    }
+
+    &__num, &__call {
+        margin-right: 82px;
+        color: #fff;
+        margin-top: 82px;
+        white-space: nowrap;
+    }
+
+    &__call {
+        text-decoration-style: dashed;
+        display: block;
+        text-transform: uppercase;
+        @include hover;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+        display: flex;
+        position: absolute;
+        bottom: 25px;
+    }
+
+    &__item {
+        color: #fff;
+        margin-left: 45px;
+        padding: 7px 20px;
+        white-space: nowrap;
+        text-transform: uppercase;
+    }
+
+    &__item:first-child {
+        margin-left: 0;
+    }
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        @include hover;
+    }
+
+    &_activ {
+        background: $active_color;
+        border-radius: 10px;
+
+        a {
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+}

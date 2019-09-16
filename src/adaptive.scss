@@ -1,0 +1,49 @@
+@media screen and (max-width: 1000px) {
+    .section {
+        padding: 0 20px;
+    }
+
+    .menu__item {
+        margin: 0;
+    }
+
+    .consultation {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu__list {
+        flex-direction: column;
+    }
+    .menu {
+        &__top {
+            flex-direction: column;
+        }
+        &__logo {
+            margin-bottom: 15px;
+        }
+        &__num, &__call {
+            margin-top: 0;
+         }
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profiles { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
