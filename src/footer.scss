@@ -1,0 +1,16 @@
+.footer {
+    background-image: url(./files/footer-background.jpg);
+    height: 540px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    &-logo {
+        right: calc(50% - 57px);
+        position: absolute;
+        bottom: 95px;
+        width: 115px;
+        height: 76px;
+    }
+}

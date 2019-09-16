@@ -1,0 +1,29 @@
+.textare {
+    width: 380px;
+    resize:none;
+    height: 166px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+
+    &__button {
+        white-space: nowrap;
+    }
+
+    &__input {
+        margin-bottom: 7px;
+    }
+
+    &__titel {
+        margin: 0;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    &__button {
+        padding: 19px 151px;
+    }
+}

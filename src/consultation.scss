@@ -1,0 +1,51 @@
+.input, textarea {
+    width: 380px;
+    height: 54px;
+    background-color: #EEEEEE;
+    text-transform: uppercase;
+    border: none;
+    text-align: center;
+    
+    &::placeholder {
+        color: #393939;
+        font-weight: 500;
+    }
+}
+
+.form {
+    width: 380px;
+    justify-content: center;
+}
+
+.consultation {
+    display: flex;
+    justify-content: space-between;
+
+    &__head {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &__text {
+        white-space: nowrap;
+        width: 480px;
+    }
+
+    &__heading {
+        top: -30px;
+    }
+
+    &__info {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__input {
+        margin-bottom: 7px;
+    }
+
+    &__button {
+        padding: 19px 145px;
+    }
+}
