@@ -1,4 +1,4 @@
-html, body, input, ul, p, li, button, textarea, h1, h2, h3 {
+html, body, input, ul, li, button, textarea, h1, h2, h3 {
   margin: 0;
   padding: 0;
   border: none; }
@@ -6,7 +6,7 @@ html, body, input, ul, p, li, button, textarea, h1, h2, h3 {
 strong {
   font-weight: 500; }
 
-body, p {
+body {
   line-height: 1.5;
   font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
@@ -118,7 +118,8 @@ body, p {
     line-height: 60px;
     text-transform: uppercase;
     width: 314px;
-    margin: 0; }
+    margin: 0;
+    line-height: 1; }
   .info__text {
     max-width: 564px; }
     .info__text > :first-child {
@@ -168,7 +169,8 @@ body, p {
     left: 0;
     right: 0;
     margin: auto;
-    background-image: url("../../im/crown.svg"); }
+    background-image: url("../../im/crown.svg");
+    background-size: cover; }
 
 .photos {
   display: flex;
