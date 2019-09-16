@@ -6,8 +6,9 @@
 }
 
 .person {
-
+  margin: auto;
   text-align: center;
+  max-width: 500px;
 
   &__photo {
     width: 150px;
@@ -28,7 +29,7 @@
 
   &__text {
     position: relative;
-    
+
 
     &::after {
       display: block;
@@ -40,8 +41,7 @@
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      left: 0;
-    /*  right: calc(100% + 6px);*/
+      left: calc(50% - 130px);
       bottom: calc(100% + 6px);
     }
   }

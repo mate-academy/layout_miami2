@@ -6,10 +6,6 @@
   font-weight: 500;
   position: relative;
   line-height: 1;
-
-  &__phone {
-    /*@extend .info__item;*/
-  }
 }
 
 .logo {
@@ -41,7 +37,6 @@
   }
 
   &__item {
-    /*@extend .menu__link;*/
     list-style: none;
     margin: 35px 0;
   }

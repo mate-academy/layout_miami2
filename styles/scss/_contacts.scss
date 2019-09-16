@@ -18,9 +18,10 @@
 
   &__form {
     width: 383px;
-
-    & input__textarea::placeholder {
-      text-transform: uppercase;
-    }
   }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }
