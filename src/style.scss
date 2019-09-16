@@ -1,0 +1,15 @@
+@import "reset";
+@import "variables";
+@import "header-top";
+@import "header-bottom";
+@import "section-info";
+@import "footer";
+
+.header {
+  height: 765px;
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  position: relative;
+}
