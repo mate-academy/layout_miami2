@@ -40,3 +40,9 @@
     background-image: url("../images/crown.png");
   }
 }
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .heading {
+    font-size: 30px;
+  }
+}

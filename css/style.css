@@ -24,6 +24,10 @@ strong {
   font-weight: 500;
 }
 
+input {
+  border: 0;
+}
+
 .logo {
   height: 76px;
   width: 115px;
@@ -192,6 +196,11 @@ strong {
   background-image: url("../images/crown.png");
 }
 
+@media screen and (max-width: 999px) {
+  .heading {
+    font-size: 30px;
+  }
+}
 .info {
   display: flex;
   justify-content: space-between;
@@ -217,6 +226,7 @@ strong {
 @media screen and (max-width: 999px) {
   .info {
     flex-direction: column;
+    font-size: 30px;
   }
   .info__heading {
     margin-bottom: 12px;
@@ -252,6 +262,16 @@ strong {
   width: calc(67% - 10px);
 }
 
+@media screen and (max-width: 499px) {
+  .photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .photos__img {
+    width: calc(100% - 20px);
+  }
+}
 .consultation {
   display: flex;
   justify-content: space-between;
