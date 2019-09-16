@@ -1,31 +1,31 @@
 .photos
-    display: flex
-    justify-content: space-between
+  display: flex
+  justify-content: space-between
 
-    &__img
-        width: calc( 50% - 10px )
-        height: 260px
-        object-fit: cover
+  &__img
+    width: calc( 50% - 10px )
+    height: 260px
+    object-fit: cover
 
-    &_wide_left
-        .photos__img
-            &:first-child
-                width: calc( 67% - 10px )
+  &_wide_left
+    .photos__img
+      &:first-child
+        width: calc( 67% - 10px )
 
-            &:last-child
-                width: calc( 33% - 10px )
+      &:last-child
+        width: calc( 33% - 10px )
 
-    &_wide_right
-        .photos__img
-            &:first-child
-                width: calc( 33% - 10px )
+  &_wide_right
+    .photos__img
+      &:first-child
+        width: calc( 33% - 10px )
 
-            &:last-child
-                width: calc( 67% - 10px )
+      &:last-child
+        width: calc( 67% - 10px )
 
 .gallery
-    &__caption
-        margin: 12px 0 35px
+  &__caption
+    margin: 12px 0 35px
 
-    &__button
-        margin: auto
+  &__button
+    margin: auto
