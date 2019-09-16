@@ -105,4 +105,57 @@ body {
   height: 76px;
 }
 
+.content-box {
+  padding: 100px calc(50% - 470px);
+}
+
+.bottom {
+  height: 540px;
+  background-image: url("../../images/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.bottom__logo {
+  position: absolute;
+  bottom: 95px;
+  left: calc(50% - 57.5px);
+}
+
+.main-info {
+  display: flex;
+  justify-content: space-between;
+}
+.main-info__heading {
+  width: 314px;
+  height: 180px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 60px;
+  margin: 0;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.main-info__link {
+  text-decoration: none;
+  color: #00aaef;
+}
+.main-info__phrase:first-child {
+  margin-top: 0;
+}
+.main-info__text {
+  max-width: 564px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 699px) {
+  .main-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
