@@ -231,6 +231,24 @@ section {
   width: calc(67% - 10px);
 }
 
+@media screen and (max-width: 999px) {
+  .photos {
+    flex-direction: column;
+  }
+  .photos__img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+  }
+  .photos_wide_left .photos__img:first-child, .photos_wide_right .photos__img:first-child {
+    width: 100%;
+  }
+  .photos_wide_left .photos__img:last-child, .photos_wide_right .photos__img:last-child {
+    width: 100%;
+  }
+}
 .gallery__caption {
   margin: 12px 0 35px 0;
 }
