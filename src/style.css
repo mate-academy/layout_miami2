@@ -354,7 +354,8 @@ body {
       display: flex;
       flex-direction: column; }
       .header-top__block_phone, .header-top__block_order {
-        margin-left: 0; }
+        margin-left: 0;
+        margin-bottom: 20px; }
   .header__nav {
     margin-top: 500px; }
     .header__nav__list {
@@ -394,7 +395,8 @@ body {
 
   .consultation__main_first-box {
     text-align: center;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-bottom: 50px; }
 
   .testimonials__main {
     display: flex;
@@ -406,6 +408,8 @@ body {
   .contacts__main {
     display: flex;
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+    .contacts__main-left {
+      margin-bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
