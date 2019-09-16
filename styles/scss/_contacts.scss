@@ -2,6 +2,11 @@
 
   &_textarea {
     height: 166px;
+
+    &::placeholder {
+      color: inherit;
+      text-transform: uppercase;
+    }
   }
 }
 
