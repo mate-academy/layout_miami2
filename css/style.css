@@ -230,6 +230,7 @@ input, textarea {
   .info__heading {
     margin-bottom: 12px;
     font-size: 30px;
+    width: 100%;
   }
 }
 .gallery__caption {
