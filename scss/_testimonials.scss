@@ -1,0 +1,14 @@
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-gap: 70px;
+  justify-content: center;
+  padding-bottom: 69px;
+}
+
+@media screen and (max-width: 900px) {
+  .testimonials {
+    grid-template-columns: repeat(1, 200px);
+    grid-gap: 10px;
+  }
+}

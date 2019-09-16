@@ -1,0 +1,50 @@
+.section {
+  &:nth-child(even) {
+    background-color: #eee;
+  }
+  &__heading {
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 1;
+    text-transform: uppercase;
+    position: relative;
+    width: max-content;
+    margin: auto;
+    top: -0.5em;
+    &_logo {
+      background-image: url(../images/heading-logo.svg);
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 16px;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    &%line {
+      content: "";
+      height: 2px;
+      width: calc(50% - 19.5px);
+      background: $blue-color;
+      position: absolute;
+      top: calc(100% + 4px);
+    }
+    &::before {
+      @extend %line;
+      left: 0;
+    }
+    &::after {
+      @extend %line;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+ .section {
+    &__heading {
+      font-size: 32px;
+    }
+  } 
+}

@@ -1,0 +1,113 @@
+@import 'vars';
+@import 'mixins';
+@import 'reset';
+@import 'header';
+@import 'logo';
+@import 'info';
+@import 'nav';
+@import 'footer';
+@import 'section';
+@import 'gallery';
+@import 'photos';
+@import 'consultation';
+@import 'testimonials';
+@import 'person';
+
+.highlight {
+  color: $blue-color;
+}
+
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 922px;
+  margin: 93px auto 66px auto;
+
+  &__info {
+    > p {
+      width: 276px;
+      font-size: 24px;
+      line-height: 36px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__form {
+    width: 383px;
+
+    > input {
+      @include input_mix;
+
+      &::placeholder {
+        color: #393939;
+      }
+    }
+    
+    > button {
+      @include button_mix;
+
+      &::placeholder {
+        color: #393939;
+      }
+
+      &:hover {
+        background-color: $btn-hover-color;
+      }
+    }
+
+
+    &_textarea {
+      width: 383px;
+      height: 186px;
+      background-color: #eee;
+      text-align: center;
+      font-size: 14px;
+      line-height: 36px;
+      font-weight: 500;
+      text-transform: uppercase;
+      border: none;
+      box-sizing: border-box; 
+      resize: none;
+
+      &::placeholder {
+        color: #393939;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+
+    &__info {
+      width: 80%;
+      margin-right: 10%;
+      margin-left: 10%;
+      
+      > p {
+        width: 256px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 24px;
+
+      }
+    }
+
+    &__form {
+      width: 80%;
+      margin-right: 10%;
+      margin-left: 10%;
+
+      > input, button, textarea {
+        width: 100%;
+      }
+    }
+    
+    
+  }
+}
