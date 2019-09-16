@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body {
+html, body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
@@ -319,11 +319,12 @@ h1, h2, h3, p, button, input, textarea {
 @media screen and (max-width: 999px) {
   .section-about {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
   .section-about__info {
     margin-top: 24px;
+    width: 314px;
   }
 }
 .section-gallery {

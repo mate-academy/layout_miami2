@@ -11,11 +11,12 @@
   
   .section-about {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
     &__info {
       margin-top: 24px;
+      width: 314px;
     }  
   }
 }
