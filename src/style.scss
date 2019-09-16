@@ -66,17 +66,6 @@
   }
 }
 
-//.nav__item {
-//  text-decoration: none;
-//  margin-right: 22.5px;
-//  padding: 7px 20px;
-//  &_active {
-//    color: black;
-//    background: $color-hover;
-//    border-radius: 10px;
-//  }
-//}
-
 .nav__link,
 .header-top_order_link{
   color: #ffffff;
@@ -252,6 +241,24 @@
         color: #393939;
       }
     }
+    &-button {
+        box-sizing: border-box;
+        width: 383px;
+        background-color: $light-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        padding: 11px 40px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 36px;
+        text-align: center;
+        &:hover {
+          background-color: white;
+          color: $light-color;
+          border: 1px solid $light-color;
+        }
+    }
   }
 }
 /* TESTIMONUALS SECTION */
@@ -312,25 +319,6 @@
 .position_card {
   font-style: italic;
   color: #393939;
-}
-
-.button {
-  box-sizing: border-box;
-  width: 383px;
-  background-color: $light-color;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #fff;
-  padding: 11px 140px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 36px;
-  text-align: center;
-  &:hover {
-    background-color: white;
-    color: $light-color;
-    border: 1px solid $light-color;
-  }
 }
 
 /* CONTACTS US */
@@ -404,6 +392,24 @@
         line-height: 36px;
         color: #393939;
       }
+    }
+    &_form-button {
+        box-sizing: border-box;
+        width: 383px;
+        background-color: $light-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        padding: 11px 140px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 36px;
+        text-align: center;
+        &:hover {
+          background-color: white;
+          color: $light-color;
+          border: 1px solid $light-color;
+        }
     }
   }
 }
@@ -511,4 +517,92 @@
         }
       }
     }
+@media (max-width: 699px) {
+  .info {
+    &__header {
+      text-align: center;
+    }
+    &__text {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  .gallery {
+    &__main {
+      &_first-box{
+        display: flex;
+        flex-direction: column;
+      }
+      &_second-box{
+        display: flex;
+        flex-direction: column;
+      }
+      &_third-box{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .consultation {
+    text-align: center;
+    padding: 0 5%;
+    &__title {
+    }
+    &__bottom-underline {
+    }
+    &__main {
+      &_first-box {
+        &_info {
+          width: 100%;
+         display: inline-block;
+        }
+      }
+      &_form {
+        &-input {
+          width: 80%;
+        }
+        &-button {
+          width: 80%;
+          margin: auto;
+          text-align: center;
 
+        }
+      }
+    }
+  }
+  .contacts {
+    &__main {
+      text-align: center;
+
+      &-right {
+         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+      }
+    }
+  }
+  .contacts__main_form-input {
+    width: 80%;
+  }
+  .contacts__main_form-textarea {
+    width: 80%;
+  }
+  .contacts__main_form-button {
+    width: 80%;
+    padding: 0 50px;
+  }
+  label {
+    width: 100%;
+  }
+}
+@media (max-width: 350px) {
+  .consultation__title {
+    font-size: 30px;
+  }
+  .testimonials__title {
+    font-size: 30px;
+  }
+}
