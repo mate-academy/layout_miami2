@@ -5,7 +5,7 @@ body {
 }
 
 strong {
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 .header {
@@ -82,6 +82,9 @@ strong {
 .section {
   padding: 156px calc(50% - 470px);
 }
+.section:nth-child(even) {
+  background-color: #F2F2F2;
+}
 
 .info {
   display: flex;
@@ -106,6 +109,29 @@ strong {
 
 .blue-text {
   color: #00aaef;
+}
+
+.gallery__heading {
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: relative;
+  width: max-content;
+}
+.gallery__heading::before, .gallery__heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  background-color: #00AAEF;
+  bottom: 0;
+  width: 75px;
+}
+.gallery__heading::before {
+  left: 0;
+}
+.gallery__heading::after {
+  right: 0;
 }
 
 .footer {
