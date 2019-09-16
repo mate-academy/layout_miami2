@@ -323,10 +323,100 @@ html, body {
 
   .info__container {
     flex-direction: column;
-    padding-left: 70px;
+    padding: 70px;
   }
   .info__heading {
     margin-bottom: 10px;
+  }
+
+  .consultation__container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px;
+  }
+  .consultation__form {
+    margin-top: 40px;
+  }
+
+  .testimonials__container {
+    padding-left: 100px;
+  }
+
+  .contact-us__container {
+    flex-direction: column;
+    padding: 60px;
+  }
+}
+@media screen and (max-width: 851px) {
+  .testimonials__container {
+    flex-direction: column;
+    align-items: center;
+    padding: 70px;
+  }
+  .testimonials__item {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .info__heading {
+    font-size: 32px;
+    width: 100%;
+  }
+  .info__text {
+    width: 100%;
+  }
+
+  .consultation__container {
+    padding: 70px;
+  }
+  .consultation__text {
+    width: 100%;
+  }
+  .consultation__form {
+    width: 100%;
+  }
+
+  .contact-us__container {
+    padding: 70px;
+  }
+  .contact-us__text {
+    width: 100%;
+  }
+  .contact-us__form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header__container {
+    padding: 35px;
+  }
+
+  .gallery__container {
+    padding: 70px 0;
+  }
+  .gallery__photos {
+    flex-direction: column;
+    height: initial;
+  }
+  .gallery__photos img, .gallery__photos img {
+    height: 260px;
+    width: 100%;
+  }
+  .gallery .wide-right img:first-child {
+    width: 100%;
+  }
+  .gallery .wide-right img:last-child {
+    width: 100%;
+  }
+
+  .consultation__text h3 {
+    width: 100%;
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 50px 20px;
   }
 }
 
