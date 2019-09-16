@@ -78,7 +78,7 @@
   }
 
   .feedback-form {
-    width: 80vw;
+    width: 77vw;
   }
 
   .consultation {
@@ -87,7 +87,7 @@
     &__text {
       display: flex;
       flex-direction: column;
-      width: 80vw;
+      width: 77vw;
       margin: 0 auto;
       margin-bottom: 3vw;
     }
@@ -174,6 +174,10 @@
   .info__alt-button {
     display: block;
     @include inside-centered;
+  }
+
+  .feedback-form {
+    width: 75vw;
   }
 
   .consultation__question {

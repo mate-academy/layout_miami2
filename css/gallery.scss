@@ -1,6 +1,6 @@
 .gallery {
   background-color: $bg-color-second;
-  padding: 8vw 10vw; 
+  padding: 8% 10%; 
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,10 +13,10 @@
 
   &__site-photos {
     display: flex;
-    width: 80vw;
+    width: 77vw;
     justify-content: space-between;
     margin-bottom: 0.5vw;
-    margin-top: 2vw;
+    margin: 2vw auto 0 auto;
   }
 
   &__photos-name {
@@ -24,26 +24,26 @@
   }
 
   &__photo-1 {
-    width: 52vw;
+    width: 50vw;
   }
 
   &__photo-2 {
-    width: 26vw;
+    width: 25vw;
   }
 
   &__photo-3 {
-    width: 39vw;
+    width: 37.5vw;
   }
 
   &__photo-4 {
-    width: 39vw;
+    width: 37.5vw;
   }
 
   &__photo-5 {
-    width: 26vw;
+    width: 25vw;
   }
   
   &__photo-6 {
-    width: 52vw;
+    width: 50vw;
   }
 }
