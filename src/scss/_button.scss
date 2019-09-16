@@ -6,7 +6,8 @@
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color $hover-duration;
-  
+  border: none;
+
   &:hover {
     background-color: #2F80ED;
   }

@@ -143,6 +143,7 @@ strong {
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.2s;
+  border: none;
 }
 .button:hover {
   background-color: #2F80ED;
@@ -215,6 +216,11 @@ strong {
     margin-bottom: 12px;
   }
 }
+@media screen and (max-width: 321px) {
+  .info__heading {
+    width: 250px;
+  }
+}
 .gallery__caption {
   margin: 12px 0 35px 0;
 }
@@ -245,6 +251,27 @@ strong {
   width: calc(67% - 10px);
 }
 
+@media screen and (max-width: 999px) {
+  .photos {
+    flex-direction: column;
+  }
+  .photos__img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .photos_wide_left .photos__img:first-child {
+    width: 100%;
+  }
+  .photos_wide_left .photos__img:last-child {
+    width: 100%;
+  }
+  .photos_wide_right .photos__img:first-child {
+    width: 100%;
+  }
+  .photos_wide_right .photos__img:last-child {
+    width: 100%;
+  }
+}
 .footer {
   height: 540px;
   background-image: url("../images/background-bottom.jpg");
