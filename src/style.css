@@ -282,11 +282,11 @@ img {
 @media screen and (max-width: 768px) {
   .gallery__image--one-third, .gallery__image--two-third, .gallery__image--half {
     height: 200px;
+    width: 49%;
   }
 }
 @media screen and (max-width: 425px) {
   .gallery__image--one-third, .gallery__image--two-third, .gallery__image--half {
-    width: 49%;
     height: 180px;
   }
 }

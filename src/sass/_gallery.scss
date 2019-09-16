@@ -49,6 +49,7 @@
       &--two-third,
       &--half {
         height: 200px;
+        width: 49%;
       }
     }
   }
@@ -62,7 +63,6 @@
       &--one-third,
       &--two-third,
       &--half {
-        width: 49%;
         height: 180px;
       }
     }
