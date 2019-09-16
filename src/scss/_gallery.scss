@@ -52,13 +52,10 @@
       width: 100%;
       margin-bottom: 10px;
     }
+
     &_wide_left, &_wide_right {
       .photos__img {
-        &:first-child {
-          width: 100%;
-        }
-
-        &:last-child {
+        &:first-child, &:last-child {
           width: 100%;
         }
       }

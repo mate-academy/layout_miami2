@@ -259,10 +259,7 @@ strong {
     width: 100%;
     margin-bottom: 10px;
   }
-  .photos_wide_left .photos__img:first-child, .photos_wide_right .photos__img:first-child {
-    width: 100%;
-  }
-  .photos_wide_left .photos__img:last-child, .photos_wide_right .photos__img:last-child {
+  .photos_wide_left .photos__img:first-child, .photos_wide_left .photos__img:last-child, .photos_wide_right .photos__img:first-child, .photos_wide_right .photos__img:last-child {
     width: 100%;
   }
 }
