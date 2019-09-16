@@ -390,7 +390,7 @@ input, textarea {
 }
 .contact__text {
   font-size: 24px;
-  width: 280px;
+  max-width: 280px;
 }
 .contact__form {
   width: 380px;
