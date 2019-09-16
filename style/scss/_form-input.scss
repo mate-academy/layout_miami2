@@ -1,0 +1,46 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+  width: 383px;
+
+  &__item {
+    border: 1px solid #EEEEEE;
+    background-color: #EEEEEE;
+    height: 54px;
+    padding: 0 0 0 156px;
+    margin-bottom: 8px;
+
+    &_textarea {
+      @extend .form-input__item;
+      height: 166.15px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 36px;
+      text-transform: uppercase;
+    }
+
+    &::placeholder {
+      color: #393939;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 36px;
+    }
+  }
+
+  &__button {
+    height: 54px;
+    background-color: #00AAEF;
+    color: #fff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 36px;
+    text-transform: uppercase;
+    border: 1px solid #00AAEF;
+
+    &:hover {
+      background-color: #fff;
+      color: #00AAEF;
+    }
+  }
+}

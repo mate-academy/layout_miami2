@@ -1,0 +1,143 @@
+.header-layout {
+  height: 765px;
+  background-image: url("../../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  position: relative;
+  align-items: stretch;
+
+  &__top {
+    display: flex;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    align-items: start;
+    max-width: 50%;
+    left: calc(50% - #{$logo-width/2});
+    white-space: nowrap;
+  }
+
+  &__logo {
+    margin-right: 82px;
+  }
+
+  @mixin header-layout__top-position {
+    position: relative;
+    top: calc(50% + 10px);
+    padding-bottom: 4px;
+  }
+
+  &__call {
+    @include header-layout__top-position;
+    border-bottom: 1px dashed #fff;
+  }
+
+  &__phone {
+    margin-right: 82px;
+    @include header-layout__top-position;
+  }
+
+  &__link {
+   color: #fff;
+    text-decoration: none;
+  }
+
+  .navigate {
+
+    &__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      padding: 7px 20px;
+      margin-right:65px;
+      text-transform: uppercase;
+      transition: margin-right 0.3s;
+
+      &_active {
+        background-color: #D5C5AA;
+        border-radius: 10px;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: color 0.5s;
+
+      &:hover {
+        color: #D5C5AA;
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .header-layout {
+    .navigate {
+
+      &__list {
+        justify-content: space-around;
+      }
+
+      &__item {
+        margin-right: 30px;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .header-layout {
+    .navigate {
+
+      &__list {
+        justify-content: space-around;
+      }
+
+      &__item {
+        margin-right: 15px;
+
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .header-layout {
+
+    &__call {
+      margin-top: 20px;
+    }
+
+    &__top {
+      flex-direction: column;
+    }
+
+    .navigate {
+
+      &__list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__item {
+        margin: 0;
+
+      }
+    }
+  }
+}
+

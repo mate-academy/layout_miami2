@@ -1,0 +1,13 @@
+.logo {
+  width: $logo-width;
+  height: $logo-height;
+}
+
+.content-box {
+  padding: 100px calc(50% - #{$main-info-width/2});
+  position: relative;
+}
+
+.content-box:nth-child(even) {
+  background-color: #EEEEEE;
+}

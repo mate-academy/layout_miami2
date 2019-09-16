@@ -1,0 +1,44 @@
+.heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 48px;
+  position: absolute;
+  margin: 0;
+
+  .crown::before {
+    content: "";
+    display: block;
+    width: 23px;
+    height: 16px;
+    background-image: url("../../images/crown.svg");
+    background-size: cover;
+    background-position: center;
+    left: calc(50% - 11.5px);
+    bottom: -16px;
+    position: absolute;
+
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: calc(50% - 33px);
+    height: 2px;
+    background-color: #00AAEF;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: calc(50% - 33px);
+    height: 2px;
+    background-color: #00AAEF;
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+  }
+}

@@ -1,0 +1,60 @@
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__face {
+      width: 150px;
+      height: 150px;
+      border-radius: 75px;
+      object-fit: cover;
+      object-position: center;
+      margin-bottom: 12px;
+    }
+
+    &__sign {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__work {
+      margin:0;
+      font-weight: normal;
+      font-style: italic;
+      color: #67676f;
+    }
+
+    &__testimonial {
+      position: relative;
+    }
+
+    &__dot {
+      position: absolute;
+      top: -17px;
+      left: -25px;
+    }
+
+    &__text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      width: 200px;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .testimonials {
+    flex-direction: column;
+  }
+}
