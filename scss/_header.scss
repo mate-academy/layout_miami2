@@ -3,11 +3,13 @@
   height: 100vh;
   padding: 35px 0;
 
-@include mobileL {
-  height: 70vh;
-  padding: 35px 0 10px;
-}
+  @include mobile {
+    padding: 35px 0 10px;
+  }
 
+  @include mobileL {
+    height: 85vh;
+  }
 
   &__top {
     display: flex;

@@ -523,10 +523,14 @@ body {
   height: 100vh;
   padding: 35px 0;
 }
+@media (max-width: 768px) {
+  .header {
+    padding: 35px 0 10px;
+  }
+}
 @media (max-width: 425px) {
   .header {
-    height: 70vh;
-    padding: 35px 0 10px;
+    height: 85vh;
   }
 }
 .header__top {
@@ -602,6 +606,9 @@ body {
   .nav__item {
     padding-bottom: 10px;
   }
+  .nav__item:last-child {
+    padding-bottom: 0;
+  }
 }
 .nav__link {
   text-decoration: none;
@@ -641,7 +648,7 @@ body {
 }
 @media (max-width: 320px) {
   .info {
-    padding: 15px 0;
+    padding: 35px 0;
   }
 }
 .info__title {
@@ -830,7 +837,7 @@ body {
 }
 @media (max-width: 768px) {
   .testemonials {
-    padding: 70px 0;
+    padding: 70px 0 35px;
   }
 }
 .testemonials__block {
@@ -866,7 +873,7 @@ body {
   left: -20px;
   width: 43px;
   height: 43px;
-  background: url(/img/testemonials/quot.png) no-repeat;
+  background: url("../img/testemonials/quot.png") no-repeat;
 }
 @media (max-width: 768px) {
   .testemonials__text:after {
@@ -880,7 +887,7 @@ body {
 }
 @media (max-width: 768px) {
   .contact {
-    padding: 65px 0;
+    padding: 70px 0 35px;
   }
 }
 .contact__info {
