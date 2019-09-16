@@ -2,6 +2,8 @@
 @import "variables";
 @import "header-top";
 @import "header-bottom";
+@import "section-info";
+@import "footer";
 
 .header {
   height: 765px;
@@ -11,4 +13,3 @@
   font-weight: 500;
   position: relative;
 }
-
