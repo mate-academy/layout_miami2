@@ -210,6 +210,11 @@ body {
   position: relative;
   left: calc(50% - 94px);
   margin-top: 44px;
+  border: 1px solid #00AAEF;
+}
+.gallery__botton:hover {
+  background-color: #fff;
+  color: #00AAEF;
 }
 
 @media (max-width: 699px) {

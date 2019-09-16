@@ -56,6 +56,13 @@
     position: relative;
     left: calc(50% - 94px);
     margin-top: 44px;
+    border: 1px solid #00AAEF;
+
+    &:hover {
+      background-color: #fff;
+      color: #00AAEF;
+
+    }
   }
 }
 
