@@ -1,0 +1,50 @@
+.header__nav {
+  position: absolute;
+  bottom: 25px;
+  justify-content: center;
+  @include centered;
+}
+
+.nav {
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    margin: 0 22.5px;
+    padding: 7px 20px;
+
+    &_active {
+      background-color: $light-active-color;
+      border-radius: 10px;
+    }
+  }
+  &__link {
+    color: white;
+    text-decoration: none;
+    transition: color $hover-duration;
+    white-space: nowrap;
+
+    &:hover {
+      color: $light-active-color;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__item {
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
