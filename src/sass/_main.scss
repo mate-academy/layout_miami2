@@ -1,0 +1,20 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $text-color;
+}
+
+%container {
+  min-width: 870px;
+  max-width: $container-max-width;
+  width: $container-lg-width;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: $break-point-lg) {
+  %container {
+    width: $container-md-width;
+    min-width: 0;
+  }
+}

@@ -1,0 +1,12 @@
+.footer {
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: url(images/footer/footer-bg.jpg) no-repeat center;
+  background-size: cover;
+
+  &__logo {
+    margin-bottom: 95px;
+  }
+}

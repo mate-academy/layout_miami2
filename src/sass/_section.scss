@@ -1,0 +1,18 @@
+.section {
+  position: relative;
+  padding: 156px 0;
+  background-color: #fff;
+
+  &__title {
+    position: absolute;
+    top: -0.5em;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  &--darken {
+    padding: 112px 0;
+    background-color: darken($light-color, 10%);
+  }
+};
