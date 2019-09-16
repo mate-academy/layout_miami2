@@ -1,0 +1,18 @@
+.footer {
+  height: $footer-height;
+  background-image: url("../../images/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+
+
+  &__logo {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 8vh;
+    @include logo;
+  }
+}

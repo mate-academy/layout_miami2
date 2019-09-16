@@ -1,0 +1,159 @@
+
+.gallery__photo_1 {grid-area: photo_1}
+.gallery__photo_2 {grid-area: photo_2}
+.gallery__photo_3 {grid-area: photo_3}
+.gallery__photo_4 {grid-area: photo_4}
+.gallery__photo_5 {grid-area: photo_5}
+.gallery__photo_6 {grid-area: photo_6}
+
+.gallery__caption_1 {grid-area: caption_1}
+.gallery__caption_2 {grid-area: caption_2}
+.gallery__caption_3 {grid-area: caption_3}
+
+.section {
+  padding: 156px calc(50% - 470px);
+  position: relative;
+
+  &__content {
+    width: 100%;
+  }
+
+  &:nth-child(even) {
+    background-color: #eeeeee;
+  }
+
+  &__heading {
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: -0.5em;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: stretch;
+    align-items: start;
+    grid-gap: 16px;
+    grid-template-rows: $gallery-height 31px $gallery-height 31px 2 $gallery-height;
+    grid-template-areas:
+            "photo_1    photo_1     photo_1     photo_1     photo_2     photo_2"
+            "caption_1  caption_1   caption_1   caption_1   caption_1   caption_1"
+            "photo_3    photo_3     photo_3     photo_4     photo_4     photo_4"
+            "caption_2  caption_2   caption_2   caption_2   caption_2   caption_2"
+            "photo_5    photo_5     photo_6     photo_6     photo_6     photo_6"
+            "caption_3  caption_3   caption_3   caption_3   caption_3   caption_3";
+  }
+}
+
+.gallery {
+
+  &__photo {
+
+    &_1 {
+      background-image: url("../../images/marina-palms-1.jpg");
+      @include image-gallery;
+    }
+
+    &_2 {
+      background-image: url("../../images/marina-palms-2.jpg");
+      @include image-gallery;
+    }
+
+    &_3 {
+      background-image: url("../../images/edition-residents-1.jpg");
+      @include image-gallery;
+    }
+
+    &_4 {
+      background-image: url("../../images/edition-residents-2.jpg");
+      @include image-gallery;
+    }
+
+    &_5 {
+      background-image: url("../../images/faena-house-1.jpg");
+      @include image-gallery;
+    }
+
+    &_6 {
+      background-image: url("../../images/faena-house-2.jpg");
+      @include image-gallery;
+    }
+  }
+
+  /*&__button {
+    margin: auto;
+  }*/
+}
+
+.caption {
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.highlight {
+  color: #00aaef;
+}
+
+.button {
+
+  display: block;
+  margin: auto;
+
+  &__text {
+    color: white;
+    background-color: #00aaef;
+    padding: 19px 62px;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+      background-color: #2f80ed;
+    }
+  }
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: absolute;
+  width: max-content;
+  white-space: nowrap;
+  display: block;
+
+  &%line {
+    position: absolute;
+    content: "";
+    display: block;
+    top: calc(100% + 5px);
+    width: calc(50% - 19.5px);
+    background-color: #00aaef;
+    height: 2px;
+  }
+
+  &::before {
+    @extend %line;
+    left: 0;
+  }
+
+  &::after {
+    @extend %line;
+    right: 0;
+  }
+
+  &__crown {
+    position: absolute;
+    height: 13px;
+    width: 20px;
+    display: block;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-image: url("../../images/crow.svg");
+  }
+}
