@@ -1,6 +1,12 @@
 $logo-width: 115px;
 $logo-height: 76px;
 $light-active-color: #d5c5aa;
+$basic-line-height: 1.5;
+
+@import "testimonials";
+@import "gallery";
+@import "contact";
+@import "consultation";
 
 html, body {
   margin: 0;
@@ -154,7 +160,12 @@ html, body {
       padding-left: 70px;
     }
     &__heading {
-      margin-bottom: 10px;
+      margin: 5px auto 10px;
+      width: 80%;
     }
+    &__text {
+      width: 80%;
+    }
+
   }
 }
