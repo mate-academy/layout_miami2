@@ -107,6 +107,15 @@ body {
 
 .content-box {
   padding: 100px calc(50% - 470px);
+  position: relative;
+}
+.content-box__heading {
+  left: calc(50% - 97px);
+  top: -26px;
+}
+
+.content-box:nth-child(even) {
+  background-color: #EEEEEE;
 }
 
 .bottom {
@@ -156,6 +165,102 @@ body {
     flex-direction: column;
     align-items: center;
   }
+}
+.gallery .photos {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery .photos__img {
+  width: calc(50% - 15px);
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+}
+.gallery .photos_left .gallery .photos__img:first-child {
+  width: calc(67% - 15px);
+}
+.gallery .photos_left .gallery .photos__img:last-child {
+  width: calc(33% - 15px);
+}
+.gallery .photos_right .gallery .photos__img:first-child {
+  width: calc(33% - 15px);
+}
+.gallery .photos_right .gallery .photos__img:last-child {
+  width: calc(67% - 15px);
+}
+.gallery__description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 12px;
+  margin-bottom: 35px;
+}
+.gallery__link {
+  text-decoration: none;
+  color: #00AAEF;
+}
+.gallery__botton {
+  background-color: #00AAEF;
+  border: none;
+  text-transform: uppercase;
+  width: 188px;
+  height: 52px;
+  color: #fff;
+  padding: 0;
+  position: relative;
+  left: calc(50% - 94px);
+  margin-top: 44px;
+}
+
+@media (max-width: 699px) {
+  .gallery .photos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery .photos__img {
+    margin-top: 10px;
+  }
+}
+.heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 48px;
+  position: absolute;
+  margin: 0;
+  width: 194px;
+}
+.heading .crown::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 16px;
+  background-image: url("../../images/crown.svg");
+  background-size: cover;
+  background-position: center;
+  left: calc(50% - 11.5px);
+  bottom: -16px;
+  position: absolute;
+}
+.heading::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 2px;
+  background-color: #00AAEF;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+.heading::after {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 2px;
+  background-color: #00AAEF;
+  position: absolute;
+  right: 0;
+  bottom: -5px;
 }
 
 /*# sourceMappingURL=style.css.map */
