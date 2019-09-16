@@ -179,6 +179,10 @@ strong {
   transition: 0.5s;
 }
 
+.photos__text {
+  margin: 12px 0 20px 0;
+}
+
 .gallery .block {
   display: flex;
   justify-content: space-between;
@@ -200,11 +204,11 @@ strong {
 .gallery .block_photos_right .block__photos:last-child {
   width: calc(67% - 20px);
 }
-.gallery p {
+.gallery__text {
   font-weight: 500;
-  margin: 12px 0 35px 0;
+  margin: 5px 0 20px 0;
 }
-.gallery p > .line-focus {
+.gallery__text > .line-focus {
   color: #00aaef;
 }
 .gallery__button {
@@ -255,11 +259,11 @@ strong {
   margin-bottom: 7px;
 }
 .consultation__button {
-  padding: 19px 145px;
+  padding: 19px 140px;
 }
 
 .textare {
-  width: 380px;
+  width: 376px;
   resize: none;
   height: 166px;
 }
@@ -281,7 +285,7 @@ strong {
   line-height: 36px;
 }
 .contact__button {
-  padding: 19px 151px;
+  padding: 19px 146.5px;
 }
 
 .nofocus {

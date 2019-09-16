@@ -27,8 +27,6 @@
         right: 0;
         margin: auto;
         background-image: url(./files/photos/logo__text.png);
-
-        // background-color: aqua;
     }
 }
 
@@ -46,6 +44,10 @@
         background-color: #2f80ed;
         transition: $transition;
     }
+}
+
+.photos__text {
+    margin: 12px 0 20px 0;
 }
 
 .gallery {
@@ -77,10 +79,10 @@
         }
     }
 
-    p {
+    &__text {
         @include linefocus;
         font-weight: 500;
-        margin: 12px 0 35px 0;
+        margin: 5px 0 20px 0;
     }
 
     &__button {
