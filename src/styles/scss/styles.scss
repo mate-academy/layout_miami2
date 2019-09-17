@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap');
 $logo-width: 115px;
 $logo-hight: 76px;
 $ligth-active-color: #d5c5aa;
@@ -9,4 +9,5 @@ $image-gap: 10px;
 @import "nav";
 @import "main";
 @import "footer";
+@import "media";
 

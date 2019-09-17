@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap");
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
@@ -7,6 +7,15 @@ body {
 }
 
 strong {
+  font-weight: 500;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  font-size: 14px;
+  line-height: 1;
   font-weight: 500;
 }
 
@@ -100,6 +109,9 @@ strong {
 .section__gallery {
   margin-top: 30px;
 }
+.section__content {
+  width: 100%;
+}
 
 .heading {
   font-size: 48px;
@@ -139,12 +151,10 @@ strong {
 
 .info {
   width: 940px;
-  display: grid;
-  grid-template-areas: "heading text";
-  grid-gap: 62px;
+  display: flex;
+  justify-content: space-between;
 }
 .info__heading {
-  grid-area: heading;
   width: 314px;
   text-transform: uppercase;
   font-size: 48px;
@@ -153,24 +163,15 @@ strong {
   margin: 0;
 }
 .info__text {
-  grid-area: text;
-  grid-template-areas: "p1" "p2" "p3";
-  grid-gap: 24px;
+  width: 564px;
+  font-size: 16px;
+  line-height: 24px;
 }
 .info__text > :first-child {
   margin-top: 0;
 }
 .info__text > :last-child {
   margin-bottom: 0;
-}
-.info__p1 {
-  grid-area: p1;
-}
-.info__p2 {
-  grid-area: p2;
-}
-.info__p3 {
-  grid-area: p3;
 }
 
 .highlight {
@@ -185,6 +186,7 @@ strong {
 }
 
 .button {
+  border: none;
   display: block;
   color: white;
   background-color: #00aaef;
@@ -217,6 +219,104 @@ strong {
 }
 .photos_wide_right .photos__img:last-child {
   width: calc(67% - $image-gap);
+}
+
+.consultation {
+  display: flex;
+  justify-content: space-between;
+}
+.consultation__text {
+  width: 480px;
+}
+.consultation__heading {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0 24px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+.form__item {
+  margin-bottom: 10px;
+}
+.form__input, .form__button {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 24px;
+  text-align: center;
+  color: #393939;
+  background-color: #eee;
+  border: none;
+  box-sizing: border-box;
+  line-height: 1;
+}
+.input::placeholder {
+  color: inherit;
+}
+.input__textarea {
+  height: 166px;
+}
+
+.testimonials {
+  display: grid;
+  grid-gap: 65px;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+}
+
+.person {
+  text-align: center;
+}
+.person__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.person__name {
+  margin-top: 12px;
+  font-weight: 700;
+}
+.person__position {
+  margin: 0;
+  columns: #696973;
+  font-style: italic;
+}
+.person__text {
+  position: relative;
+}
+.person__text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 33px;
+  background-image: url("../../images/cuotes.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: calc(100% - 6px);
+  bottom: calc(100% - 6px);
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__text {
+  font-size: 24px;
+  width: 280px;
 }
 
 .footer {
@@ -252,7 +352,25 @@ strong {
   }
 
   .section {
-    padding: 20px;
+    padding: 40px 20px;
+  }
+
+  .consultation {
+    flex-direction: column;
+  }
+  .consultation__text, .consultation__form {
+    width: 100%;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+  .contact__text, .contact__form {
+    width: 100%;
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(1, 200px);
   }
 }
 

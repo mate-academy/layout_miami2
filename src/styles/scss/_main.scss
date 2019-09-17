@@ -21,6 +21,10 @@
   &__gallery {
     margin-top: 30px;
   }
+
+  &__content {
+    width: 100%
+  }
 }
 
 .heading {
@@ -67,11 +71,10 @@
 
 .info {
   width: 940px;
-  display: grid; 
-  grid-template-areas: "heading text";
-  grid-gap: 62px;
+  display: flex; 
+  justify-content: space-between;
+  
   &__heading {
-    grid-area: heading;
     width: 314px;
     text-transform: uppercase;
     font-size: 48px;
@@ -80,24 +83,15 @@
     margin: 0;
   }
   &__text {
-    grid-area: text;
-    grid-template-areas: "p1""p2""p3";
-    grid-gap: 24px;
+    width: 564px;
+    font-size: 16px;
+    line-height: 24px;
     > :first-child  {
       margin-top: 0;
     }
     > :last-child {
       margin-bottom: 0;
     }
-  }
-  &__p1 {
-    grid-area: p1;
-  }
-  &__p2 {
-    grid-area: p2;
-  }
-  &__p3 {
-    grid-area: p3;
   }
 }
 
@@ -116,6 +110,7 @@
 }
 
 .button {
+  border: none;
   display: block;
   color: white;
   background-color: #00aaef;
@@ -162,5 +157,116 @@
         width: calc(67% - $image-gap)
       }
     }
+  }
+}
+
+.consultation {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    width: 480px;
+  }
+
+  &__heading {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 24px 0;
+  }
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__input, &__button {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+  }
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 24px;
+  text-align: center;
+  color: #393939;
+  background-color: #eee;
+  border: none;
+  box-sizing: border-box;
+  line-height: 1;
+
+  &::placeholder {
+    color: inherit;
+  }
+
+  &__textarea {
+    height: 166px;
+  }
+}
+
+.testimonials {
+  display: grid;
+  grid-gap:  65px;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+}
+
+.person {
+  text-align: center;
+
+  &__photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin-top: 12px;
+    font-weight: 700;
+  }
+
+  &__position {
+    margin: 0;
+    columns: #696973;
+    font-style: italic;
+  }
+
+  &__text {
+    position: relative;
+    
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 40px;
+      height: 33px;
+      background-image: url("../../images/cuotes.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      right: calc(100% - 6px);
+      bottom: calc(100% - 6px);
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    font-size: 24px;
+    width: 280px;
   }
 }
