@@ -36,8 +36,14 @@
 }
 
 @media screen and (max-width: 549px) {
-    .consultation__form {
-        width: 70vw;
+    .consultation {
+        &__form {
+            width: 70vw;
+        }
+
+        &__content {
+            width: 95vw;
+        }
     }
 }
 

@@ -65,3 +65,11 @@
         }
     }
 }
+
+@media screen and (max-width: 549px) {
+    .testimonials {
+        .person:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
