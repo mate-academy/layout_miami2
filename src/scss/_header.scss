@@ -50,11 +50,10 @@
 
   .header{
     &__top {
-      //flex-direction: column;
       left: 0;
       width: 100%;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
       font-size: 11px;
     }
