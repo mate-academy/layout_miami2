@@ -1,0 +1,83 @@
+.header {
+  height: 765px;
+  max-height: 100vh;
+  background-image: url("../images/background-header.jpg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  position: relative;
+  line-height: 1;
+
+  &__nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25px;
+  }
+
+  &__top {
+    position: absolute;
+    display: flex;
+    left: calc(50% - #{$logo-width / 2});
+    top: 35px;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__phone {
+    margin: 0 82px;
+  }
+
+  &__phone, &__action {
+    position: relative;
+    top: $logo-height * 0.62;
+    white-space: nowrap;
+  }
+
+  &__link {
+    color: white;
+    border-bottom: 1px dashed;
+    transition: color $hover-duration;
+    text-decoration: none;
+
+    &:hover {
+      color: $light-active-color;
+    }
+  }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+
+  .header{
+    &__top {
+      left: 0;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 11px;
+    }
+
+    &__phone{
+      margin: 20px 0;
+    }
+
+    &__phone, &__action {
+      top: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .header{
+    &__top {
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &__phone, &__action {
+      display: none;
+    }
+  }
+}
