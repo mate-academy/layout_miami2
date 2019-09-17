@@ -156,11 +156,7 @@
 .bottom-underline_picture {
   height: 16px;
 }
-.picture_1,
-.picture_3,
-.picture_5 {
-  margin-right: 16px;
-}
+
 
 .about_picture {
   margin: 12px 0 35px 0;
@@ -227,8 +223,10 @@
   &_form {
     display: flex;
     flex-direction: column;
+    width: 100%;
+
     &-input {
-      width: 383px;
+      width: 100%;
       height: 54px;
       background-color: #eee;
       margin-bottom: 10px;
@@ -243,7 +241,6 @@
     }
     &-button {
         box-sizing: border-box;
-        width: 383px;
         background-color: $light-color;
         text-transform: uppercase;
         text-decoration: none;
@@ -490,7 +487,11 @@
         flex-direction: column;
         justify-items: center;
         align-items: center;
-
+        &_form {
+          &-input {
+            width: 100%;
+          }
+        }
       }
 
       .consultation__main_first-box {
@@ -519,6 +520,7 @@
     }
 @media (max-width: 699px) {
   .info {
+    padding: 20px;
     &__header {
       text-align: center;
     }
@@ -546,6 +548,9 @@
   .consultation {
     text-align: center;
     padding: 0 5%;
+    &__main {
+
+    }
     &__title {
     }
     &__bottom-underline {
@@ -597,10 +602,39 @@
   }
 }
 @media (max-width: 350px) {
-  .consultation__title {
-    font-size: 30px;
+  .section {
+    .info {
+      padding: 15px;
+      &__header {
+        font-size: 30px;
+      }
+    }
   }
-  .testimonials__title {
-    font-size: 30px;
+  .consultation {
+    &__main {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    &__title {
+      font-size: 30px;
+      margin-top: 50px;
+    }
+    &__bottom-underline {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  .testimonials {
+    &__title {
+      font-size: 30px;
+      margin-top: 50px;
+    }
+    &__bottom-underline {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+  .contacts {
+    padding-top: 50px;
   }
 }
