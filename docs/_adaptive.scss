@@ -8,7 +8,12 @@
         margin: 0 8%;
                 }
 
+    .testimonials {
+        grid-template-columns: repeat(2, 200px);
+    }
+
 @media screen and (max-width:860px) {
+
     .nav__menu {
 flex-direction: column;
     }
@@ -42,8 +47,33 @@ flex-direction: column;
             margin-top: 20px;
         }
     }
-    .gallery__photo {
+    .gallery__photo, .gallery__text {
         padding-top: 30px;
+        margin-left: 20px;
       }
+
+  .consultation {
+    flex-direction: column;
+
+    &__info, &__form {
+    margin-left: 20px;
+  }
+}
+
+    .section + .section {
+        padding: 60px 0;
+    }
+
+    .testimonials {
+        grid-template-columns: repeat(1, 200px);
+    }
+
+    .contact {
+        flex-direction: column;
+
+        &__info, &__form {
+            margin-left: 20px;
+        }
+    }
   }
 }

@@ -114,6 +114,10 @@ strong {
   text-decoration: none;
 }
 
+.gallery__button {
+  width: 188px;
+  height: 52px;
+}
 .gallery__photo {
   display: flex;
   justify-content: space-between;
@@ -151,9 +155,6 @@ strong {
   background-color: #00AAEF;
   cursor: pointer;
   transition-duration: 0.2s;
-  height: 52px;
-  width: 188px;
-  margin: 44px auto 0 auto;
   border: none;
 }
 .button:hover {
@@ -185,6 +186,121 @@ strong {
   right: 0;
 }
 
+.consultation {
+  display: flex;
+  justify-content: space-between;
+}
+.consultation__text {
+  width: 480px;
+}
+.consultation__miniheading {
+  width: 351px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: normal;
+  margin-bottom: 24px;
+}
+.consultation__form {
+  width: 380px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form__input {
+  height: 53px;
+}
+.form__button {
+  margin: 8px 0;
+  height: 52px;
+  width: 188px;
+}
+.form__input, .form__button {
+  width: 380px;
+}
+
+.input {
+  font-size: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  width: 379px;
+  margin-top: 8px;
+  background-color: #eeeeee;
+  border: none;
+}
+.input__textarea {
+  height: 166px;
+  box-sizing: border-box;
+}
+.input::placeholder {
+  color: black;
+  text-transform: uppercase;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+  grid-gap: 100px;
+}
+
+.person {
+  text-align: center;
+}
+.person__foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.person__name {
+  margin-top: 12px;
+  font-weight: 700;
+}
+.person__position {
+  margin: 0;
+  color: #696973;
+  font-style: italic;
+}
+.person__about {
+  position: relative;
+}
+.person__about::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 33px;
+  background-image: url("./img/quotes.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: calc(100% + 5px);
+  bottom: calc(100% + 5px);
+}
+.person .section__testimonials {
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.contact__text {
+  font-size: 24px;
+  width: 280px;
+}
+.contact__input {
+  width: 380px;
+}
+.contact__button {
+  width: 380px;
+  height: 54px;
+  margin: 8px 0;
+}
+
 .footer {
   position: relative;
   height: 540px;
@@ -208,6 +324,10 @@ strong {
   .header__phone {
     padding: 0 0;
     margin: 0 8%;
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(2, 200px);
   }
 }
 @media screen and (max-width: 1024px) and (max-width: 860px) {
@@ -240,8 +360,31 @@ strong {
     margin-top: 20px;
   }
 
-  .gallery__photo {
+  .gallery__photo, .gallery__text {
     padding-top: 30px;
+    margin-left: 20px;
+  }
+
+  .consultation {
+    flex-direction: column;
+  }
+  .consultation__info, .consultation__form {
+    margin-left: 20px;
+  }
+
+  .section + .section {
+    padding: 60px 0;
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(1, 200px);
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+  .contact__info, .contact__form {
+    margin-left: 20px;
   }
 }
 
