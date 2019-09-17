@@ -360,7 +360,7 @@ strong {
     margin-top: 20px;
   }
 
-  .gallery__photo, .gallery__text {
+  .gallery__photo, .gallery__text, .gallery__button {
     padding-top: 30px;
     margin-left: 20px;
   }
