@@ -199,7 +199,7 @@ input, textarea {
 @media screen and (max-width: 999px) {
   .heading {
     font-size: 30px;
-    line-hight: 28px;
+    line-height: 28px;
   }
 }
 .info {
