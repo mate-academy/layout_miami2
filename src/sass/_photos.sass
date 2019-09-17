@@ -1,0 +1,60 @@
+.photos
+  display: flex
+  justify-content: space-between
+
+  &__img
+    width: calc( 50% - 10px )
+    height: 260px
+    object-fit: cover
+
+  &_wide_left
+    .photos__img
+      &:first-child
+        width: calc( 67% - 10px )
+
+      &:last-child
+        width: calc( 33% - 10px )
+
+  &_wide_right
+    .photos__img
+      &:first-child
+        width: calc( 33% - 10px )
+
+      &:last-child
+        width: calc( 67% - 10px )
+
+.gallery
+  &__caption
+    margin: 12px 0 35px
+
+  &__button
+    margin: auto
+
+@media screen and (max-width: 599px)
+  .photos
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .photos
+    &__img
+      width: calc( 100% - 20px )
+
+    &_wide_left
+      .photos__img
+        &:first-child
+          width: calc( 100% - 20px )
+
+        &:last-child
+          width: calc( 100% - 20px )
+
+    &_wide_right
+      .photos__img
+        &:first-child
+          width: calc( 100% - 20px )
+
+        &:last-child
+          width: calc( 100% - 20px )
+
+  .gallery
+    margin-top: 20px

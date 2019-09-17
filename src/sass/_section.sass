@@ -1,0 +1,22 @@
+.section
+  padding: 100px calc(50% - 470px)
+  position: relative
+  box-sizing: border-box
+
+  &:nth-child(even)
+    background-color: #eeeeee
+
+  &__heading
+    left: 0
+    right: 0
+    margin: auto
+    top: calc(-0.5em - 2px)
+
+@media screen and (max-width: 999px)
+  .section
+    padding: 40px
+
+    &_heading
+      margin: 20px auto
+
+

@@ -1,0 +1,23 @@
+.Consultation
+  display: flex
+  justify-content: space-between
+
+  &__form
+    width: 380px
+
+  &__text
+    width: 480px
+
+  &__heading
+    font-size: 32px
+    line-height: 40px
+    margin: 0 0 24px 0
+
+@media screen and (max-width: 999px)
+  .Consultation
+    flex-direction: column
+    margin-top: 20px
+
+    &__text, &__form
+      width: 100%
+      box-sizing: border-box

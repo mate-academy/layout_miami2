@@ -1,0 +1,46 @@
+.person
+  text-align: center
+
+  &__photo
+    width: 150px
+    height: 150px
+    border-radius: 50%
+
+  &__name
+    margin-top: 12px
+    font-weight: 700
+
+  &__position
+    margin: 0
+    color: #696973
+    font-style: italic
+
+  &__text
+    position: relative
+    margin-top: 16px
+
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      width: 35px
+      height: 29px
+      background-image: url('../../im/quotes.jpg')
+      background-size: contain
+      background-repeat: none
+      background-position: center
+      right: calc( 100% - 10px )
+      bottom: calc( 100% + 6px )
+
+.testimonials
+  display: grid
+  grid-gap: 65px
+  grid-template-columns: repeat(3, 200px)
+  justify-content: center
+
+@media screen and (max-width: 999px)
+  .testimonials
+    grid-template-columns: repeat(1, 200px)
+    margin-top: 20px
+
+

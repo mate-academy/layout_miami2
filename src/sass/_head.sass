@@ -1,0 +1,128 @@
+.header
+  height: 756px
+  background-image: url("../../im/header.jpg")
+  background-size: cover
+  background-position: center
+  font-weight: 500
+  position: relative
+  line-height: 1
+
+  &__nav
+    position: absolute
+    bottom: 25px
+    left: 0
+    right: 0
+
+  &__top
+    position: absolute
+    display: flex
+    left: calc(50% - #{$logo-width / 2})
+    top: 35px
+    text-transform: uppercase
+    color: #fff
+
+  &__phone
+    margin: 0 82px
+
+  &__phone, &__action
+    top: $logo-height * 0.62
+    position: relative
+    white-space: nowrap
+
+  &__link
+    color: #fff
+    border-bottom: 1px dashed
+    text-decoration: none
+    transition: color $hover-deration
+
+    &:hover
+      color: $light-act-color
+
+.heading
+  font-size: 48px
+  font-weight: 300
+  text-transform: uppercase
+  position: absolute
+  display: block
+  width: max-content
+  line-height: 1
+  white-space: nowrap
+
+  &%line
+    content: ''
+    display: block
+    position: absolute
+    height: 2px
+    width: calc( 50% - 19.5px )
+    background-color: #00aaef
+    top: calc( 100% + 5px )
+
+  &::after
+    @extend %line
+    right: 0
+
+  &::before
+    @extend %line
+    left: 0
+
+  &__crown
+    position: absolute
+    display: block
+    width: 20px
+    height: 13px
+    top: calc( 100% + 4px )
+    left: 0
+    right: 0
+    margin: auto
+    background-image: url('../../im/crown.svg')
+    background-size: cover
+
+.nav
+  text-transform: uppercase
+  cursor: pointer
+
+  &__list
+    margin: 0
+    list-style: none
+    display: flex
+    padding: 0
+    justify-content: center
+
+  &__item
+    margin: 0 22.5px
+    padding: 7px 20px
+    white-space: nowrap
+
+    &_active
+      background-color: $light-act-color
+      border-radius: 10px
+
+  &__link
+    color: white
+    text-decoration: none
+    transition: color $hover-deration
+
+    &:hover
+      color: $light-act-color
+
+.phone
+  color: #ffffff
+
+@media screen and (max-width: 999px)
+  .header
+    &__phone, &__action
+      top: 0
+
+    &__top
+      flex-direction: column
+
+    &__phone
+      margin: 20px 0
+
+    .nav__list
+        flex-direction: column
+        align-items: center
+
+  .heading
+    font-size: 38px
+    margin: 20px 0

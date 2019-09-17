@@ -1,0 +1,43 @@
+.info
+  display: flex
+  justify-content: space-between
+  box-sizing: border-box
+
+  &__heading
+    font-weight: lighter
+    font-size: 48px
+    line-height: 60px
+    text-transform: uppercase
+    width: 314px
+    margin: 0
+    line-height: 1
+
+  &__text
+    max-width: 564px
+
+    > :first-child
+      margin-top: 0
+
+    > :last-child
+      margin-bottom: 0
+
+.link
+  color: #00AAEF
+  text-decoration: none
+
+  &:hover
+    color: #00AAEF
+
+  &:visited
+    color: #00AAEF
+
+@media screen and (max-width: 999px)
+  .info
+    flex-direction: column
+
+    &__heading
+      margin-bottom: 12px
+      font-size: 36px
+      width: 100%
+
+
