@@ -41,12 +41,14 @@
     &__top, &__average, &__bottom {
       flex-direction: column;
       align-items: center;
-      align-content: center;
-      justify-content: center;
     }
 
     &__description {
       margin-bottom: 12px;
+    }
+
+    &__big-photo, &__middle-photo, &__small-photo {
+      width: 100%;
     }
   }
 }

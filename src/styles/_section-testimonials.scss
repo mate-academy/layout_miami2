@@ -14,4 +14,8 @@
   .testimonials {
     flex-direction: column;
   }
+
+  .testimonials__block:nth-child(2) {
+    margin: 30px 30px;
+  }
 }

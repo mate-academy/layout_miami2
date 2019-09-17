@@ -34,11 +34,14 @@
       font-weight: 400;
 
       &::before {
-        content: "،،";
-        font-size: 92px;
+        content: "";
+        background-image: url(../../images/quotes.png);
+        // font-size: 92px;
         position: absolute;
         left: -40px;
         top: 135px;
+        width: 43px;
+        hi
       }
     }
   }
