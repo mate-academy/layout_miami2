@@ -159,7 +159,7 @@ h3 {
   justify-content: space-between;
 }
 .info__heading {
-  max-width: 314px;
+  width: 314px;
   text-transform: uppercase;
   font-size: 48px;
   line-height: 60px;
@@ -167,7 +167,7 @@ h3 {
   margin: 0;
 }
 .info__text {
-  max-width: 564px;
+  width: 564px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -360,6 +360,14 @@ h3 {
     padding: 40px 20px;
   }
 
+  .info {
+    flex-direction: column;
+  }
+  .info__heading, .info__text {
+    width: 100%;
+    padding: 10px 0;
+  }
+
   .consultation {
     flex-direction: column;
   }
@@ -384,6 +392,17 @@ h3 {
 
   .photos .photos__img:first-child {
     margin-right: 5px;
+  }
+}
+@media screen and (max-width: 649px) {
+  .photos {
+    flex-direction: column;
+  }
+  .photos__img {
+    width: 100%;
+  }
+  .photos .photos__img:first-child {
+    margin-bottom: 5px;
   }
 }
 

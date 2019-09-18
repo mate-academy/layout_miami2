@@ -20,6 +20,15 @@
     padding: 40px 20px;
   }
 
+  .info {
+    flex-direction: column;
+
+    &__heading, &__text {
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+
   .consultation {
     flex-direction: column;
 
@@ -51,4 +60,23 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 649px) {
+  .photos {
+    flex-direction: column;
+
+    &__img {
+      width: 100%;
+    }
+
+    .photos__img {
+      &:first-child{
+        margin-bottom: 5px;
+      }
+    }
+
+  }
+
+  
 }
