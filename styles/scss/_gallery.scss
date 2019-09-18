@@ -44,41 +44,9 @@
             "photo_5    photo_5     photo_6     photo_6     photo_6     photo_6"
             "caption_3  caption_3   caption_3   caption_3   caption_3   caption_3";
   }
-}
 
-.gallery {
-
-  &__photo {
-
-    &_1 {
-      background-image: url("../../images/marina-palms-1.jpg");
-      @include image-gallery;
-    }
-
-    &_2 {
-      background-image: url("../../images/marina-palms-2.jpg");
-      @include image-gallery;
-    }
-
-    &_3 {
-      background-image: url("../../images/edition-residents-1.jpg");
-      @include image-gallery;
-    }
-
-    &_4 {
-      background-image: url("../../images/edition-residents-2.jpg");
-      @include image-gallery;
-    }
-
-    &_5 {
-      background-image: url("../../images/faena-house-1.jpg");
-      @include image-gallery;
-    }
-
-    &_6 {
-      background-image: url("../../images/faena-house-2.jpg");
-      @include image-gallery;
-    }
+  > img {
+    @include image-gallery;
   }
 }
 

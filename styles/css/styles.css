@@ -184,39 +184,38 @@ strong {
   grid-template-rows: 263px 31px 263px 31px 2 263px;
   grid-template-areas: "photo_1    photo_1     photo_1     photo_1     photo_2     photo_2" "caption_1  caption_1   caption_1   caption_1   caption_1   caption_1" "photo_3    photo_3     photo_3     photo_4     photo_4     photo_4" "caption_2  caption_2   caption_2   caption_2   caption_2   caption_2" "photo_5    photo_5     photo_6     photo_6     photo_6     photo_6" "caption_3  caption_3   caption_3   caption_3   caption_3   caption_3";
 }
-
 .gallery__photo_1 {
-  background-image: url("../../images/marina-palms-1.jpg");
+  /*background-image: url("../../images/marina-palms-1.jpg");*/
   object-fit: cover;
   background-position: center;
   height: 263px;
 }
 .gallery__photo_2 {
-  background-image: url("../../images/marina-palms-2.jpg");
+  /*background-image: url("../../images/marina-palms-2.jpg");*/
   object-fit: cover;
   background-position: center;
   height: 263px;
 }
 .gallery__photo_3 {
-  background-image: url("../../images/edition-residents-1.jpg");
+  /*background-image: url("../../images/edition-residents-1.jpg");*/
   object-fit: cover;
   background-position: center;
   height: 263px;
 }
 .gallery__photo_4 {
-  background-image: url("../../images/edition-residents-2.jpg");
+  /*background-image: url("../../images/edition-residents-2.jpg");*/
   object-fit: cover;
   background-position: center;
   height: 263px;
 }
 .gallery__photo_5 {
-  background-image: url("../../images/faena-house-1.jpg");
+  /* background-image: url("../../images/faena-house-1.jpg");*/
   object-fit: cover;
   background-position: center;
   height: 263px;
 }
 .gallery__photo_6 {
-  background-image: url("../../images/faena-house-2.jpg");
+  /*background-image: url("../../images/faena-house-2.jpg");*/
   object-fit: cover;
   background-position: center;
   height: 263px;
@@ -377,6 +376,10 @@ strong {
 .input_textarea {
   height: 166px;
 }
+.input_textarea::placeholder {
+  color: inherit;
+  text-transform: uppercase;
+}
 
 .contact {
   display: flex;
@@ -485,13 +488,16 @@ strong {
   .testimonials {
     grid-template-columns: repeat(1, 100%);
     grid-gap: 20px;
-    /*align-items: center;*/
   }
 
   .contact {
     flex-direction: column;
     padding: 0 20px;
     align-items: center;
+  }
+
+  .person {
+    margin: auto;
   }
 }
 
