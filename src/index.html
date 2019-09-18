@@ -14,12 +14,14 @@
 
 <body>
   <header class="header">
-    <div class="logo header__logo">
-      <img src="images/logo.png" alt="Logo" class="logo__img">
-    </div>
-    <div class="phone-number header__phone-number">
-      <span>+1 234 555-55-55</span>
-      <a href="#" class="phone-number__link">call to order</a>
+    <div class="header__logo">
+      <div class="logo ">
+        <img src="images/logo.png" alt="Logo" class="logo__img">
+      </div>
+      <div class="phone-number header__phone-number">
+        <span class="phone-number__item">+1 234 555-55-55</span>
+        <a href="#" class="phone-number__item phone-number__link">call to order</a>
+      </div>
     </div>
     <nav class="light-menu header__light-menu">
       <ul class="light-menu__list">
@@ -168,7 +170,7 @@
             n.<br>suite 700<br>Minneapolis, MN 55401</p>
         </div>
         <form action="#" class="form">
-          <div class=""><input type="text" placeholder="name" class="form__item input"></div>
+          <div><input type="text" placeholder="name" class="form__item input"></div>
           <div><input type="email" placeholder="email" class="form__item input"></div>
           <div><textarea name="message" placeholder="message" cols="30" class="form__textarea"></textarea></div>
           <div><button class="form__button">Write to us</button></div>

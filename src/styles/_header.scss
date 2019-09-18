@@ -10,18 +10,12 @@
 
   &__logo {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: calc(50% - 58px);
     top: 35px;
     display: flex;
-    justify-content: center;
+    align-items: flex-end;
   }
 
-  &__phone-number {
-    position: absolute;
-    left: calc(50% + 139px);    
-    top: 82px;
-  }
 
   &__light-menu {
     position: absolute;
@@ -33,7 +27,8 @@
 
 @media screen and (max-width: $max-width) {
 
-  .header__phone-namber {
-    left: calc(50% + 80px);    
+  .header__logo {
+    flex-direction: column;
+    align-items: center;
   }
 }

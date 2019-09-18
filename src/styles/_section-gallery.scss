@@ -16,4 +16,13 @@
     margin-top: 9px;
   }   
 }
+
+@media screen and (max-width: $max-width) {
+  
+  .section-gallery {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}
   

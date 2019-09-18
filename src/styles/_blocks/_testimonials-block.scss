@@ -35,13 +35,14 @@
 
       &::before {
         content: "";
-        background-image: url(../../images/quotes.png);
-        // font-size: 92px;
+        background-image: url(./../images/quotes.png);
+        background-repeat: no-repeat;
+        background-position: center;
         position: absolute;
-        left: -40px;
-        top: 135px;
+        left: -30px;
+        bottom: 160px;
         width: 43px;
-        hi
+        height: 43px;
       }
     }
   }

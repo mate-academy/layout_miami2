@@ -1,11 +1,15 @@
 .phone-number {
     display: flex;
-    white-space: nowrap;
+    margin-bottom: 10px;
+
+    &__item {
+      margin-left: 82px;
+    }
   
     &__link {
-      margin-left: 82px;
       color: $link-color;
       border-bottom: dashed 1px;
+      padding-bottom: 4px;
       text-decoration: none;
   
       &:hover {
@@ -20,9 +24,10 @@
   .phone-number {
     flex-direction: column;
 
-    &__link {
+    &__item {
       margin-left: 0;
     }
+
   }
 }
   
