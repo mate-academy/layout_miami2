@@ -1,0 +1,82 @@
+.header {  // main block of site (header/first block) 
+  position: relative;
+  height: 765px; 
+  max-height: 100vh; 
+  background-image: url('../images/header-background.jpg');
+  background-size: cover;
+  background-position: center; 
+  color: $header-text-color; 
+  line-height: 1;
+
+  &__contact { //main block for logo and phone number in header 
+    position: absolute; 
+    top: 35px;
+    display: flex;
+    left: calc(50% - (#{$logo-width} / 2));
+    text-transform: uppercase;
+  }
+
+  &__number { //Phone number in header 
+    margin: 0 82px;
+  }
+
+  &__number , &__call {  //position for number and link to call relatively main logo
+    position: relative;
+    top: $logo-height * 0.6;
+    white-space: nowrap;
+  }
+
+  &__link { //call to order after number in header 
+    text-decoration: none; 
+    border-bottom: 1px dashed; 
+    padding-bottom: 2px;
+    transition: color $hover-time;
+    color: $header-text-color;
+
+    &:hover {  
+      color: $hover-color;
+    }
+  }
+}
+
+@media screen and (max-width: 1099px) {  
+  .header {
+    &__contact {
+      right: 5px;
+      justify-content: space-evenly;
+    }
+
+    &__number {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .header {
+    &__contact {
+      left: 0; 
+      right: 0; 
+      justify-content: space-around;
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .header {
+    &__contact {
+      left: calc(50% - (#{$logo-width} / 2));
+      right: auto;
+      flex-direction: column;
+    }
+
+    &__logo {
+      height: $logo-height;
+      width: $logo-width;
+    }
+
+    &__number {
+      margin: 10px 0;
+    }
+  }  
+}

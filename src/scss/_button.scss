@@ -1,0 +1,13 @@
+.button {
+  display: block;
+  background-color: #00AAEF;
+  padding: 19px 62px; 
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #2F80ED;
+  }
+}
