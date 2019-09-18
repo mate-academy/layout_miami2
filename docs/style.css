@@ -114,7 +114,12 @@ strong {
   text-decoration: none;
 }
 
+.gallery__heading {
+  left: calc(50% - 97px);
+}
 .gallery__button {
+  display: block;
+  margin: auto;
   width: 188px;
   height: 52px;
 }
@@ -148,13 +153,12 @@ strong {
 }
 
 .button {
-  display: block;
   font-size: 14px;
   text-transform: uppercase;
   color: white;
   background-color: #00AAEF;
   cursor: pointer;
-  transition-duration: 0.2s;
+  transition-duration: color 0.2s;
   border: none;
 }
 .button:hover {
@@ -167,7 +171,6 @@ strong {
   text-transform: uppercase;
   position: absolute;
   width: max-content;
-  left: calc(50% - 97px);
   top: -77px;
 }
 .heading::before, .heading::after {
@@ -189,6 +192,9 @@ strong {
 .consultation {
   display: flex;
   justify-content: space-between;
+}
+.consultation__heading {
+  left: calc(50% - 170px);
 }
 .consultation__text {
   width: 480px;
@@ -214,7 +220,6 @@ strong {
 .form__button {
   margin: 8px 0;
   height: 52px;
-  width: 188px;
 }
 .form__input, .form__button {
   width: 380px;
@@ -245,6 +250,9 @@ strong {
   grid-template-columns: repeat(3, 200px);
   justify-content: center;
   grid-gap: 100px;
+}
+.testimonials__heading {
+  left: calc(50% - 162px);
 }
 
 .person {
@@ -288,6 +296,9 @@ strong {
   display: flex;
   justify-content: space-between;
 }
+.contact__heading {
+  left: calc(50% - 141px);
+}
 .contact__text {
   font-size: 24px;
   width: 280px;
@@ -330,7 +341,7 @@ strong {
     grid-template-columns: repeat(2, 200px);
   }
 }
-@media screen and (max-width: 1024px) and (max-width: 860px) {
+@media screen and (max-width: 860px) {
   .nav__menu {
     flex-direction: column;
   }
@@ -341,6 +352,9 @@ strong {
     padding: 5px 10px;
   }
 
+  .header {
+    height: 75vh;
+  }
   .header__top {
     flex-direction: column;
   }
@@ -360,15 +374,19 @@ strong {
     margin-top: 20px;
   }
 
-  .gallery__photo, .gallery__text, .gallery__button {
-    padding-top: 30px;
+  .gallery__photo, .gallery__text {
+    margin-top: 30px;
     margin-left: 20px;
   }
 
   .consultation {
     flex-direction: column;
   }
-  .consultation__info, .consultation__form {
+  .consultation__form {
+    display: block;
+    margin: auto;
+  }
+  .consultation__info {
     margin-left: 20px;
   }
 
@@ -383,8 +401,25 @@ strong {
   .contact {
     flex-direction: column;
   }
-  .contact__info, .contact__form {
+  .contact__form {
+    margin: auto;
+  }
+  .contact__info {
     margin-left: 20px;
+  }
+
+  .gallery__photo {
+    flex-direction: column;
+  }
+  .gallery_img {
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  .gallery_img.wide {
+    width: 100%;
+  }
+  .gallery_img.narrow {
+    width: 100%;
   }
 }
 

@@ -12,6 +12,7 @@
     .testimonials {
         grid-template-columns: repeat(2, 200px);
     }
+}
 
 @media screen and (max-width:860px) {
 
@@ -26,6 +27,8 @@ flex-direction: column;
             }
 
     .header {
+
+        height: 75vh;
         
         &__top {
         flex-direction: column;
@@ -48,15 +51,20 @@ flex-direction: column;
             margin-top: 20px;
         }
     }
-    .gallery__photo, .gallery__text, .gallery__button {
-        padding-top: 30px;
+    .gallery__photo, .gallery__text {
+        margin-top: 30px;
         margin-left: 20px;
       }
 
   .consultation {
     flex-direction: column;
 
-    &__info, &__form {
+    &__form {
+        display: block;
+        margin: auto;
+    }
+
+    &__info {
     margin-left: 20px;
   }
 }
@@ -68,13 +76,36 @@ flex-direction: column;
     .testimonials {
         grid-template-columns: repeat(1, 200px);
     }
-
+    
     .contact {
         flex-direction: column;
 
-        &__info, &__form {
+        &__form {
+            margin: auto;
+        }
+
+        &__info {
             margin-left: 20px;
         }
+    }
+
+    .gallery {
+    
+        &__photo {
+            flex-direction: column;
+        }
+    
+        &_img {
+            width: calc(100% - 20px);
+            padding: 10px;
+
+            &.wide {
+                width: 100%;
+            } 
+    
+            &.narrow {
+                width: 100%;
+        } 
     }
   }
 }
