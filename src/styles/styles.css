@@ -435,7 +435,7 @@ h1, h2, h3, p, button, input, textarea {
 }
 .section-contact-us {
   padding: 153px 160px 145px;
-  justify-content: space-around;
+  justify-content: space-evenly;
   position: relative;
 }
 .section-contact-us__heading-block {
@@ -447,10 +447,10 @@ h1, h2, h3, p, button, input, textarea {
   justify-content: space-evenly;
   width: 100%;
 }
-.section-contact-us__block__info {
+.section-contact-us__block_info {
   margin-right: 268px;
 }
-.section-contact-us__block__info_text {
+.section-contact-us__block_info_text {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
@@ -460,6 +460,9 @@ h1, h2, h3, p, button, input, textarea {
   .section-contact-us__block {
     flex-direction: column;
     align-items: center;
+  }
+  .section-contact-us__block_info {
+    margin-right: 0;
   }
 }
 .footer {
