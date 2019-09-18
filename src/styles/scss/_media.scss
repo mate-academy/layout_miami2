@@ -39,4 +39,16 @@
   .testimonials {
     grid-template-columns: repeat(1, 200px);
   }
+
+  .photos__img {
+    width: calc(50%);
+  }
+
+  .photos {
+    .photos__img {
+      &:first-child{
+        margin-right: 5px;
+      }
+    }
+  }
 }

@@ -19,6 +19,10 @@ button {
   font-weight: 500;
 }
 
+h3 {
+  margin: 0;
+}
+
 .header {
   line-height: 1;
   height: 765px;
@@ -150,12 +154,12 @@ button {
 }
 
 .info {
-  width: 940px;
+  max-width: 940px;
   display: flex;
   justify-content: space-between;
 }
 .info__heading {
-  width: 314px;
+  max-width: 314px;
   text-transform: uppercase;
   font-size: 48px;
   line-height: 60px;
@@ -163,7 +167,7 @@ button {
   margin: 0;
 }
 .info__text {
-  width: 564px;
+  max-width: 564px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -231,7 +235,8 @@ button {
 .consultation__heading {
   font-size: 32px;
   line-height: 40px;
-  margin: 0 24px 0;
+  width: 351px;
+  font-weight: 300;
 }
 
 .form {
@@ -371,6 +376,14 @@ button {
 
   .testimonials {
     grid-template-columns: repeat(1, 200px);
+  }
+
+  .photos__img {
+    width: calc(50%);
+  }
+
+  .photos .photos__img:first-child {
+    margin-right: 5px;
   }
 }
 
