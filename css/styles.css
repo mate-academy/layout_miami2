@@ -1,0 +1,697 @@
+body {
+  margin: 0;
+  font-size: normal;
+  text-decoration: none;
+  font-family: Ubuntu;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-decoration: none;
+  font-size: normal;
+}
+
+li {
+  list-style: none;
+}
+
+.callback {
+  position: fixed;
+  top: 2vw;
+  right: 2vw;
+  border: none;
+  max-width: 75px;
+  max-height: 75px;
+  padding: 0;
+  background: url(../img/ellipse-phone.png) no-repeat center;
+  background-size: 75px;
+  z-index: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.callback__icon {
+  width: 75px;
+  height: 75px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.nav__list {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  min-width: 80vw;
+  padding: 0;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+.nav__item {
+  white-space: nowrap;
+}
+.nav__link {
+  line-height: 100%;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 7px 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__link:hover {
+  color: #D5C5AA;
+}
+.nav__link:active {
+  background: #D5C5AA;
+  color: black;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 338px;
+  position: relative;
+}
+.heading::before {
+  position: absolute;
+  content: "";
+  left: 2px;
+  bottom: -5px;
+  width: 38%;
+  background-color: #00AAEF;
+  height: 2px;
+}
+.heading::after {
+  position: absolute;
+  content: "";
+  right: 2px;
+  bottom: -5px;
+  width: 38%;
+  background-color: #00AAEF;
+  height: 2px;
+}
+.heading__text {
+  font-size: 48px;
+  line-height: 100%;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.heading__crown {
+  position: absolute;
+  bottom: -15px;
+}
+
+.button {
+  width: 188px;
+  height: 52px;
+  background: #00AAEF;
+  color: white;
+  border-radius: 0;
+  margin: 4vw auto;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  background: #009FEF;
+}
+
+.header {
+  width: 100%;
+  height: 765px;
+  background: url(../img/panoram.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+.header__logo {
+  position: absolute;
+  left: calc(50% - 54px);
+  top: 35px;
+  width: 108px;
+}
+.header__nav {
+  position: absolute;
+  bottom: 45px;
+}
+
+.text-deco_color {
+  color: #00AAEF;
+}
+
+.main {
+  width: 100vw;
+}
+
+.info {
+  padding: 8vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: white;
+}
+.info__heading {
+  position: absolute;
+  top: -26px;
+  left: calc(50% - 113px);
+}
+.info__heading__text {
+  background: linear-gradient(white 55%, black 45%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.info__about-miami {
+  min-width: 314px;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 140%;
+}
+.info__paragraph {
+  min-width: 314px;
+  line-height: 150%;
+  text-transform: none;
+}
+.info__paragraph_alt {
+  font-size: 14px;
+  display: none;
+}
+.info__alt-button {
+  margin: 4vw auto;
+  display: none;
+}
+
+.gallery {
+  background-color: #EEEEEE;
+  padding: 8% 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.gallery__heading {
+  position: absolute;
+  top: -26px;
+  left: calc(50% - 97px);
+}
+.gallery__site-photos {
+  display: flex;
+  width: 77vw;
+  justify-content: space-between;
+  margin-bottom: 0.5vw;
+  margin: 2vw auto 0 auto;
+}
+.gallery__photos-name {
+  font-weight: 500;
+  width: 77vw;
+  margin: 0 auto;
+}
+.gallery__photo-1 {
+  width: 50vw;
+}
+.gallery__photo-2 {
+  width: 25vw;
+}
+.gallery__photo-3 {
+  width: 37.5vw;
+}
+.gallery__photo-4 {
+  width: 37.5vw;
+}
+.gallery__photo-5 {
+  width: 25vw;
+}
+.gallery__photo-6 {
+  width: 50vw;
+}
+.gallery__photo-1_alt {
+  display: none;
+  width: 77vw;
+}
+.gallery__photo-2_alt {
+  display: none;
+  width: 77vw;
+}
+.gallery__photo-3_alt {
+  display: none;
+  width: 77vw;
+}
+
+.feedback-form {
+  width: 39vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.feedback-form__item {
+  width: 100%;
+  margin: 0.5vw 0;
+  height: 54px;
+  color: black;
+  padding: 0;
+  border: none;
+  background-color: #EEEEEE;
+  text-indent: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.feedback-form__item::placeholder {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  text-transform: uppercase;
+  text-indent: 0;
+}
+.feedback-form__item:last-child {
+  color: white;
+  background-color: #00AAEF;
+}
+.feedback-form__item:last-child:hover {
+  background-color: #009FEF;
+}
+
+.consultation {
+  padding: 8vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.consultation__heading {
+  position: absolute;
+  top: -26px;
+  left: calc(50% - 169px);
+}
+.consultation__text {
+  display: flex;
+  flex-direction: column;
+  width: 37vw;
+  margin-right: 4vw;
+}
+.consultation__question {
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 120%;
+  color: black;
+}
+.consultation__alt-question {
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 120%;
+  color: black;
+  display: none;
+  text-align: center;
+}
+.consultation__paragraph {
+  color: black;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.testimonials {
+  display: flex;
+  padding: 8vw 16vw;
+  background-color: #EEEEEE;
+  position: relative;
+  justify-content: space-between;
+}
+.testimonials__heading {
+  position: absolute;
+  top: -26px;
+  left: calc(50% - 160px);
+}
+.testimonials__infoblock {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.testimonials__infoblock:nth-child(5), .testimonials__infoblock:nth-child(6), .testimonials__infoblock:nth-child(7) {
+  display: none;
+}
+.testimonials__photos {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.testimonials__names {
+  line-height: 150%;
+  font-size: 16px;
+  color: black;
+}
+.testimonials__positions {
+  font-size: 16px;
+  font-style: italic;
+  color: #696973;
+  line-height: 150%;
+  height: 48px;
+  margin-bottom: 1vw;
+}
+.testimonials__reviews {
+  line-height: 24px;
+  color: black;
+}
+.testimonials__button {
+  display: none;
+  margin: 0 auto;
+}
+
+.contact-us {
+  padding: 8vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  background: white;
+}
+.contact-us__heading {
+  position: absolute;
+  top: -26px;
+  left: calc(50% - 139px);
+}
+.contact-us__contacts {
+  width: 37vw;
+  line-height: 36px;
+  color: black;
+  font-size: 24px;
+}
+.contact-us__contats_alt {
+  display: none;
+}
+.contact-us__item {
+  height: 12em;
+  resize: none;
+  padding-top: 1em;
+  overflow: hidden;
+}
+.contact-us__item::placeholder {
+  line-height: 36px;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  padding-top: -1em;
+}
+
+.footer {
+  background: url(../img/bg-footer.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 540px;
+  width: 100%;
+  position: relative;
+}
+.footer__logo {
+  position: absolute;
+  left: calc(50% - 54px);
+  bottom: 95px;
+}
+
+@media screen and (min-width: 1600px) {
+  .testimonials__infoblock:nth-child(7) {
+    display: block;
+  }
+}
+@media screen and (min-width: 1401px) {
+  .nav__link {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .info__about-miami {
+    font-size: 64px;
+    min-width: calc(314px * 1.5);
+  }
+  .info__paragraph {
+    font-size: 24px;
+  }
+
+  .consultation {
+    align-items: center;
+  }
+  .consultation__text {
+    width: 40vw;
+  }
+  .consultation__question {
+    font-size: 42px;
+    line-height: 120%;
+    color: black;
+  }
+  .consultation__paragraph {
+    color: black;
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .testimonials__positions {
+    display: block;
+  }
+  .testimonials__infoblock:nth-child(5), .testimonials__infoblock:nth-child(6) {
+    display: block;
+  }
+
+  .contact-us__contacts {
+    font-size: 36px;
+    line-height: 150%;
+  }
+}
+@media screen and (max-width: 999px) {
+  .callback {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+  }
+  .callback__icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+  .nav__item {
+    margin: 1vw 0;
+  }
+
+  .feedback-form {
+    width: 77vw;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .gallery .gallery__photos-name {
+    font-size: 14px;
+  }
+
+  .consultation {
+    flex-direction: column;
+  }
+  .consultation__text {
+    display: flex;
+    flex-direction: column;
+    width: 77vw;
+    margin: 0 auto;
+    margin-bottom: 3vw;
+  }
+
+  .testimonials {
+    flex-direction: column;
+  }
+  .testimonials__infoblock {
+    width: 68vw;
+    flex-direction: column;
+    text-align: start;
+    position: relative;
+    margin-bottom: 3vw;
+    border-bottom: 1px solid black;
+  }
+  .testimonials__photos {
+    margin: 0;
+    order: 2;
+  }
+  .testimonials__names {
+    order: 1;
+  }
+  .testimonials__positions {
+    order: 3;
+    max-width: 150px;
+  }
+  .testimonials__reviews {
+    position: absolute;
+    top: 87px;
+    left: 170px;
+  }
+
+  .contact-us {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-us__contacts {
+    margin-bottom: 1.5vw;
+  }
+}
+@media screen and (max-width: 449px) {
+  .nav__list {
+    flex-direction: column;
+    margin: 0 10vw 0 10vw;
+  }
+
+  .heading {
+    display: none;
+  }
+
+  .feedback-form {
+    width: 75vw;
+  }
+
+  .header {
+    background: url(../img/panoram-small.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+  }
+
+  .info {
+    padding: 6vw 6.5vw;
+  }
+  .info__about-miami {
+    text-align: center;
+    font-size: 36px;
+    min-width: 0px;
+  }
+  .info__paragraph {
+    display: none;
+  }
+  .info__paragraph_alt {
+    display: block;
+    text-align: center;
+  }
+  .info__alt-button {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery__photos-name {
+    font-size: 12px;
+  }
+  .gallery__photo-1 {
+    display: none;
+  }
+  .gallery__photo-2 {
+    display: none;
+  }
+  .gallery__photo-3 {
+    display: none;
+  }
+  .gallery__photo-4 {
+    display: none;
+  }
+  .gallery__photo-5 {
+    display: none;
+  }
+  .gallery__photo-6 {
+    display: none;
+  }
+  .gallery__photo-1_alt {
+    display: block;
+  }
+  .gallery__photo-2_alt {
+    display: block;
+  }
+  .gallery__photo-3_alt {
+    display: block;
+    width: 77vw;
+  }
+
+  .consultation__question {
+    display: none;
+  }
+  .consultation__alt-question {
+    display: block;
+  }
+  .consultation__paragraph {
+    display: none;
+  }
+
+  .testimonials {
+    flex-direction: column;
+    padding: 8vw 10vw;
+  }
+  .testimonials__infoblock {
+    width: 200px;
+    flex-direction: column;
+    text-align: center;
+    border: none;
+    margin: 0 auto 3vw auto;
+    position: static;
+  }
+  .testimonials__infoblock:nth-child(3), .testimonials__infoblock:nth-child(4) {
+    display: none;
+  }
+  .testimonials__photos {
+    margin: 0 auto;
+    order: 1;
+    width: 150px;
+    height: 150px;
+  }
+  .testimonials__names {
+    order: 2;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  .testimonials__positions {
+    order: 3;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  .testimonials__reviews {
+    order: 4;
+    position: relative;
+    max-width: 150px;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+  }
+  .testimonials__button {
+    display: block;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-us__contacts {
+    display: block;
+    width: 80vw;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

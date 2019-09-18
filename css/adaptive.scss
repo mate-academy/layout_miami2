@@ -1,0 +1,324 @@
+@media screen and (min-width: 1600px) {
+  .testimonials {
+    &__infoblock:nth-child(7) {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 1401px) {
+  .nav {
+    &__link {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .info {
+    &__about-miami {
+      font-size: 64px;
+      min-width: calc(314px * 1.5);
+    }
+  
+    &__paragraph {
+      font-size: 24px;
+    }
+  }
+  
+  .consultation {
+    align-items: center;
+
+    &__text {
+      width: 40vw;
+    }
+
+    &__question {
+      font-size: 42px;
+      line-height: 120%;
+      color: $text-color-main;
+    }
+  
+    &__paragraph {
+      color: $text-color-main;
+      font-size: 24px;
+      line-height: 150%;
+    }
+  }
+
+  .testimonials {
+    &__positions {
+      display: block;
+    }
+
+    &__infoblock:nth-child(5),
+    &__infoblock:nth-child(6) {
+    display: block;
+    }
+  }
+
+  .contact-us {
+    &__contacts {
+      font-size: 36px;
+      line-height: 150%;
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .callback {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+
+    &__icon {
+      width: 50px;
+      height: 50px; 
+    }
+  }
+
+  .nav {
+    &__list {
+      flex-direction: column;
+    }
+  
+    &__item {
+      margin: 1vw 0;
+    }
+  }
+
+  .feedback-form {
+    width: 77vw;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .gallery {
+    .gallery__photos-name {
+      font-size: 14px;
+    }
+  }
+
+  .consultation {
+    flex-direction: column;
+   
+    &__text {
+      display: flex;
+      flex-direction: column;
+      width: 77vw;
+      margin: 0 auto;
+      margin-bottom: 3vw;
+    }
+  }
+
+  .testimonials {
+    flex-direction: column;
+  
+    &__infoblock {
+      width: 68vw;
+      flex-direction: column;
+      text-align: start;
+      position: relative;
+      margin-bottom: 3vw;
+      border-bottom: 1px solid black;
+    }
+  
+    &__photos {
+      margin: 0;
+      order: 2;
+    }
+  
+    &__names {
+      order: 1;
+    }
+  
+    &__positions {
+      order: 3;
+      max-width: 150px;
+    }
+  
+    &__reviews {
+      position: absolute;
+      top: 87px;
+      left: 170px;
+    }
+  }
+
+  .contact-us {
+    flex-direction: column;
+    text-align: center;
+    &__contacts {
+      margin-bottom: 1.5vw;
+    }
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .nav {
+    &__list {
+      flex-direction: column;
+      margin: 0 10vw 0 10vw;
+    }
+  }
+  
+  .heading {
+    display: none;
+  }
+
+  .feedback-form {
+    width: 75vw;
+  }
+
+  .header {
+    background: url(../img/panoram-small.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+  }
+
+  .info {
+    padding: 6vw 6.5vw;
+    
+    &__about-miami {
+      text-align: center;
+      font-size: 36px;
+      min-width: 0px;
+    }
+  
+    &__paragraph {
+      display: none;
+    }
+  
+    &__paragraph_alt {
+      display: block;
+      text-align: center;
+    }
+  
+    &__alt-button {
+      display: block;
+      @include inside-centered;
+    }
+  }
+
+  .gallery {
+    &__photos-name {
+      font-size: 12px;
+    }
+
+    &__photo-1 {
+      display: none;
+    }
+  
+    &__photo-2 {
+      display: none;
+    }
+  
+    &__photo-3 {
+      display: none;
+    }
+  
+    &__photo-4 {
+      display: none;
+    }
+  
+    &__photo-5 {
+      display: none;
+    }
+    
+    &__photo-6 {
+      display: none;
+    }
+
+    &__photo-1_alt {
+      display: block;
+    }
+  
+    &__photo-2_alt {
+      display: block;
+    }
+  
+    &__photo-3_alt {
+      display: block;
+      width: 77vw;
+    }
+  }
+
+  .consultation {
+    &__question {
+      display: none;
+    }
+
+    &__alt-question {
+      display: block;
+    }
+
+    &__paragraph {
+      display: none;
+    }
+  }
+  
+  .testimonials {
+    flex-direction: column;
+    padding: 8vw 10vw;
+  
+    &__infoblock {
+      width: 200px;
+      flex-direction: column;
+      text-align: center;
+      border: none;
+      margin: 0 auto 3vw auto;
+      position: static;
+    }
+
+    &__infoblock:nth-child(3),
+    &__infoblock:nth-child(4) {
+    display: none;
+    }
+  
+    &__photos {
+      margin: 0 auto;
+      order: 1;
+      width: 150px;
+      height: 150px;
+    }
+  
+    &__names {
+      order: 2;
+      max-width: 150px;
+      margin: 0 auto;
+    }
+  
+    &__positions {
+      order: 3;
+      max-width: 150px;
+      margin: 0 auto;
+    }
+  
+    &__reviews {
+      order: 4;
+      position: relative;
+      max-width: 150px;
+      margin: 0 auto;
+      top: 0;
+      left: 0;
+    }
+
+    &__button {
+      display: block;
+      position: static;
+      @include inside-centered;
+    }
+  }
+
+  .contact-us {
+    &__contacts {
+      display: block;
+      width: 80vw;
+    }
+  }
+
+  .footer {
+    display: none;
+  }
+}

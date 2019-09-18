@@ -1,0 +1,39 @@
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 338px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 2px;
+    bottom: -5px;
+    width: 38%;
+    background-color: $deco-color;
+    height: 2px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 2px;
+    bottom: -5px;
+    width: 38%;
+    background-color: $deco-color;
+    height: 2px;
+  }
+
+  &__text {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 300;
+    text-transform: $text-case;
+  }
+
+  &__crown {
+    position: absolute;
+    bottom: -15px;
+  }
+}

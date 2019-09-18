@@ -1,0 +1,41 @@
+.consultation {
+  padding: 8vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+ 
+  &__heading {
+    position: absolute;
+    top: -26px;
+    left: calc(50% - 169px);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    width: 37vw;
+    margin-right: 4vw;
+  }
+
+  &__question {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 120%;
+    color: $text-color-main;
+  }
+
+  &__alt-question {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 120%;
+    color: $text-color-main;
+    display: none;
+    text-align: center;
+  }
+
+  &__paragraph {
+    color: $text-color-main;
+    font-size: 18px;
+    line-height: 150%;
+  }
+}

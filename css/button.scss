@@ -1,0 +1,16 @@
+.button {
+  width: 188px;
+  height: 52px;
+  background: $deco-color;
+  color: white;
+  border-radius: 0;
+  margin: 4vw auto;
+  text-transform: $text-case;
+  position: relative;
+  cursor: pointer;
+  @include inside-centered;
+
+  &:hover {
+    background:#009FEF;
+  }
+} 

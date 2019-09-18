@@ -1,0 +1,66 @@
+.gallery {
+  background-color: $bg-color-second;
+  padding: 8% 10%; 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    position: absolute;
+    top: -26px;
+    left: calc(50% - 97px);
+  }
+
+  &__site-photos {
+    display: flex;
+    width: 77vw;
+    justify-content: space-between;
+    margin-bottom: 0.5vw;
+    margin: 2vw auto 0 auto;
+  }
+
+  &__photos-name {
+    font-weight: 500;
+    width: 77vw;
+    margin: 0 auto;
+  }
+
+  &__photo-1 {
+    width: 50vw;
+  }
+
+  &__photo-2 {
+    width: 25vw;
+  }
+
+  &__photo-3 {
+    width: 37.5vw;
+  }
+
+  &__photo-4 {
+    width: 37.5vw;
+  }
+
+  &__photo-5 {
+    width: 25vw;
+  }
+  
+  &__photo-6 {
+    width: 50vw;
+  }
+
+  &__photo-1_alt {
+    display: none;
+    width: 77vw;
+  }
+
+  &__photo-2_alt {
+    display: none;
+    width: 77vw;
+  }
+
+  &__photo-3_alt {
+    display: none;
+    width: 77vw;
+  }
+}

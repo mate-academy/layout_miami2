@@ -1,0 +1,42 @@
+.info {
+  padding: 8vw 10vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-color: $bg-color-main;
+
+  &__heading {
+    position: absolute;
+    top: -26px;
+    left: calc(50% - 113px);
+  }
+
+  &__heading__text {
+    background: linear-gradient($text-color-second 55%, $text-color-main 45%);
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  &__about-miami {
+    min-width: 314px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 140%;
+  }
+
+  &__paragraph {
+    min-width: 314px;
+    line-height: 150%;
+    text-transform: none;
+  }
+
+  &__paragraph_alt {
+    font-size: 14px;
+    display: none;
+  }
+
+  &__alt-button {
+    margin: 4vw auto;
+    display: none;
+  }
+}
