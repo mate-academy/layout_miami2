@@ -1,0 +1,111 @@
+@media screen and (max-width:1024px) {
+    
+    .nav__item {
+        margin-left: 1%;
+            }
+
+    .header__phone {
+        padding: 0 0;
+        margin: 0 8%;
+                }
+
+    .testimonials {
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+
+@media screen and (max-width:860px) {
+
+    .nav__menu {
+flex-direction: column;
+    }
+
+    .nav__item {
+        max-width: fit-content;
+        margin-left: 20px;
+        padding: 5px 10px;
+            }
+
+    .header {
+
+        height: 75vh;
+        
+        &__top {
+        flex-direction: column;
+            }
+
+        &__top, &__phone {
+                padding: 10px 0;
+                text-align: center;
+               }
+           }
+
+    .section {
+            padding: 20px 20px;
+        }
+
+    .info {
+        flex-direction: column;
+
+        &__heading {
+            margin-top: 20px;
+        }
+    }
+    .gallery__photo, .gallery__text {
+        margin-top: 30px;
+        margin-left: 20px;
+      }
+
+  .consultation {
+    flex-direction: column;
+
+    &__form {
+        display: block;
+        margin: auto;
+    }
+
+    &__info {
+    margin-left: 20px;
+  }
+}
+
+    .section + .section {
+        padding: 60px 0;
+    }
+
+    .testimonials {
+        grid-template-columns: repeat(1, 200px);
+    }
+    
+    .contact {
+        flex-direction: column;
+
+        &__form {
+            margin: auto;
+        }
+
+        &__info {
+            margin-left: 20px;
+        }
+    }
+
+    .gallery {
+    
+        &__photo {
+            flex-direction: column;
+        }
+    
+        &_img {
+            width: calc(100% - 20px);
+            padding: 10px;
+
+            &.wide {
+                width: 100%;
+            } 
+    
+            &.narrow {
+                width: 100%;
+        } 
+    }
+  }
+}
