@@ -19,6 +19,12 @@ h1, h2, h3, p, button, input, textarea {
   background-color: #eeeeee;
 }
 
+@media screen and (max-width: 999px) {
+  .section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
 .form {
   width: 388px;
   display: flex;
@@ -30,10 +36,6 @@ h1, h2, h3, p, button, input, textarea {
 .form__item, .form__button {
   width: 100%;
   height: 54px;
-  font-family: Ubuntu;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 36px;
 }
 .form__item {
   margin-bottom: 8px;
@@ -69,6 +71,7 @@ h1, h2, h3, p, button, input, textarea {
   font-size: 48px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .heading-block__heading {
   font-weight: 300;
@@ -330,7 +333,6 @@ h1, h2, h3, p, button, input, textarea {
 
 @media screen and (max-width: 999px) {
   .section-about {
-    display: flex;
     align-items: center;
     flex-direction: column;
   }
@@ -418,6 +420,11 @@ h1, h2, h3, p, button, input, textarea {
 }
 
 @media screen and (max-width: 999px) {
+  .section-testimonials {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
   .testimonials {
     flex-direction: column;
   }
