@@ -1,0 +1,48 @@
+.info {
+    @include section-common-styles;
+
+    &__content {
+        width: $section-content-width;
+        display: flex;
+    }
+
+    &__article {
+        line-height: 24px;
+
+        > :first-child {
+            margin-top: 0;
+        }
+
+        > :last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__heading {
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 60px;
+        min-width: 314px;
+        text-transform: uppercase;
+        margin-right: 62px;
+    }
+}
+
+@media screen and (max-width: $small-screen-breakpoint) {
+    .info {
+        &__content {
+            flex-direction: column;
+        }
+
+        &__heading {
+            margin-bottom: 16px;
+            min-width: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 549px) {
+    .info__content {
+        width: 95vw;
+    }
+}
