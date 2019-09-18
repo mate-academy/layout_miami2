@@ -312,6 +312,7 @@ strong {
 }
 .input_textarea {
   height: 166px;
+  resize: none;
 }
 
 .testimonials {
