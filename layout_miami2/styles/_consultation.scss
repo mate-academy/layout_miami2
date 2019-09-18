@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     display: flex;
-    margin-bottom: 123px;
+    margin-bottom: 100px;
   }
 
   &__heading {
@@ -65,6 +65,8 @@
 
     > button {
       background-color: #00aaef;
+      height: 54px;
+      width: 383px;
       border-style: none;
       color: #fff;
       text-transform: uppercase;
@@ -77,12 +79,12 @@
         background-color: #2f80ed;
         cursor: pointer;
       }
-      height: 54px;;
     }
 
     &_input {
       background: #eee;
       height: 54px;
+      width: 383px;
       text-align: center;
       margin-bottom: 8px;
       border-style: none;

@@ -7,7 +7,7 @@
 
   &__block {
     display: flex;
-    margin-bottom: 83px;
+    margin-bottom: 100px;
     flex-direction: column;
     align-items: center;
   }
@@ -87,6 +87,11 @@
     }
   }
 
+.crown{
+  position: absolute;
+  margin-top: 30px;
+}
+
 
 @media screen and (max-width: 999px) {
   .gallery__row {
@@ -95,7 +100,13 @@
     align-items: center;
   }
   .gallery__image_wrapper {
+
     min-width: 302px;
     margin-bottom: 10px;
+    > img{
+      width: 100vw;
+      height: 100%;
+    }
   }
 }
+
