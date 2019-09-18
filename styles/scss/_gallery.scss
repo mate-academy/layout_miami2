@@ -43,10 +43,10 @@
             "caption_2  caption_2   caption_2   caption_2   caption_2   caption_2"
             "photo_5    photo_5     photo_6     photo_6     photo_6     photo_6"
             "caption_3  caption_3   caption_3   caption_3   caption_3   caption_3";
-  }
 
-  > img {
-    @include image-gallery;
+    > img {
+      @include image-gallery;
+    }
   }
 }
 
