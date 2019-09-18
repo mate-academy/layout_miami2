@@ -9,7 +9,7 @@
 
     &__info {
         font-size: 24px;
-        max-width: 276px;
+        width: 276px;
 
         > p:first-child {
             margin-top: 0;
@@ -36,12 +36,12 @@
 
 @media screen and (max-width: 549px) {
     .contact {
-        &__form {
-            width: 70vw;
-        }
-
         &__content {
             width: 95vw;
+        }
+
+        &__form {
+            width: 90vw;
         }
     }
 }

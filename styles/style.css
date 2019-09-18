@@ -451,6 +451,7 @@ a:hover, a:visited:hover {
 
 .form .input_textarea {
   height: 166px;
+  resize: none;
 }
 
 .testimonials {
@@ -569,7 +570,7 @@ a:hover, a:visited:hover {
 
 .contact__info {
   font-size: 24px;
-  max-width: 276px;
+  width: 276px;
 }
 
 .contact__info > p:first-child {
@@ -596,11 +597,11 @@ a:hover, a:visited:hover {
 }
 
 @media screen and (max-width: 549px) {
-  .contact__form {
-    width: 70vw;
-  }
   .contact__content {
     width: 95vw;
+  }
+  .contact__form {
+    width: 90vw;
   }
 }
 
