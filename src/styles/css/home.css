@@ -19,6 +19,10 @@ section {
   display: flex;
 }
 
+.input_textarea {
+  resize: none;
+}
+
 .logo {
   width: 115px;
   height: 76px;
