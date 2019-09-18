@@ -65,30 +65,29 @@
 }
 
 @media screen and (max-width: 999px) {
+  .callback {
+    width: 50px;
+    height: 50px;
+    background-size: 50px;
+
+    &__icon {
+      width: 50px;
+      height: 50px; 
+    }
+  }
+
   .nav {
     &__list {
       flex-direction: column;
-      margin-bottom: 4vh;
     }
   
     &__item {
-      margin: 1vh 0;
+      margin: 1vw 0;
     }
   }
 
   .feedback-form {
     width: 77vw;
-  }
-
-  .header {
-    &__top-content {
-      flex-direction: column;
-    }
-  
-    &__phone-number,
-    &__offer {
-      margin: 2vh 0 0 -7.5px;
-    }
   }
 
   .info {
