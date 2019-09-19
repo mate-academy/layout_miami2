@@ -97,8 +97,9 @@ $size: 16px;
   padding: 156px 160px;
   color: black;
   .info {
+    margin-bottom: 60px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     .info-block {
       text-transform: uppercase;
       max-width: 314px;

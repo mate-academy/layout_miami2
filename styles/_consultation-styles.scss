@@ -1,6 +1,6 @@
 
 .consult {
-  padding: 0 156px calc(50% - 470px);
+  padding: 0 calc(50% - 574px) calc(50% - 574px);
   position: relative;
   color: black;
 }
@@ -58,7 +58,7 @@
 .consult_items {
   display: flex;
   justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .items_text,
@@ -83,6 +83,8 @@
 
 .items_form {
   input {
+    font-size: 18px;
+    font-weight: bold;
     height: 54px;
     width: 100%;
     margin-bottom: 8px;

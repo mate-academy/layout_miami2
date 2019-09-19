@@ -8,7 +8,7 @@ body {
 }
 
 .gallery {
-  padding: 110px 160px;
+  padding: 160px calc(50% - 574px);
   position: relative;
   background-color: #eee;
   color: black;
@@ -135,7 +135,7 @@ button {
 }
 
 .consult {
-  padding: 0 156px calc(50% - 470px);
+  padding: 0 calc(50% - 574px) calc(50% - 574px);
   position: relative;
   color: black;
 }
@@ -200,7 +200,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .items_text,
@@ -224,6 +224,8 @@ button {
 }
 
 .items_form input {
+  font-size: 18px;
+  font-weight: bold;
   height: 54px;
   width: 100%;
   margin-bottom: 8px;
@@ -279,10 +281,11 @@ input[type="button"] {
 }
 
 .testimony {
-  padding: 0 248px calc(50% - 470px);
+  padding: 0 calc(50% - 574px) calc(50% - 470px);
   position: relative;
   color: black;
   background-color: #eee;
+  margin-top: 60px;
 }
 
 .testimony_head {
@@ -392,7 +395,7 @@ input[type="button"] {
 }
 
 .contact {
-  padding: 0 156px calc(50% - 470px);
+  padding: 0 calc(50% - 574px) calc(50% - 687px);
   position: relative;
   color: black;
 }
@@ -468,7 +471,13 @@ input[type="button"] {
   line-height: 36px;
 }
 
+.contact_form {
+  width: calc(50% - 36px);
+}
+
 .contact_form input {
+  font-size: 18px;
+  font-weight: bold;
   height: 54px;
   width: 100%;
   margin-bottom: 8px;
@@ -481,6 +490,8 @@ input[type="button"] {
 }
 
 .form_textarea {
+  font-size: 18px;
+  font-weight: bold;
   width: 100%;
   height: 116px;
   padding: 0;
@@ -506,14 +517,6 @@ input[type="button"] {
   height: 76px;
 }
 
-@media screen and (max-width: 977px) {
-  .nav-item {
-    margin: 0 5px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
-}
-
 @media screen and (max-width: 1234px) {
   ul.head-contact {
     -webkit-box-orient: vertical;
@@ -528,7 +531,12 @@ input[type="button"] {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 977px) {
+  .nav-item {
+    margin: 0 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
   .head-nav-items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -540,24 +548,9 @@ input[type="button"] {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-}
-
-@media screen and (max-width: 799px) {
-  .main.info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .info-block p {
+    text-align: center;
   }
-}
-
-@media screen and (max-width: 940px) {
-  .testimony_items,
-  .consult_items,
-  .contact_block,
   .info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -567,28 +560,84 @@ input[type="button"] {
         -ms-flex-align: center;
             align-items: center;
   }
-  .consult,
-  .testimony {
-    padding: 156px calc(50% - 470px) 156px calc(50% - 470px);
+  .gallery {
+    margin-bottom: 40px;
+    background-color: unset;
+  }
+  .photos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gallery_photos img {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+  .gallery_photos p {
+    text-align: center;
+  }
+  .top_photos img:nth-child(1),
+  .top_photos img:nth-child(2) {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 10px;
+  }
+  .bottom_photos img:nth-child(1),
+  .bottom_photos img:nth-child(2) {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 10px;
   }
   .consult_items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 0;
   }
-  .consult_items .items_text {
-    width: 380px;
+  .consult {
+    padding-bottom: 60px;
   }
-  .consult_items .items_form input {
-    width: 200px;
+  .items_text,
+  .items_form {
+    width: 300px;
   }
-  .contact_block {
-    margin-bottom: 50px;
+  .testimony_items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
   }
-  .contact_block .block_detail {
-    text-align: center;
-    width: 276px;
+  .testimony {
+    padding-bottom: 60px;
   }
   .items_block {
-    width: 200px;
+    width: 240px;
+    margin-bottom: 10px;
+  }
+  .contact_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .block_detail, .contact_form {
+    width: 300px;
   }
 }
 
@@ -692,12 +741,12 @@ input[type="button"] {
 }
 
 .main .info {
+  margin-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .main .info .info-block {
