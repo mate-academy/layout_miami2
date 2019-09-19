@@ -577,7 +577,7 @@ input[type="button"] {
   }
   .gallery_photos img {
     width: 300px;
-    height: 400px;
+    height: 300px;
     margin-bottom: 10px;
   }
   .gallery_photos p {
@@ -586,13 +586,13 @@ input[type="button"] {
   .top_photos img:nth-child(1),
   .top_photos img:nth-child(2) {
     width: 300px;
-    height: 400px;
+    height: 300px;
     margin-bottom: 10px;
   }
   .bottom_photos img:nth-child(1),
   .bottom_photos img:nth-child(2) {
     width: 300px;
-    height: 400px;
+    height: 300px;
     margin-bottom: 10px;
   }
   .consult_items {
