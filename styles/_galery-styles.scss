@@ -1,8 +1,12 @@
 .gallery {
-  padding: 160px calc(50% - 574px);
+  padding: 0 calc(50% - 574px) calc(50% - 600px);
   position: relative;
   background-color: #eee;
   color: black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
 
   & img {
     width: calc(50% - 10px);
@@ -11,7 +15,7 @@
   }
 
   &_photos {
-    margin: 0 auto;
+    margin: 48px auto;
     .photos {
       display: flex;
       justify-content: space-between;
@@ -35,43 +39,6 @@
   width: calc(33% - 10px);
 }
 
-.head-content {
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: -2.9em;
-}
-.gallery_head {
-  display: block;
-  font-weight: 300;
-  font-size: 48px;
-  white-space: nowrap;
-  text-transform: uppercase;
-  position: relative;
-  width: max-content;
-}
-
-.gallery_head::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 75px;
-  line-height: 1px;
-  height: 2px;
-  background-color: #00aaef;
-}
-
-.gallery_head::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  line-height: 1px;
-  right: 0;
-  width: 75px;
-  height: 2px;
-  background-color: #00aaef;
-}
-
 .galerry_caption {
   font-style: normal;
   font-weight: 500;
@@ -88,10 +55,7 @@ button {
 }
 
 .gallery_button {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
+  margin-bottom: 60px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;

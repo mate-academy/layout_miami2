@@ -2,44 +2,10 @@
   padding: 0 calc(50% - 574px) calc(50% - 687px);
   position: relative;
   color: black;
+  margin-bottom: 50px;
 }
 
-.contact_main {
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: -0.6em;
-}
 
-.contact_head {
-  display: block;
-  font-weight: 300;
-  font-size: 48px;
-  white-space: nowrap;
-  text-transform: uppercase;
-  position: relative;
-  width: max-content;
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 123px;
-    line-height: 1px;
-    height: 2px;
-    background-color: #00aaef;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    line-height: 1px;
-    right: 0;
-    width: 123px;
-    height: 2px;
-    background-color: #00aaef;
-  }
-}
 
 .contact_crown {
   position: absolute;
@@ -79,7 +45,7 @@
     background-color: #eee;
     border-width: 0;
   }
-  input[type="button"] {
+  input[type="submit"] {
     background-color: #00aaef;
   }
 }
