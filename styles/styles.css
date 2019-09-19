@@ -385,6 +385,8 @@ input[type="button"] {
 
 .block_position {
   margin: 0;
+  color: gray;
+  font-style: italic;
 }
 
 .block_text {
