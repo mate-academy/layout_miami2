@@ -1,0 +1,9 @@
+.link {
+    color: $highlight-color;
+    text-decoration: none;
+
+    &:hover{
+    color: $highlight-hover-color;
+    transition: color $hover-duration;
+    }
+}

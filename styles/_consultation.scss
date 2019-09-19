@@ -1,0 +1,25 @@
+.consultation {
+    display: flex;
+    justify-content: space-between;
+
+    &__text {
+        width: 480px;
+        line-height: 40px;
+        margin: 24px;
+    }
+
+    &__form {
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .consultation {
+        flex-direction: column;
+    
+
+    &__text, &__form {
+        width: 100%;
+    }
+}
+}
