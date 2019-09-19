@@ -235,7 +235,7 @@ h3 {
 .consultation__heading {
   font-size: 32px;
   line-height: 40px;
-  width: 351px;
+  max-width: 351px;
   font-weight: 300;
 }
 
@@ -403,6 +403,11 @@ h3 {
   }
   .photos .photos__img:first-child {
     margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .heading {
+    font-size: 40px;
   }
 }
 
