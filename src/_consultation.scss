@@ -1,0 +1,35 @@
+.consultation {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    max-width: 480px;
+    padding-right: 72px;
+  }
+
+  &__form {
+    width: 380px;
+  }
+
+  &__heading {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 24px;
+    font-weight: normal;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .consultation {
+    flex-direction: column;
+
+    &__form {
+      width: 100%;
+    }
+
+    &__text {
+      max-width: 100%;
+      padding-right: 0;
+    }
+  }
+}

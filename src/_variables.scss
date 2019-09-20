@@ -1,0 +1,10 @@
+$logo-width: 115px;
+$logo_height: 76px;
+$light-active-color: #d5c5aa;
+$hover-duration: .2s;
+$color-decoration:  #00aaef;
+
+@mixin centered {
+  left: 0;
+  right: 0;  
+}

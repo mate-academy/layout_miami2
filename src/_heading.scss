@@ -1,0 +1,48 @@
+.heading {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: absolute;
+  width: max-content;
+  white-space: nowrap;
+  display: block;
+
+  @mixin underline {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -7px;
+    width: calc(50% - 22px);
+    height: 2px;
+    background-color: $color-decoration;
+  }
+
+  &::before {
+    left: 0;
+    @include underline;
+  }
+
+  &::after {
+    right: 0;
+    @include underline;
+  }
+
+  &__logos {
+    position: absolute;
+    background-image: url('../images/crown.svg');
+    width: 20px;
+    height: 13px;
+    bottom: -17px;
+    display: block;
+    @include centered;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .heading {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
