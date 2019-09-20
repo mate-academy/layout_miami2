@@ -1,0 +1,60 @@
+.photos {
+  display: flex;
+  justify-content: space-between;
+
+  &__img {
+    height: 260px;
+    object-fit: cover;
+
+    &_middle {
+      width: calc(50% - 10px);
+    }
+
+    &_big {
+      width: calc(66% - 10px);
+    }
+  
+    &_small {
+      width: calc(34% - 10px);
+    }
+  }
+}
+
+.photos__text {
+  text-transform: uppercase;
+  margin: 12px 0 35px 0;
+  font-weight: 500;
+}
+
+.photos__link {
+  color: $color-decoration;
+  transition: color $hover-duration;
+}
+
+.photos__link:hover {
+  color: #2F80ED;
+}
+
+@media screen and (max-width: 850px) {
+  .photos__img {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .photos {
+    flex-direction: column;
+    
+    &__img {
+      width: 100%;
+      height: 160px;
+    }
+
+    & img:first-child {
+      margin-bottom: 20px;
+    }
+  }
+  img:first-child {
+    margin-bottom: 20px;
+  }
+}

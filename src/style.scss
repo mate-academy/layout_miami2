@@ -1,15 +1,17 @@
 @import "reset";
 @import "variables";
+@import "header";
 @import "header-top";
-@import "header-bottom";
-@import "section-info";
+@import "nav";
+@import "section";
+@import "info";
+@import "heading";
+@import "galery";
+@import "photos";
+@import "consultation";
+@import "form";
+@import "input";
+@import "testimonials";
+@import "person";
+@import "contact";
 @import "footer";
-
-.header {
-  height: 765px;
-  background-image: url('../images/header.jpg');
-  background-size: cover;
-  background-position: center;
-  font-weight: 500;
-  position: relative;
-}

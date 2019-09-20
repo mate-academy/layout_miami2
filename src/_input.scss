@@ -1,0 +1,16 @@
+.input {
+  text-align: center;
+  font-size: 14px;
+  color: #393939;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+  border: none;
+  color: #393939;
+  box-sizing: border-box;
+  position: relative;
+
+  &__textarea {
+    height: 166px;
+  }
+}
+
