@@ -1,0 +1,15 @@
+.footer {
+  height: 540px;
+  background-image: url('../../images/footer.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &__logo {
+    position: absolute;
+    display: flex;
+    bottom: 95px;
+    left: calc(50% - #{ $logo-width / 2 });
+  }
+}
+

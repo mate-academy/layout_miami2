@@ -1,0 +1,32 @@
+.nav {
+  text-transform: uppercase;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    margin: 0 22.5px;
+    padding: 7px 20px;
+    white-space: nowrap;
+
+    &_active {
+      background-color: $ligth-active-color;
+      border-radius: 10px;
+    } 
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color $hover-duration;
+
+    &:hover {
+      color: $ligth-active-color;
+    }
+  }
+}
