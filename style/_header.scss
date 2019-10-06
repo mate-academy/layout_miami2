@@ -1,0 +1,113 @@
+.header{
+	height: 765px;
+	max-height: 70vh;
+  background-image: url("../img/background-header.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+	font-weight: 500;
+	line-height: 1;
+
+  &__nav {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+  }
+
+  &__top {
+    position: absolute;
+    top: 35px;
+    left: calc(50% - #{$widthLogo} / 2);
+    display: flex;
+  }
+
+  &__phone {
+    position: relative;
+    top: 62%;
+    margin-left: 82px;
+		color: white;
+		margin-top: 52px;
+  }
+
+  &__action {
+    @extend .header__phone;
+
+    &-link {
+      color: white;
+			text-decoration: none;
+			border-bottom: 1px dashed;
+			text-transform: uppercase;
+
+			&:hover {
+				color: $colorHeader;
+			}
+		}
+	}
+}
+
+.logo {
+    height: #{$heightLogo};
+    width: #{$widthLogo};
+}
+
+.nav {
+  text-transform: uppercase;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    margin: 0 22.5px;
+    padding: 7px 20px;
+    white-space: nowrap;
+    line-height: 16px;
+
+    &_active {
+      background-color: $colorHeader;
+      border-radius: 10px;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.2s;
+
+      &:hover {
+        color: $colorHeader;
+      }
+    }
+  }
+}
+
+.info {
+	display: flex;
+	justify-content: space-between;
+
+	&__heading {
+		width: 314px;
+		font-size: 48px;
+		line-height: 60px;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin: 0;
+	}
+
+	&__text {
+		font-weight: 400;
+		max-width: 564px;
+
+		& :first-child {
+			margin-top: 0;
+		}
+
+		& :last-child {
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.consultation {
+  display: flex;
+  justify-content: space-between;
+
+  &__field {
+    max-width: 480px;
+    font-size: 16px;
+    line-height: 1.5;
+
+    &_question{
+      margin: 24px 0;
+      font-size: 32px;
+      line-height: 40px;
+      font-weight: 400;
+    }
+  }
+
+  &__form {
+    width: 383px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    height: 54px;
+    width: 378px;
+    background-color: #eee;
+    margin-top: 15px;
+
+    &_input {
+      height: inherit;
+      width: inherit;
+      outline: none;
+      border: 0;
+      padding: 0;
+      background-color: transparent;
+
+      &::placeholder {
+        text-align: center;
+        font-family: 'Ubuntu';
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 36px;
+        color: #393939;
+        text-transform: uppercase;
+      }
+    }
+  }
+  
+  &__button {
+    margin-top: 15px;
+  }
+}

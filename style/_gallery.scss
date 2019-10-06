@@ -1,0 +1,53 @@
+.gallery {
+	&__caption {
+		margin: 12px 0 35px 0;
+	}
+
+	&__button {
+		margin: 0 auto;
+	}
+}
+
+.button {
+	color: white;
+	background-color: #00AAEF;
+	padding: 19px 62px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: block;
+
+	&:hover {
+		background-color: #2F80ED;
+	}
+}
+
+.photos {
+	display: flex;
+	justify-content: space-between;
+
+	&__img {
+		width: calc(50% - 10px);
+		height: 260px;
+		object-fit: cover;
+	}
+
+	&__left {
+		.photos__img:first-child {
+			width: calc(67% - 10px);
+		}
+
+		.photos__img:last-child {
+			width: calc(33% - 10px);
+		}
+	}
+
+	&__rigth {
+		.photos__img:first-child {
+			width: calc(33% - 10px);
+		}
+
+		.photos__img:last-child {
+			width: calc(67% - 10px);
+		}
+	}
+}

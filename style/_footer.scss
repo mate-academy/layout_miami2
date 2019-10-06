@@ -1,0 +1,13 @@
+.footer {
+	background-image: url("../img/background-footer.jpg");
+	height: 540px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+	&__logo {
+		position: absolute;
+		top: 369px;
+		left: calc(50% - #{$widthLogo} / 2);
+	}
+}

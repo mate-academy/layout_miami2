@@ -1,0 +1,40 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+
+  &__adress {
+    width: 280px;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+  &__form {
+    width: 378px;
+  }
+}
+
+.form__label_area {
+  background-color: transparent;
+  border: 0;
+  height: 166px;
+  width: inherit;
+  resize: none;
+
+  &::placeholder {
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #393939;
+    text-transform: uppercase;
+  }
+}
+
+.form_area {
+  height: 166px;
+}
+
+input[type] {
+  text-align: center;
+}
