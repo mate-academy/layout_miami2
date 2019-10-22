@@ -1,0 +1,46 @@
+.heading {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.6em;
+  display: block;
+  font-weight: 300;
+  font-size: 48px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  position: relative;
+  width: max-content;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 123px;
+    line-height: 1px;
+    height: 2px;
+    background-color: #00aaef;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    line-height: 1px;
+    right: 0;
+    width: 123px;
+    height: 2px;
+    background-color: #00aaef;
+  }
+}
+
+.crown {
+  position: absolute;
+  width: 23px;
+  height: 16px;
+  display: block;
+  top: calc(100% + 4px);
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-image: url("../images/crown1.svg");
+  background-repeat: no-repeat;
+}
