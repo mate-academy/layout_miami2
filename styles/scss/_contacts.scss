@@ -1,0 +1,32 @@
+.input {
+
+  &_textarea {
+    height: 166px;
+
+    &::placeholder {
+      color: inherit;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.contact {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+
+  &__text {
+    font-size: 24px;
+    width: 280px;
+  }
+
+  &__form {
+    width: 383px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}

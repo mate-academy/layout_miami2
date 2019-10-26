@@ -1,0 +1,21 @@
+$active-color: #d5c5aa;
+$upper-text: uppercase;
+$contrast-text: white;
+$item-size: 200px;
+$footer-height: 540px;
+$gallery-height: 263px;
+$input-color: #eeeeee;
+
+@mixin logo {
+  height: 76px;
+  width: 115px;
+}
+
+@mixin image-gallery {
+  object-fit:cover;
+  background-position: center;
+  height: 263px;
+}
+
+
+

@@ -1,0 +1,504 @@
+body, input, textarea, h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  border-width: 0;
+  line-height: 1;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.header {
+  height: 765px;
+  background-image: url("../../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  position: relative;
+  line-height: 1;
+}
+
+.logo {
+  height: 76px;
+  width: 115px;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  text-transform: uppercase;
+}
+
+.info {
+  text-transform: uppercase;
+  color: white;
+  margin: auto;
+}
+.info__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-gap: 12px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.info__item {
+  list-style: none;
+  margin: 35px 0;
+}
+.info__item:first-child {
+  grid-column-start: 3;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.menu__item {
+  margin: 0 22.5px;
+  padding: 7px 20px;
+  white-space: nowrap;
+}
+.menu__item_active {
+  background-color: #d5c5aa;
+  border-radius: 10px;
+}
+.menu__item_active:hover {
+  background-color: white;
+}
+.menu__link {
+  color: white;
+  text-decoration: none;
+}
+.menu__link:hover {
+  cursor: pointer;
+  color: #d5c5aa;
+}
+.menu__link_active {
+  color: black;
+}
+
+.order {
+  border-bottom: 1px dashed;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+}
+.information__heading {
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 60px;
+  text-transform: uppercase;
+  width: 314px;
+  margin: 0;
+  display: block;
+}
+.information__text {
+  max-width: 564px;
+  padding: 0;
+}
+.information__text > :first-child {
+  margin-top: 0;
+}
+.information__text > :last-child {
+  margin-bottom: 0;
+}
+
+.gallery__photo_1 {
+  grid-area: photo_1;
+}
+
+.gallery__photo_2 {
+  grid-area: photo_2;
+}
+
+.gallery__photo_3 {
+  grid-area: photo_3;
+}
+
+.gallery__photo_4 {
+  grid-area: photo_4;
+}
+
+.gallery__photo_5 {
+  grid-area: photo_5;
+}
+
+.gallery__photo_6 {
+  grid-area: photo_6;
+}
+
+.gallery__caption_1 {
+  grid-area: caption_1;
+}
+
+.gallery__caption_2 {
+  grid-area: caption_2;
+}
+
+.gallery__caption_3 {
+  grid-area: caption_3;
+}
+
+.section {
+  padding: 156px calc(50% - 470px);
+  position: relative;
+}
+.section__content {
+  width: 100%;
+}
+.section:nth-child(even) {
+  background-color: #eeeeee;
+}
+.section__heading {
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -0.5em;
+}
+.section__gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-items: stretch;
+  align-items: start;
+  grid-gap: 16px;
+  grid-template-rows: 263px 31px 263px 31px 2 263px;
+  grid-template-areas: "photo_1    photo_1     photo_1     photo_1     photo_2     photo_2" "caption_1  caption_1   caption_1   caption_1   caption_1   caption_1" "photo_3    photo_3     photo_3     photo_4     photo_4     photo_4" "caption_2  caption_2   caption_2   caption_2   caption_2   caption_2" "photo_5    photo_5     photo_6     photo_6     photo_6     photo_6" "caption_3  caption_3   caption_3   caption_3   caption_3   caption_3";
+}
+.gallery__photo_1 {
+  /*background-image: url("../../images/marina-palms-1.jpg");*/
+  object-fit: cover;
+  background-position: center;
+  height: 263px;
+}
+.gallery__photo_2 {
+  /*background-image: url("../../images/marina-palms-2.jpg");*/
+  object-fit: cover;
+  background-position: center;
+  height: 263px;
+}
+.gallery__photo_3 {
+  /*background-image: url("../../images/edition-residents-1.jpg");*/
+  object-fit: cover;
+  background-position: center;
+  height: 263px;
+}
+.gallery__photo_4 {
+  /*background-image: url("../../images/edition-residents-2.jpg");*/
+  object-fit: cover;
+  background-position: center;
+  height: 263px;
+}
+.gallery__photo_5 {
+  /* background-image: url("../../images/faena-house-1.jpg");*/
+  object-fit: cover;
+  background-position: center;
+  height: 263px;
+}
+.gallery__photo_6 {
+  /*background-image: url("../../images/faena-house-2.jpg");*/
+  object-fit: cover;
+  background-position: center;
+  height: 263px;
+}
+
+.caption {
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.highlight {
+  color: #00aaef;
+}
+
+.button {
+  display: block;
+  margin: auto;
+}
+.button__text {
+  color: white;
+  background-color: #00aaef;
+  padding: 19px 62px;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  display: block;
+}
+.button__text:hover {
+  background-color: #2f80ed;
+}
+
+.heading {
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: absolute;
+  width: max-content;
+  white-space: nowrap;
+  display: block;
+}
+.heading::after, .heading::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: calc(100% + 5px);
+  width: calc(50% - 19.5px);
+  background-color: #00aaef;
+  height: 2px;
+}
+.heading::before {
+  left: 0;
+}
+.heading::after {
+  right: 0;
+}
+.heading__crown {
+  position: absolute;
+  height: 13px;
+  width: 20px;
+  display: block;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-image: url("../../images/crow.svg");
+}
+
+.consultation {
+  display: flex;
+  justify-content: space-between;
+}
+.consultation__text {
+  width: 480px;
+}
+.consultation__form {
+  width: 383px;
+}
+.consultation__heading {
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 0 0 24px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 383px;
+}
+.form__item {
+  margin-bottom: 8px;
+}
+.form__input, .form__bottom {
+  width: 100%;
+  box-sizing: border-box;
+}
+.form__input {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #393939;
+  background-color: #eeeeee;
+  padding: 16.5px;
+  border-width: 0;
+}
+.form__input::placeholder {
+  color: inherit;
+  text-transform: uppercase;
+}
+.form__button {
+  width: 383px;
+}
+
+.testimonials {
+  display: grid;
+  grid-gap: 65px;
+  grid-template-columns: repeat(3, 200px);
+  justify-content: center;
+}
+
+.person {
+  margin: auto;
+  text-align: center;
+  max-width: 500px;
+}
+.person__photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.person__name {
+  margin-top: 12px;
+  font-weight: 700;
+}
+.person__position {
+  margin: 0;
+  color: #696973;
+  font-style: italic;
+}
+.person__text {
+  position: relative;
+}
+.person__text::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 33px;
+  background-image: url("../../images/quote.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: calc(50% - 130px);
+  bottom: calc(100% + 6px);
+}
+
+.input_textarea {
+  height: 166px;
+}
+.input_textarea::placeholder {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.contact__text {
+  font-size: 24px;
+  width: 280px;
+}
+.contact__form {
+  width: 383px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  height: 540px;
+  background-image: url("../../images/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+}
+.footer__logo {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 8vh;
+  height: 76px;
+  width: 115px;
+}
+
+@media screen and (max-width: 1100px) {
+  .menu__item {
+    margin: 0 4px;
+  }
+
+  .info__list {
+    grid-template-columns: repeat(5, 150px);
+  }
+
+  .information {
+    padding: 0 20px;
+  }
+  .information__heading {
+    width: 400px;
+    margin-bottom: 40px;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .consultation {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 799px) {
+  .menu__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__link {
+    margin: 0;
+  }
+
+  .info__list {
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: 150px 40px 40px;
+    align-items: end;
+    grid-gap: 0;
+  }
+  .info__item:first-child {
+    grid-column-start: 1;
+  }
+
+  .information {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+  .section__gallery {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: auto;
+    grid-template-areas: "photo_1" "photo_2" "caption_1" "photo_3" "photo_4" "caption_2" "photo_5" "photo_6" "caption_3";
+  }
+
+  .caption {
+    margin: 0 auto 15px;
+  }
+
+  .consultation {
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials {
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 20px;
+  }
+
+  .contact {
+    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .person {
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
