@@ -3,7 +3,7 @@ html, body, ul, li, button, input, textarea, h1, h2, h3, h4, h5, h6 {
   padding: 0;
   border-width: 0;
   font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
+  font-size: 19px;
   line-height: inherit;
 }
 
@@ -17,7 +17,7 @@ strong {
 
 .header {
   height: 765px;
-  background-image: url("../../images/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("../../images/header.jpeg");
   background-size: cover;
   background-position: center;
   font-weight: 500;
@@ -45,14 +45,16 @@ strong {
   position: relative;
   top: 47.12px;
   white-space: nowrap;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 .header__link {
   color: white;
   border-bottom: 1px dashed;
   text-decoration: none;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 .header__link:hover {
-  color: #D5C5AA;
+  color: #e2dddd;
 }
 
 @media screen and (max-width: 999px) {
@@ -84,16 +86,47 @@ strong {
   white-space: nowrap;
 }
 .nav__item_active {
-  background-color: #D5C5AA;
-  border-radius: 10px;
+  height: 15px;
+  width: 132px;
+  color: #fff;
+  border-radius: 20.5px;
+  border: 1px solid #fff;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 .nav__link {
   color: white;
   text-decoration: none;
   transition: color 0.2s;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 .nav__link:hover {
-  color: #D5C5AA;
+  color: #e2dddd;
+}
+
+.underline {
+  position: relative;
+  color: currentColor;
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
+}
+
+.underline:after {
+  --scale: 0;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 2px;
+  background: linear-gradient(135deg, #73fac8, #00bee1);
+  transform: scaleX(var(--scale));
+  transform-origin: var(--x) 50%;
+  transition: transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
 }
 
 @media screen and (max-width: 999px) {
@@ -149,7 +182,7 @@ strong {
   top: calc(100% + 5px);
   width: calc(50% - 19.5px);
   height: 2px;
-  background-color: #00AAEF;
+  background-color: #5F4B8B;
 }
 .heading::before {
   left: 0;
@@ -198,7 +231,7 @@ strong {
   }
 }
 .highlighted {
-  color: #00AAEF;
+  color: #5F4B8B;
 }
 
 .gallery__caption {
@@ -211,14 +244,47 @@ strong {
 .button {
   display: block;
   color: white;
-  background-color: #00AAEF;
-  padding: 19px 62px;
+  background-color: #5F4B8B;
+  padding: 19px;
   text-transform: uppercase;
   cursor: pointer;
   transition: background-color 0.2s;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  border: none;
+  width: 200px;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+.button:after {
+  content: "";
+  background: #5F4B8B;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
 }
 .button:hover {
-  background-color: #2F80ED;
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #5F4B8B;
+  color: #000;
+}
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+.button:focus {
+  outline: 0;
 }
 
 .photos {
@@ -243,9 +309,27 @@ strong {
   width: calc(40% - 10%);
 }
 
+@media screen and (max-width: 999px) {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .photos__img {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .photos_wide_left .photos__img:first-child, .photos_wide_right .photos__img:first-child {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .photos_wide_left .photos__img:last-child, .photos_wide_right .photos__img:last-child {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
 .footer {
   height: 540px;
-  background-image: url("../../images/footer.jpg");
+  background-image: url("../../images/footer.jpeg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -306,6 +390,7 @@ strong {
   box-sizing: border-box;
   text-transform: uppercase;
   line-height: 1;
+  outline: none;
 }
 .input::placeholder {
   color: inherit;
@@ -382,7 +467,7 @@ strong {
   }
 }
 .link {
-  color: #00AAEF;
+  color: #5F4B8B;
   text-decoration: none;
 }
 

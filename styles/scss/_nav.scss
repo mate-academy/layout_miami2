@@ -16,8 +16,17 @@
     white-space: nowrap;
 
     &_active {
-      background-color: $light-active-color;
-      border-radius: 10px;
+      height: 15px;
+      width: 132px;
+      color: #fff;
+      border-radius: 20.5px;
+      border: 1px solid #fff;
+      background: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
     }
   }
 
@@ -25,13 +34,36 @@
     color: white;
     text-decoration: none;
     transition: color $hover-duration;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
 
 
     &:hover {
-      color: $light-active-color;
-
+      color: #e2dddd;
     }
   }
+}
+
+.underline {
+  position: relative;
+  color: currentColor;
+  text-decoration: none;
+  transition: color .3s cubic-bezier(.51,.92,.24,1);
+}
+
+.underline:after {
+  --scale: 0;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 2px;
+  background: linear-gradient(135deg,#73fac8,#00bee1);
+  transform: scaleX(var(--scale));
+  transform-origin: var(--x) 50%;
+  transition: transform .3s cubic-bezier(.51,.92,.24,1);
 }
 
 @media screen and (max-width: $small-screen-breakpoint) {

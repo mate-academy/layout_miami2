@@ -6,31 +6,33 @@
     <link rel="stylesheet" href="styles/css/styles.css">
     <link rel="icon" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,500,700&display=swap" rel="stylesheet">
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 <body>
 <header class="header">
     <div class="header__top">
-        <img src="images/logo.png" alt="Miami" class="logo header__logo">
+        <img src="images/logo.svg" alt="Miami" class="logo header__logo">
         <div class="header__phone">
             +1 234 555-55-55
         </div>
         <div class="header__action">
-            <a href="#" class="header__link">Call to order</a>
+            <a href="#" class="header__link"><span>Call to order</span></a>
         </div>
     </div>
-    <nav class="nav header__nav">
+    <nav id="menu" class="nav header__nav">
         <ul class="nav__list">
             <li class="nav__item nav__item_active">Home</li>
-            <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Consultation</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Testimonials</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Contacts</a></li>
+            <li class="nav__item"><a href="#about-us" class="nav__link">About Us</a></li>
+            <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
+            <li class="nav__item"><a href="#consultation" class="nav__link">Consultation</a></li>
+            <li class="nav__item"><a href="#testimonials" class="nav__link">Testimonials</a></li>
+            <li class="nav__item"><a href="#contacts" class="nav__link">Contacts</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <section class="section section_info">
+    <section id="about-us" class="section section_info">
         <div class="info">
             <h1 class="info__heading">Miami <strong>best</strong>  Real estate  <span class="highlighted">here</span></h1>
             <div class="info__text">
@@ -41,28 +43,28 @@
             </div>
         </div>
     </section>
-    <section class="section">
+    <section id="gallery" class="section">
         <h2 class="heading section__heading">Gallery <span class="heading__crown"></span></h2>
         <div class="gallery section__gallery">
             <div class="photos photos_wide_left">
-                <img class="photos__img" src="images/photos/1.jpg" alt="">
-                <img class="photos__img" src="images/photos/2.jpg" alt="">
+                <img class="photos__img" src="images/photos/1.jpeg" alt="">
+                <img class="photos__img" src="images/photos/2.jpeg" alt="">
             </div>
             <p class="gallery__caption">Marina Palms / <span class="highlighted">North Miami Beach, FL 33162</span></p>
             <div class="photos">
-                <img class="photos__img" src="images/photos/3.jpg" alt="">
-                <img class="photos__img" src="images/photos/4.jpg" alt="">
+                <img class="photos__img" src="images/photos/3.jpeg" alt="">
+                <img class="photos__img" src="images/photos/4.jpeg" alt="">
             </div>
-            <p class="gallery__caption">Edition Residens / <span class="highlighted">Miami Beach, FL 33139</span></p>
-            <div class="photos photos_wide_right">
-                <img class="photos__img" src="images/photos/5.jpg" alt="">
-                <img class="photos__img" src="images/photos/6.jpg" alt="">
+            <p class="gallery__caption">Edition Residence / <span class="highlighted">Miami Beach, FL 33139</span></p>
+            <div class="pho tos photos_wide_right">
+                <img class="photos__img" src="images/photos/5.jpeg" alt="">
+                <img class="photos__img" src="images/photos/6.jpeg" alt="">
             </div>
             <p class="gallery__caption">Faena House / <span class="highlighted">Miami Beach, FL 33140</span></p>
             <button class="button gallery__button">View All</button>
         </div>
     </section>
-    <section class="section">
+    <section id="consultation" class="section">
         <h2 class="heading section__heading">Consultation<span class="heading__crown"></span></h2>
         <div class="consultation">
             <div class="consultation__text">
@@ -71,7 +73,7 @@
                     "Analysis of musical works." Pointillism, which originated in the music of the early twentieth century, microforms, found a distant
                     historical.</p>
             </div>
-            <form action="#" class="form consultation__form" method="post">
+            <form action="#" class="form consultation__form">
                 <label><input type="text" name="name" placeholder="Name" class="input form__input"></label>
                 <label><input type="text" name="phone" placeholder="Phone" class="input form__input"></label>
                 <label><input type="text" name="email" placeholder="Email" class="input form__input"></label>
@@ -79,37 +81,37 @@
             </form>
         </div>
     </section>
-    <section class="section">
+    <section id="testimonials" class="section">
         <h2 class="heading section__heading">Testimonials<span class="heading__crown"></span></h2>
         <div class="testimonials section__content">
             <div class="person">
-                <img class="person__photo" src="images/people/1.jpg" alt="Tim Cook">
+                <img class="person__photo" src="images/people/1.jpeg" alt="Tim Cook">
                 <h3 class="person__name">Tim Cook</h3>
                 <p class="person__position">CEO</p>
                 <p class="person__text">Nice work, Certificates National Association of Realtors (USA).</p>
             </div>
             <div class="person">
-                <img class="person__photo" src="images/people/2.jpg" alt="Katherine Adams">
+                <img class="person__photo" src="images/people/2.jpeg" alt="Katherine Adams">
                 <h3 class="person__name">Katherine Adams</h3>
-                <p class="person__position">Senior Vice President</p>
+                <p class="person__position">Chief Design Officer </p>
                 <p class="person__text">My soul is illuminated by an unearthly joy, as these beautiful spring morning, which I enjoy with all my heart. I’m all alone and blissfully happy in the local edge.</p>
             </div>
             <div class="person">
-                <img class="person__photo" src="images/people/3.jpg" alt="Jonathan Ive">
+                <img class="person__photo" src="images/people/3.jpeg" alt="Jonathan Ive">
                 <h3 class="person__name">Jonathan Ive</h3>
-                <p class="person__position">Chief Design Officer</p>
+                <p class="person__position">Senior Vice President</p>
                 <p class="person__text">When my lovely valley of steam rises and half-day sun is above an impermeable.</p>
             </div>
         </div>
     </section>
-    <section class="section">
+    <section id="contacts" class="section">
         <h2 class="heading section__heading">Contact Us<span class="heading__crown"></span></h2>
         <div class="contact">
             <div class="contact__text">
                 <p><a href="mailto:Hello@miami.com" class="link">Hello@miami.com </a><br>+1 234 555-55-55</p>
                 <p>400 first ave. n. <br>suite 700<br> Minneapolis, MN 55401</p>
             </div>
-            <form action="#" class="form contact__form" method="post">
+            <form action="#" class="form contact__form">
                 <label><input type="text" name="name" placeholder="Name" class="input form__input"></label>
                 <label><input type="text" name="email" placeholder="Email" class="input form__input"></label>
                 <label><textarea name="message" placeholder="Message" class="input input_textarea form__input"></textarea></label>
@@ -119,7 +121,7 @@
     </section>
 </main>
 <footer class="footer">
-    <img src="images/logo.png" alt="Miami" class="logo footer__logo">
+    <img src="images/logo.svg" alt="Miami" class="logo footer__logo">
 </footer>
 </body>
 </html>

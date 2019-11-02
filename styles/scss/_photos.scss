@@ -30,3 +30,29 @@
     }
   }
 }
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__img {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    &_wide_left, &_wide_right {
+      .photos__img {
+        &:first-child {
+          width: 100%;
+          padding-bottom: 20px;
+        }
+
+        &:last-child {
+          width: 100%;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
