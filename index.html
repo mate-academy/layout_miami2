@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Miami</title>
 </head>
+
 <body>
   <!-- Header -->
   <header class="section header">
@@ -24,25 +26,25 @@
           call to order
         </a>
       </div>
-      <nav class="nav">
+      <nav class="nav" id="menu">
         <ul class="nav__menu">
           <li class="nav__item">
             <a class="nav__link nav__link_active" href="#">Home</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">About Us</a>
+            <a class="nav__link" href="#info">About Us</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Gallery</a>
+            <a class="nav__link" href="#gallery">Gallery</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Consultation</a>
+            <a class="nav__link" href="#consultation">Consultation</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Testimonials</a>
+            <a class="nav__link" href="#testimonials">Testimonials</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">Contacts</a>
+            <a class="nav__link" href="#contacts">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -50,7 +52,7 @@
   </header>
   <main>
     <!-- Info -->
-    <section class="section info">
+    <section class="section info" id="info">
       <div class="container container_info">
         <h1 class="info__title">Miami <span>Best</span> Real Estate <span
             class="higthlight info__higthlight">Here</span>
@@ -77,7 +79,7 @@
     </section>
     <!-- Gallery -->
     <section class="section-gray gallery">
-      <h2 class="title">
+      <h2 class="title" id="gallery">
         Gallery <span class="title__crown"></span>
       </h2>
       <div class="container">
@@ -103,13 +105,13 @@
           </figure>
         </div> <!-- gallery__photos -->
         <a href="#" class="button gallery__button">
-          Viev All
+          View All
         </a>
       </div> <!-- container_gallery -->
     </section>
     <!-- Consultation -->
     <section class="section consultation">
-      <h2 class="title">
+      <h2 class="title" id="consultation">
         Consultation <span class="title__crown"></span>
       </h2>
       <div class="container container_consultation">
@@ -142,7 +144,7 @@
     </section>
     <!-- Testemonials -->
     <section class="section-gray testemonials">
-      <h2 class="title">
+      <h2 class="title" id="testimonials">
         Testemonials <span class="title__crown"></span>
       </h2>
       <div class="container container_testemonials">
@@ -176,7 +178,7 @@
     </section>
     <!-- Contact Us -->
     <section class="section contact">
-      <h2 class="title">
+      <h2 class="title" id="contacts">
         Contact Us <span class="title__crown"></span>
       </h2>
       <div class=" container container_contact">
@@ -206,5 +208,8 @@
       <img src="logo.png" alt="logo">
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
