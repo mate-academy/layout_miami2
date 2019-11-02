@@ -1,0 +1,38 @@
+.consultation {
+  padding: 150px 0;
+  position: relative;
+
+  @include mobile {
+    padding: 75px 0;
+  }
+
+  &__texts {
+    max-width: 480px;
+    margin-right: 10px;
+
+    @include mobile {
+      max-width: 100%;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 25px;
+  }
+
+  &__form {
+    max-width: 385px;
+
+    @include mobile {
+      max-width: 75%;
+      margin: 0 auto;
+    }
+
+    @include mobileL {
+      max-width: 100%;
+    }
+  }
+}

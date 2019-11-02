@@ -1,0 +1,34 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include main-font;
+    font-weight: $main-weight;
+    line-height: $main-height;
+    color: $main-color;
+    font-size: $main-size;
+}
+
+.logo {
+    width: $logo-width;
+    height: $logo-height;
+}
+
+@import "section";
+@import "container";
+@import "titles";
+@import "button";
+@import "header";
+@import "nav";
+@import "info";
+@import "gallery";
+@import "consultation";
+@import "form";
+@import "testemonials";
+@import "contact";
+@import "footer";

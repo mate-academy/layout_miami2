@@ -1,0 +1,56 @@
+.title {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: $title-size;
+  font-weight: 300;
+  width: max-content;
+  line-height: 48px;
+  top: -0.5em;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    right: calc(50% + 24px);
+    bottom: -5px;
+    left: 0;
+    background-color: $theme-color;
+  }
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    right: 0;
+    bottom: -5px;
+    left: calc(50% + 24px);
+    background-color: $theme-color;
+  }
+
+  &__crown {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 13px;
+    left: 0;
+    right: 0;
+    bottom: -13px;
+    margin: 0 auto;
+    background-image: url(../img/crown.svg);
+  }
+
+  @include mobile {
+    font-size: 38px;
+    top: -.74em;
+  }
+
+  @include mobileL {
+    font-size: 30px;
+    top: -.8em;
+  }
+}

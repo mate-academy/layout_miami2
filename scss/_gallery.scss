@@ -1,0 +1,65 @@
+.gallery {
+  padding: 110px 0;
+  position: relative;
+
+  @include mobile {
+    padding: 75px 0;
+  }
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+
+    @include mobileL {
+    margin-bottom: 25px;
+    }
+
+    &_caption {
+      width: 100%;
+      margin-top: 12px;
+      font-weight: 500;
+    }
+
+    &_caption>span {
+      color: $theme-color;
+    }
+
+    &:last-child {
+      margin-bottom: 45px;
+    }
+  }
+
+  &__img {
+    width: calc(50% - 5px);
+    display: block;
+    object-fit: cover;
+    height: 260px;
+
+    &_big {
+      flex: 2;
+    }
+
+    &_small {
+      flex: 1;
+    }
+
+    &:first-of-type {
+      margin-right: 10px;
+    }
+
+    @include mobile {
+      height: auto;
+    }
+  }
+
+  &__button {
+    max-width: max-content;
+    margin: 0 auto;
+
+    @include mobileL {
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}

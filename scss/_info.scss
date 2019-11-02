@@ -1,0 +1,66 @@
+.info {
+  padding: 150px;
+
+  @include tablet {
+    padding: 75px 0;
+  }
+
+  @include mobileL {
+    padding: 40px 0;
+  }
+
+  @include mobileS {
+    padding: 35px 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    max-width: 315px;
+    font-weight: 300;
+    font-size: $title-size;
+    line-height: 60px;
+    margin-right: 15px;
+
+    & + span {
+      font-weight: $bold-weight;
+    }
+
+    @include tablet {
+      margin: 0;
+      margin-bottom: 25px;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    @include mobileS {
+      margin-bottom: 15px;
+      font-size: 25px;
+      line-height: 40px;
+    }
+  }
+
+  &__higthlight {
+    color: $theme-color;
+  }
+
+  &__texts {
+    max-width: 564px;
+
+    & p {
+      margin-bottom: 25px;
+
+      &>span {
+        font-weight: $bold-weight;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+
+    }
+
+    @include mobileS {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  background: #87BFC1 url(../img/footer-bg.jpg) center no-repeat / cover;
+  height: 540px;
+
+  @include mobile {
+    height: 400px;
+  }
+
+  @include mobileL {
+    height: 300px;
+  }
+
+  &__logo {
+    margin: auto auto 95px;
+  }
+}

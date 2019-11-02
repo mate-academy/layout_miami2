@@ -1,0 +1,53 @@
+.container {
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 25px;
+
+  @include mobileL {
+    padding: 0 15px;
+  }
+
+  &_header {
+    @include flex_between;
+
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &_info {
+    @include flex_between;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &_consultation {
+    @include flex_between;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &_testemonials {
+    @include flex_between;
+    
+    flex-wrap: wrap;
+    max-width: 750px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &_contact {
+    @include flex_between;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
