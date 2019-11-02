@@ -327,6 +327,9 @@ input[type="button"] {
 
 .contact_form input[type="submit"] {
   background-color: #00aaef;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
 }
 
 .form_textarea {
