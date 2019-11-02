@@ -1,0 +1,32 @@
+.consultation {
+  display: flex;
+  justify-content: space-between;
+
+
+  &__heading {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 24px;
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  &__form {
+    width: 380px;
+  }
+
+  &__article {
+    max-width: 480px;
+  }
+}
+
+
+@media screen and (max-width: $small-screen-breakpoint) {
+  .consultation {
+    flex-direction: column;
+
+    &__text, &__form {
+      width: 100%;
+    }
+  }
+}
