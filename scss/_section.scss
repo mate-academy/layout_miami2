@@ -1,0 +1,31 @@
+.section {
+  @include section_flex;
+
+  &__info {
+    @include inner_container;
+  }
+
+  &__heading {
+    margin: 0;
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 300;
+    display: block;
+    box-sizing: border-box;
+    min-height: 130px;
+    min-width: 314px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__paragraphs {
+    & > :first-child {
+      margin-top: 0;
+    }
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+
+  }
+}

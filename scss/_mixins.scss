@@ -1,0 +1,38 @@
+@mixin section_flex {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  height: 540px;
+}
+
+@mixin heading_position {
+  top: -0.5em;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@mixin inner_container {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  box-sizing: border-box;
+}
+
+@mixin focus_input_textarea {
+  background-color: #EEEEEE;
+  cursor: text;
+  border-radius: 5px;
+}
+
+@mixin placeholder_input_textarea {
+  text-transform: uppercase;
+  color: #393939;
+}
+
+@mixin hover_input_textarea {
+  cursor: pointer;
+  background-color: ghostwhite;
+  border-radius: 5px;
+}

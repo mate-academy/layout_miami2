@@ -1,0 +1,169 @@
+@media screen and (max-width: 1050px) {
+  .nav__unorderedlist {
+    margin: 0 40px;
+  }
+
+  .nav__item {
+    margin: 20px 0;
+  }
+
+  .header__phone {
+    margin: 0 20px;
+  }
+
+  .section {
+    margin: 0 40px;
+  }
+
+  .section__info {
+    flex-direction: column;
+  }
+
+  .section2__gallery {
+    margin: 0 40px;
+    transform: scaleX(0.85);
+  }
+
+  .section3 {
+    &__consultation {
+      margin: 0 40px;
+    }
+  }
+  .section5 {
+    &__contactus {
+      margin: 0 40px;
+    }
+  }
+  .section4 {
+    height: 100%;
+    &__testimotionals {
+      margin: 20px 40px 70px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 790px) {
+  .nav__unorderedlist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__upper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__phone {
+    margin: 40px 0;
+  }
+
+  .section2__gallery {
+    transform: scaleX(0.7);
+    text-align: center;
+    padding-top: 70px;
+  }
+  .section2 {
+    height: 100%;
+    padding-bottom: 30px;
+  }
+
+  .section {
+    height: 100%;
+    margin: 40px;
+  }
+
+  .section3 {
+    height: 650px;
+
+    &__consultation {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+
+      &__text {
+        margin: 20px auto 0;
+
+        p {
+          text-align: center;
+        }
+      }
+
+      &__heading {
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+
+
+  .section4 {
+    height: 100%;
+    &__testimotionals {
+      flex-direction: column;
+      align-items: center;
+      margin: 60px 0 20px;
+    }
+    .person {
+      width: 70%;
+      padding: 20px 0;
+      transform: scale(0.95);
+      &__text::before {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  .section5 {
+    height: 670px;
+    &__contactus {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 40px;
+    }
+  }
+
+  .photos {
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+
+    &__img {
+      width: 100%;
+      padding-top: 10px;
+    }
+
+    &_wide_left {
+      .photos__img {
+        &:first-child {
+          width: 100%;
+        }
+
+        &:last-child {
+          width: 100%;
+        }
+      }
+    }
+
+    &_wide_right {
+      .photos__img {
+        &:last-child {
+          width: 100%;
+        }
+
+        &:first-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .heading {
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 376px) {
+  .heading {
+    transform: scale(0.9);
+  }
+}

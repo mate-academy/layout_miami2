@@ -1,0 +1,576 @@
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  font-size: 14px;
+}
+
+.header {
+  height: 765px;
+  background-image: url("images/backgroundmiami.jpg");
+  background-size: cover;
+  background-position: center;
+  font-weight: 500;
+  position: relative;
+}
+.header__upper {
+  position: absolute;
+  display: flex;
+  align-items: baseline;
+  left: calc(50% - 57.5px);
+  top: 35px;
+  text-transform: uppercase;
+  color: white;
+}
+.header__phone, .header__action {
+  position: relative;
+  transform: translateY(-16px);
+  white-space: nowrap;
+}
+.header__phone:hover, .header__action:hover {
+  border-color: #D5C5AA;
+}
+.header__phone {
+  margin: 0 82px;
+  transition: 0.5s;
+}
+.header__action {
+  border-bottom: 1px dashed white;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.header__link:hover {
+  color: #D5C5AA;
+}
+.header__nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+}
+
+.nav__unorderedlist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+.nav__item {
+  margin: 0 23px;
+  padding: 7px 20px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+.nav__item_active {
+  background-color: #D5C5AA;
+  border-radius: 10px;
+}
+.nav__item_active :hover {
+  cursor: pointer;
+}
+.nav__link {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.nav__link:hover {
+  color: #D5C5AA;
+}
+.nav__link:active {
+  color: #00aaef;
+}
+
+logo {
+  width: 115px;
+  height: 76px;
+}
+
+.section {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  height: 540px;
+}
+.section__info {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  box-sizing: border-box;
+}
+.section__heading {
+  margin: 0;
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 300;
+  display: block;
+  box-sizing: border-box;
+  min-height: 130px;
+  min-width: 314px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.section__paragraphs > :first-child {
+  margin-top: 0;
+}
+.section__paragraphs > :last-child {
+  margin-bottom: 0;
+}
+
+.highlighted-text {
+  color: #00aaef;
+}
+
+.section2 {
+  height: 1257px;
+  background-color: #EEEEEE;
+  position: relative;
+  align-items: center;
+  padding-bottom: 65px;
+}
+.section2__heading {
+  top: -0.5em;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+.section2__gallery {
+  padding: 156px calc(50% - 470px) 0;
+  font-weight: 500;
+  line-height: 16px;
+  transition: 0.5s;
+}
+.section2__gallery__button {
+  margin: 44px auto;
+}
+.section2__gallery__paragraphs {
+  margin: 12px 0 35px;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-between;
+}
+.photos__img {
+  width: calc(50% - 10px);
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+}
+.photos_wide_left .photos__img:first-child {
+  width: calc(67% - 10px);
+}
+.photos_wide_left .photos__img:last-child {
+  width: calc(33% - 10px);
+}
+.photos_wide_right .photos__img:last-child {
+  width: calc(67% - 10px);
+}
+.photos_wide_right .photos__img:first-child {
+  width: calc(33% - 10px);
+}
+
+.section3 {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  height: 540px;
+  position: relative;
+}
+.section3__heading {
+  top: -0.5em;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+}
+.section3__consultation {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  box-sizing: border-box;
+}
+.section3__consultation__heading {
+  font-size: 32px;
+  font-weight: 300;
+  max-width: 350px;
+}
+.section3__consultation__text p {
+  display: block;
+  line-height: 24px;
+  font-weight: 300;
+  max-width: 480px;
+}
+
+.section4 {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  height: 540px;
+  position: relative;
+  background-color: #EEEEEE;
+}
+.section4__heading {
+  top: -0.5em;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+}
+.section4__testimotionals {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.person {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+.person__photo {
+  border-radius: 50%;
+}
+.person__position {
+  margin: 0;
+  font-style: italic;
+  color: gray;
+}
+.person__text {
+  line-height: 24px;
+  position: relative;
+}
+.person__text::before {
+  content: url("images/laps.png");
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+}
+
+.section5 {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  height: 540px;
+  position: relative;
+}
+.section5__heading {
+  top: -0.5em;
+  right: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+}
+.section5__contactus {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  box-sizing: border-box;
+}
+.section5__contactus__text p {
+  display: block;
+  line-height: 32px;
+  font-weight: 300;
+  max-width: 480px;
+  font-size: 24px;
+}
+
+.footer {
+  height: 540px;
+  background-image: url("images/footer_image.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+  .nav__unorderedlist {
+    margin: 0 40px;
+  }
+
+  .nav__item {
+    margin: 20px 0;
+  }
+
+  .header__phone {
+    margin: 0 20px;
+  }
+
+  .section {
+    margin: 0 40px;
+  }
+
+  .section__info {
+    flex-direction: column;
+  }
+
+  .section2__gallery {
+    margin: 0 40px;
+    transform: scaleX(0.85);
+  }
+
+  .section3__consultation {
+    margin: 0 40px;
+  }
+
+  .section5__contactus {
+    margin: 0 40px;
+  }
+
+  .section4 {
+    height: 100%;
+  }
+  .section4__testimotionals {
+    margin: 20px 40px 70px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .nav__unorderedlist {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__upper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__phone {
+    margin: 40px 0;
+  }
+
+  .section2__gallery {
+    transform: scaleX(0.7);
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .section2 {
+    height: 100%;
+    padding-bottom: 30px;
+  }
+
+  .section {
+    height: 100%;
+    margin: 40px;
+  }
+
+  .section3 {
+    height: 650px;
+  }
+  .section3__consultation {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .section3__consultation__text {
+    margin: 20px auto 0;
+  }
+  .section3__consultation__text p {
+    text-align: center;
+  }
+  .section3__consultation__heading {
+    margin: auto;
+    text-align: center;
+  }
+
+  .section4 {
+    height: 100%;
+  }
+  .section4__testimotionals {
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 20px;
+  }
+  .section4 .person {
+    width: 70%;
+    padding: 20px 0;
+    transform: scale(0.95);
+  }
+  .section4 .person__text::before {
+    transform: scale(0.9);
+  }
+
+  .section5 {
+    height: 670px;
+  }
+  .section5__contactus {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .photos {
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+  }
+  .photos__img {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .photos_wide_left .photos__img:first-child {
+    width: 100%;
+  }
+  .photos_wide_left .photos__img:last-child {
+    width: 100%;
+  }
+  .photos_wide_right .photos__img:last-child {
+    width: 100%;
+  }
+  .photos_wide_right .photos__img:first-child {
+    width: 100%;
+  }
+
+  .heading {
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-width: 376px) {
+  .heading {
+    transform: scale(0.9);
+  }
+}
+.input, .input_textarea {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding: 24px;
+  background-color: white;
+  color: #393939;
+  border: 0.5px solid black;
+  border-radius: 5px;
+}
+.input::placeholder, .input_textarea::placeholder {
+  text-transform: uppercase;
+  color: #393939;
+}
+.input:hover, .input_textarea:hover {
+  cursor: pointer;
+  background-color: ghostwhite;
+  border-radius: 5px;
+}
+.input:focus, .input_textarea:focus {
+  background-color: #EEEEEE;
+  cursor: text;
+  border-radius: 5px;
+}
+.input_textarea {
+  height: 167px;
+}
+.input_textarea:hover {
+  cursor: pointer;
+  background-color: ghostwhite;
+  border-radius: 5px;
+}
+.input_textarea:focus {
+  background-color: #EEEEEE;
+  cursor: text;
+  border-radius: 5px;
+}
+.input_textarea::placeholder {
+  text-transform: uppercase;
+  color: #393939;
+}
+
+.section__form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 72px;
+}
+.section__form__button, .section__form__input {
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 8px;
+  width: 383px;
+}
+
+@media screen and (max-width: 790px) {
+  .section__form {
+    transform: scale(0.8);
+    margin-left: 0;
+  }
+}
+.button {
+  display: flex;
+  background-color: #00aaef;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 62px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: inherit;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #2f80ed;
+}
+.button:active {
+  background-color: lightgrey;
+  color: #2f80ed;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: absolute;
+  line-height: 1;
+  width: max-content;
+  white-space: nowrap;
+}
+.heading::after, .heading::before {
+  content: "";
+  position: absolute;
+  width: calc(50% - 19.5px);
+  height: 2px;
+  display: block;
+  top: calc(100% + 5px);
+  background-color: #00aaef;
+}
+.heading::before {
+  left: 0;
+}
+.heading::after {
+  right: 0;
+}
+.heading_crown {
+  height: 13px;
+  width: 20px;
+  background: url("images/crown.svg");
+  position: absolute;
+  bottom: -17px;
+  left: calc(50% - 10px);
+}
+
+/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.scss.map */
+
+/*# sourceMappingURL=styles.css.map */

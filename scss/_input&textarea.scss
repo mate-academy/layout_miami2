@@ -1,0 +1,38 @@
+.input {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  padding: 24px;
+  background-color: white;
+  color: #393939;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  &::placeholder{
+    @include placeholder_input_textarea;
+  }
+
+  &:hover {
+    @include hover_input_textarea;
+  }
+
+  &:focus {
+   @include focus_input_textarea;
+  }
+
+  &_textarea {
+    @extend .input;
+    height: 167px;
+
+    &:hover {
+      @include hover_input_textarea;
+    }
+
+    &:focus {
+      @include focus_input_textarea;
+    }
+
+    &::placeholder{
+      @include placeholder_input_textarea;
+    }
+  }
+}
