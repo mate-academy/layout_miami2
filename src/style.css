@@ -125,7 +125,8 @@ body {
       padding: 15px 60px;
       font-weight: 500;
       font-size: 14px;
-      margin: auto; }
+      margin: auto;
+      border: 1px solid transparent; }
       .gallery__main_button:hover {
         background-color: white;
         color: #00aaef;
@@ -214,7 +215,8 @@ body {
       font-weight: 500;
       font-size: 14px;
       line-height: 36px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       .consultation__main_form-button:hover {
         background-color: white;
         color: #00aaef;
@@ -298,6 +300,9 @@ body {
       font-weight: normal;
       font-size: 24px;
       line-height: 36px; }
+      .contacts__main-left .address {
+        text-decoration: none;
+        color: black; }
     .contacts__main-right {
       display: flex;
       flex-direction: column; }
@@ -336,7 +341,8 @@ body {
       font-weight: 500;
       font-size: 14px;
       line-height: 36px;
-      text-align: center; }
+      text-align: center;
+      cursor: pointer; }
       .contacts__main_form-button:hover {
         background-color: white;
         color: #00aaef;
