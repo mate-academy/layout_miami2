@@ -48,6 +48,12 @@ h1, h2, h3, p, button, input, textarea {
   text-transform: uppercase;
   cursor: pointer;
 }
+.form__button:hover {
+  background-color: #f9fd00;
+  color: black;
+  box-sizing: border-box;
+  border: black dashed 1px;
+}
 .form__textarea {
   background-color: #eeeeee;
   text-align: center;
@@ -126,7 +132,6 @@ h1, h2, h3, p, button, input, textarea {
   font-size: 14px;
   line-height: 36px;
 }
-
 .light-menu__list {
   list-style: none;
   margin: 0;
@@ -209,14 +214,26 @@ h1, h2, h3, p, button, input, textarea {
 .photo-block__big-photo {
   width: 620px;
   height: 260px;
+  transition: 1s;
+}
+.photo-block__big-photo:hover {
+  transform: scale(1.4);
 }
 .photo-block__middle-photo {
   width: 462px;
   height: 260px;
+  transition: 1s;
+}
+.photo-block__middle-photo:hover {
+  transform: scale(1.4);
 }
 .photo-block__small-photo {
   width: 301px;
   height: 260px;
+  transition: 1s;
+}
+.photo-block__small-photo:hover {
+  transform: scale(1.4);
 }
 .photo-block__description {
   margin-top: 12px;
@@ -361,6 +378,13 @@ h1, h2, h3, p, button, input, textarea {
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 9px;
+  transition: 1s;
+}
+.section-gallery__button:hover {
+  background-color: #f9fd00;
+  color: black;
+  box-sizing: border-box;
+  border: black dashed 1px;
 }
 
 @media screen and (max-width: 999px) {
@@ -482,4 +506,4 @@ h1, h2, h3, p, button, input, textarea {
   justify-content: center;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */

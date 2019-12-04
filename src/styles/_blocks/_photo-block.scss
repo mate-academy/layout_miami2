@@ -14,16 +14,31 @@
   &__big-photo {
     width: 620px;
     height: 260px;
+    transition: 1s;
+
+    &:hover {
+      transform: scale(1.4);
+    }
   }
 
   &__middle-photo {
     width: 462px;
     height: 260px;
+    transition: 1s;
+
+    &:hover {
+      transform: scale(1.4);
+    }
   }
 
   &__small-photo {
     width: 301px;
     height: 260px;
+    transition: 1s;
+
+    &:hover {
+      transform: scale(1.4);
+    }
   }
 
   &__description {
