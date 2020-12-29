@@ -1,33 +1,32 @@
 .header {
-  height: 765px;
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center;
-  position: relative;
-  max-height: 100vh;
   color: $link-color;
   text-transform: uppercase;
+  min-width: 100%;
+  min-height: 100vh;
+  padding: 35px 12.7vw 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &__logo {
-    position: absolute;
-    left: calc(50% - 58px);
-    top: 35px;
     display: flex;
+    justify-content: flex-end;
     align-items: flex-end;
-  }
-
-  &__light-menu {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 25px;
+    margin-left: calc(50% - 57px); 
   }
 }
 
-@media screen and (max-width: $max-width) {
+@media screen and (max-width: 1279px) {
+  .header {
 
-  .header__logo {
-    flex-direction: column;
-    align-items: center;
+    &__logo {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
   }
 }

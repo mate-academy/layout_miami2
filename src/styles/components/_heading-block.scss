@@ -1,5 +1,4 @@
 .heading-block {
-
   font-size: 48px;
   display: flex;
   flex-direction: column;
@@ -16,6 +15,7 @@
       width: inherit;
       display: flex;
       justify-content: space-between;
+      width: 100%;
   
       &_side {
         width: calc(50% - 21px);
@@ -30,6 +30,11 @@
         background-repeat: no-repeat;
         background-position: center;
       }
-    }
   }
-  
+}
+
+@media screen and (max-width: 767px) {
+  .heading-block {
+    font-size: 36px;
+  }
+}

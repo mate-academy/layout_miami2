@@ -1,1 +1,1 @@
-- [LINK](https://mmashivskij.github.io/layout_miami2/src/).
+- [MIAMI](https://mmashivskij.github.io/layout_miami2/src/).

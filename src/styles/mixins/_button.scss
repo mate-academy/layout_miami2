@@ -5,12 +5,11 @@
   line-height: $line;
   text-transform: uppercase;
   cursor: pointer;
+  border: none;
 
   &:hover {
-    background-color: rgb(249, 253, 0);
+    background-color: white;
     color: black;
     box-sizing: border-box;
-    border: black dashed 1px;
   }
 }
- 

@@ -1,6 +1,5 @@
 .testimonials {
   display: flex;
-
   
   &__block {
     display: flex;
@@ -9,8 +8,11 @@
     align-items: center;
     line-height: 1.5;
     width: 200px;
-    margin: 0 30px;
     position: relative;
+
+    &:nth-child(2) {
+      margin: 0 50px;
+    }
 
     &_people-photo {
       width: 150px;
@@ -43,6 +45,24 @@
         bottom: 160px;
         width: 43px;
         height: 43px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+    
+  .testimonials {
+    flex-direction: column;
+
+    &__block{
+      &:nth-child(2) {
+        margin: 0;
+        margin-bottom: 30px;
+      }
+
+      &:first-child {
+        margin-bottom: 30px;
       }
     }
   }

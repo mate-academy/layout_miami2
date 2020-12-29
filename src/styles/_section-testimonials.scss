@@ -1,8 +1,9 @@
 .section-testimonials {
-  padding: 106px 250px 70px;
+  padding: 106px 0 70px;
   justify-content: center;
   position: relative;
   flex-wrap: nowrap;
+  background-color: $usefull-color;
 
   &__heading-block {
     position: absolute;
@@ -10,19 +11,9 @@
   }
 }
 
-@media screen and (max-width: $max-width) {
-  
+@media screen and (max-width: 767px) {
   .section-testimonials {
     padding-left: 10%;
     padding-right: 10%;
-
-  }
-  
-  .testimonials {
-    flex-direction: column;
-  }
-
-  .testimonials__block:nth-child(2) {
-    margin: 30px 30px;
   }
 }

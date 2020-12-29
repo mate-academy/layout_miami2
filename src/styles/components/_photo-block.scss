@@ -18,6 +18,7 @@
 
     &:hover {
       transform: scale(1.4);
+      z-index: 1 !important;
     }
   }
 
@@ -28,6 +29,7 @@
 
     &:hover {
       transform: scale(1.4);
+      z-index: 1 !important;
     }
   }
 
@@ -38,13 +40,18 @@
 
     &:hover {
       transform: scale(1.4);
+      z-index: 1 !important;
     }
   }
 
   &__description {
     margin-top: 12px;
 
-    &_special-color {
+    &_info {
+      font-weight: 700;
+    }
+
+    &_link {
       color: $special-color;
     }  
   }

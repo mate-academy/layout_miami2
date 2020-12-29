@@ -1,5 +1,5 @@
 .section-consultation {
-  padding: 153px 160px 145px;
+  padding: 15vh 10%;
   justify-content: center;
   position: relative;
 
@@ -10,23 +10,28 @@
 
   &__info {
     font-weight: 400;
-    margin-right: 72px;
 
     &_heading {
       font-size: 32px;
       line-height: 40px;
       margin-bottom: 24px;
+      font-weight: normal;
     }
 
     &_text {
       line-height: 1.5;
-      width: 480px;
+      width: 37vw;
     }
   }
-
 }
 
-@media screen and (max-width: $max-width) {
+.wrapper-for-section-consultation__info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
   .section-consultation {
     flex-direction: column;
     align-items: center;
@@ -35,7 +40,7 @@
       margin-right: 0;
 
       &_text {
-        width:383px;
+        width: auto;
       }
     }
   }
@@ -44,4 +49,8 @@
     margin-top: 20px;
   }
 
+  .wrapper-for-section-consultation__info {
+    flex-direction: column;
+    align-items: center;
+  }
 }
