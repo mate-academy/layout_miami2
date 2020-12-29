@@ -1,0 +1,69 @@
+.testimonials {
+  display: flex;
+  
+  &__block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    line-height: 1.5;
+    width: 200px;
+    position: relative;
+
+    &:nth-child(2) {
+      margin: 0 50px;
+    }
+
+    &_people-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 12px;
+    }
+
+    &_name {
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    &_position {
+      font-style: italic;
+      font-weight: 400;
+      color: #8A8A92;
+    }
+
+    &_respond {
+      font-weight: 400;
+
+      &::before {
+        content: "";
+        background-image: url(./../images/quotes.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        left: -30px;
+        bottom: 160px;
+        width: 43px;
+        height: 43px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+    
+  .testimonials {
+    flex-direction: column;
+
+    &__block{
+      &:nth-child(2) {
+        margin: 0;
+        margin-bottom: 30px;
+      }
+
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.section-gallery {
+  padding: 112px 159px 110px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: $usefull-color;
+
+  &__heading-block {
+    position: absolute;
+    top: -0.53em;
+  }
+  
+  &__button {
+    width: 188px;
+    height: 52px;
+    @include button(14px);
+    margin-top: 9px;
+    transition: 1s;
+  }   
+}
+
+@media screen and (max-width: $max-width) {
+  
+  .section-gallery {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+}
+  

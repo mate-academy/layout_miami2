@@ -1,0 +1,32 @@
+.form {
+  width: 383px;
+ 
+  &__item, &__button {
+    width: 100%;
+    height: 54px;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+  }
+
+  &__button {
+    @include button(36px);
+  }
+
+  &__textarea {
+    background-color: $usefull-color;
+    text-align: center;
+    width: 100%;
+    height: 166px;
+    margin-bottom: 8px;
+    resize: none;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    width: auto;
+  }
+}

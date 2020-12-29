@@ -1,0 +1,40 @@
+.heading-block {
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+    &__heading {
+      font-weight: 300;
+      line-height: inherit;
+      font-size: inherit;
+      text-transform: uppercase;
+    }
+  
+    &__decoration {
+      width: inherit;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  
+      &_side {
+        width: calc(50% - 21px);
+        height: 2px;
+        background-color: $special-color;
+      }
+  
+      &_centre {
+        width: 23px;
+        height: 16px;
+        background-image: url('../images/logo_small.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .heading-block {
+    font-size: 36px;
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  color: $link-color;
+  text-transform: uppercase;
+  min-width: 100%;
+  min-height: 100vh;
+  padding: 35px 12.7vw 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: calc(50% - 57px); 
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .header {
+
+    &__logo {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

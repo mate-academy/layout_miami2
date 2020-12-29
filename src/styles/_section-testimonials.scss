@@ -1,0 +1,19 @@
+.section-testimonials {
+  padding: 106px 0 70px;
+  justify-content: center;
+  position: relative;
+  flex-wrap: nowrap;
+  background-color: $usefull-color;
+
+  &__heading-block {
+    position: absolute;
+    top: -0.53em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-testimonials {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}

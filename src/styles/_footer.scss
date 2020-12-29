@@ -1,0 +1,17 @@
+.footer {
+    height: 765px;
+    background-image: url("../images/footer.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  
+    &__logo {
+      bottom: 95px;
+    }
+  }
+  

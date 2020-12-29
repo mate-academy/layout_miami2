@@ -1,0 +1,15 @@
+@mixin button($line) {
+  background-color: $special-color;
+  color: $link-color;
+  font-size: 14px;
+  line-height: $line;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    box-sizing: border-box;
+  }
+}
